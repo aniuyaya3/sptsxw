@@ -1,0 +1,50 @@
+{
+  "updated": "2026-11-18T12:00:00+08:00",
+  "days": [
+    {
+      "date": "2026-11-18",
+      "items": [
+        {
+          "repo": "hao-ai-lab/FastVideo",
+          "url": "https://github.com/hao-ai-lab/FastVideo",
+          "stars": 4825,
+          "language": "Python",
+          "summary": "统一的视频生成推理与后训练框架，核心是「加速」——把 Wan、HunyuanVideo 这类模型训得更快、跑得更快。",
+          "highlight": "统一的推理 + 后训练流水线，支持蒸馏、稀疏注意力等加速手段，直接对接主流开源视频模型。",
+          "fit": "自己部署出片、要把推理成本压下来的团队。",
+          "tags": [
+            "推理加速",
+            "训练框架"
+          ]
+        },
+        {
+          "repo": "FlashML-org/FreeVideo",
+          "url": "https://github.com/FlashML-org/FreeVideo",
+          "stars": 3244,
+          "language": "Python",
+          "summary": "在 8GB 显存的本机上跑 MiniMax H3，本地视频生成的开箱方案。",
+          "highlight": "极低显存门槛（最低 8GB），面向消费级显卡做量化与调度优化。",
+          "fit": "想完全本地化、不想付云端 API 费用的个人创作者。",
+          "tags": [
+            "本地部署",
+            "低显存"
+          ]
+        },
+        {
+          "repo": "ArcReel/ArcReel",
+          "url": "https://github.com/ArcReel/ArcReel",
+          "stars": 6631,
+          "language": "Python",
+          "summary": "AI Agent 驱动的可自部署视频工作台：小说/剧本 → 角色、场景、道具资产 → 分镜 → 视频 → 剪映草稿。",
+          "highlight": "跨镜头一致性、多供应商可切换、费用追踪，直接导出剪映草稿。",
+          "fit": "做短剧、漫剧、系列化内容的中文创作团队。",
+          "tags": [
+            "短剧",
+            "剪映",
+            "Agent"
+          ]
+        }
+      ]
+    }
+  ]
+}

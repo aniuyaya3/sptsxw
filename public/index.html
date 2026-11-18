@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VideoGen Daily · 视频生成开源热榜</title>
+<meta name="description" content="每天 12:00 自动更新：3 个高热度视频生成 GitHub 仓库" />
+<link rel="stylesheet" href="assets/style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>" />
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <span class="dot"></span>
+      <h1>VideoGen Daily</h1>
+    </div>
+    <p class="tagline">每天 <b>12:00</b> 自动推送 3 个「视频生成」方向的高热度 GitHub 仓库</p>
+    <div class="meta">
+      <span id="updated">加载中…</span>
+      <span class="sep">·</span>
+      <span id="total">—</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="today" class="day-block"></section>
+  <section id="archive"></section>
+</main>
+
+<footer class="wrap">
+  <p>数据由 GitHub Search API + Trending 每日自动抓取 · <a href="data/picks.json">picks.json</a></p>
+  <p class="dim">静态站点 · Cloudflare Pages 自动构建</p>
+</footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
