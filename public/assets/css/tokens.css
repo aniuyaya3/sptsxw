@@ -1,0 +1,16 @@
+/* design tokens — 颜色 / 间距 / 缓动；改这里就能整体换肤 */
+:root{
+  --bg:#06070a;
+  --bg-2:#0a0c11;
+  --ink:#eef2f7;
+  --ink-2:#b9c4d3;
+  --muted:#7d8a9c;
+  --line:rgba(255,255,255,.075);
+  --line-2:rgba(255,255,255,.14);
+  --teal:#5eead4;
+  --indigo:#8b93ff;
+  --amber:#f5c46b;
+  --radius:20px;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --maxw:1120px;
+}

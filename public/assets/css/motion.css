@@ -1,0 +1,22 @@
+/* 动效与无障碍降级 */
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(20px)}
+.reveal.in{opacity:1;transform:none;
+  transition:opacity .8s var(--ease),transform .8s var(--ease);
+  transition-delay:calc(var(--i,0) * 80ms)}
+
+/* ---------- responsive ---------- */
+@media (max-width:720px){
+  .hero{padding:128px 0 44px}
+  .lede{font-size:15.5px}
+  .stats{gap:28px;margin-top:34px}
+  .stat b{font-size:22px}
+  .cards{grid-template-columns:1fr}
+  .card{padding:22px 20px 18px}
+  .arc-row{flex-direction:column;gap:6px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .reveal{opacity:1;transform:none}
+}
