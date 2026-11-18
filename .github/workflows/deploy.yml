@@ -8,26 +8,58 @@ on:
 permissions:
   contents: read
 
+env:
+  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN || vars.CLOUDFLARE_API_TOKEN }}
+  CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || vars.CLOUDFLARE_ACCOUNT_ID }}
+  PROJECT: videogen-daily
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Validate data
         run: python3 -m json.tool public/data/picks.json > /dev/null && echo "picks.json OK"
 
-      - name: Ensure Pages project exists
-        continue-on-error: true
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN || vars.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || vars.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages project create videogen-daily --production-branch=main
+      - name: Preflight (token / account)
+        run: |
+          set +e
+          echo "token_len=${#CLOUDFLARE_API_TOKEN} account=${CLOUDFLARE_ACCOUNT_ID}"
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::error::CLOUDFLARE_API_TOKEN 为空：请在 Settings → Secrets and variables → Actions 里添加（Secret 或 Variable 均可）"
+            exit 1
+          fi
+          if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "::warning::CLOUDFLARE_ACCOUNT_ID 为空，将由 wrangler 自动推断（多账户时会失败）"
+          fi
+          npx -y wrangler@4 whoami > /tmp/who.log 2>&1
+          rc=$?
+          tail -c 800 /tmp/who.log
+          if [ $rc -ne 0 ]; then
+            echo "::error::wrangler whoami 失败(exit $rc): $(tail -c 500 /tmp/who.log | tr '\n' ' ')"
+            exit $rc
+          fi
+
+      - name: Ensure Pages project
+        run: |
+          set +e
+          npx -y wrangler@4 pages project create "$PROJECT" --production-branch=main > /tmp/create.log 2>&1
+          rc=$?
+          tail -c 500 /tmp/create.log
+          if [ $rc -ne 0 ] && ! grep -qi "already exists" /tmp/create.log; then
+            echo "::warning::创建项目失败(exit $rc)，继续尝试部署: $(tail -c 300 /tmp/create.log | tr '\n' ' ')"
+          fi
+          exit 0
 
       - name: Deploy
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN || vars.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID || vars.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=videogen-daily --branch=main
+        run: |
+          set +e
+          npx -y wrangler@4 pages deploy public --project-name="$PROJECT" --branch=main > /tmp/deploy.log 2>&1
+          rc=$?
+          tail -c 1500 /tmp/deploy.log
+          if [ $rc -ne 0 ]; then
+            echo "::error::部署失败(exit $rc): $(tail -c 700 /tmp/deploy.log | tr '\n' ' ')"
+            exit $rc
+          fi
+          echo "::notice::部署完成"
