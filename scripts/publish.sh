@@ -6,6 +6,11 @@ cd "$(dirname "$0")/.."
 KEY="${DEPLOY_KEY:-$HOME/.ssh/videogen_deploy}"
 [ -f "$KEY" ] || { echo "缺少部署密钥: $KEY" >&2; exit 1; }
 
+if ! git remote get-url origin >/dev/null 2>&1; then
+  echo "⚠️  尚未配置 origin 远程仓库，数据已保存本地，跳过推送" >&2
+  exit 0
+fi
+
 git add -A
 if git diff --cached --quiet; then
   echo "无变更，跳过推送"
