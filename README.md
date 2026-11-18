@@ -21,14 +21,6 @@ scripts/
 .github/workflows/deploy.yml
 ```
 
-## 一次性配置
-
-### 1. 添加 deploy key（本机 → GitHub）
-
-仓库 Settings → Deploy keys → Add deploy key，**勾选 Allow write access**：
-
-```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHdVegiIgW2usyVs7su8b1chOCcbSc6HjD6C482OnT0e videogen-daily-deploy-key
 ```
 
 私钥在本机 `~/.ssh/videogen_deploy`（600），`scripts/publish.sh` 用它推送。
