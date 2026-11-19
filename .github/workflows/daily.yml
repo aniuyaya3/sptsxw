@@ -1,0 +1,56 @@
+name: Daily Picks
+
+on:
+  schedule:
+    # 04:00 UTC = 12:00 Asia/Shanghai；GitHub 排队高峰可能延迟几分钟到半小时
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-picks
+  cancel-in-progress: false
+
+jobs:
+  pick:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch 3 repos
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 可选：配了 LLM_API_KEY 就用模型写中文简介，没配则用模板
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+        run: python3 scripts/fetch_daily.py
+
+      - name: Write picks.json
+        run: |
+          python3 scripts/update_picks.py \
+            --date "$(TZ=Asia/Shanghai date +%F)" \
+            --file /tmp/items.json
+
+      - name: Validate
+        run: |
+          python3 -m json.tool public/data/picks.json > /dev/null
+          echo "picks.json OK"
+
+      - name: Commit & push
+        run: |
+          git config user.name "videogen-bot"
+          git config user.email "videogen-bot@users.noreply.github.com"
+          git add public/data/picks.json
+          if git diff --cached --quiet; then
+            echo "无变化，跳过提交"
+            exit 0
+          fi
+          git commit -m "data: $(TZ=Asia/Shanghai date +%F) 视频生成热榜"
+          git push
