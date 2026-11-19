@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T05:34:28+00:00",
+  "updated": "2026-11-19T05:46:12+00:00",
   "days": [
     {
       "date": "2026-11-19",
@@ -89,6 +89,239 @@
             "短剧",
             "剪映",
             "Agent"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "items": [
+        {
+          "repo": "ATH-MaaS/Pixelle-Video",
+          "url": "https://github.com/ATH-MaaS/Pixelle-Video",
+          "stars": 30237,
+          "language": "Python",
+          "summary": "🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "aigc",
+            "comfyui"
+          ]
+        },
+        {
+          "repo": "latent-spaces/brag",
+          "url": "https://github.com/latent-spaces/brag",
+          "stars": 21960,
+          "language": "Python",
+          "summary": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one com…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent-skills",
+            "claude-code"
+          ]
+        },
+        {
+          "repo": "KlingAIResearch/LivePortrait",
+          "url": "https://github.com/KlingAIResearch/LivePortrait",
+          "stars": 19530,
+          "language": "Python",
+          "summary": "Bring portraits to life!",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "face-animation",
+            "image-animation"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "items": [
+        {
+          "repo": "Wan-Video/Wan2.2",
+          "url": "https://github.com/Wan-Video/Wan2.2",
+          "stars": 18763,
+          "language": "Python",
+          "summary": "Wan: Open and Advanced Large-Scale Video Generative Models",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "aigc",
+            "video-generation"
+          ]
+        },
+        {
+          "repo": "duixcom/Duix-Avatar",
+          "url": "https://github.com/duixcom/Duix-Avatar",
+          "stars": 16392,
+          "language": "C",
+          "summary": "🚀 Truly open-source AI avatar(digital human) toolkit for offline video generation and digital human cloning",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai-avatar",
+            "ai-avatars"
+          ]
+        },
+        {
+          "repo": "Zulko/moviepy",
+          "url": "https://github.com/Zulko/moviepy",
+          "stars": 15168,
+          "language": "Python",
+          "summary": "Video editing with Python",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "animation",
+            "gif"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "items": [
+        {
+          "repo": "waooAI/waoowaoo",
+          "url": "https://github.com/waooAI/waoowaoo",
+          "stars": 14881,
+          "language": "TypeScript",
+          "summary": "首家工业级全流程 AI 影视生产平台。Industry-first professional AI Agent platform for controllable film & video production.…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai-agent",
+            "ai-agents"
+          ]
+        },
+        {
+          "repo": "zai-org/CogVideo",
+          "url": "https://github.com/zai-org/CogVideo",
+          "stars": 13214,
+          "language": "Python",
+          "summary": "text and image to video generation: CogVideoX (2024) and CogVideo (ICLR 2023)",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "cogvideox",
+            "image-to-video"
+          ]
+        },
+        {
+          "repo": "HKUDS/ViMax",
+          "url": "https://github.com/HKUDS/ViMax",
+          "stars": 12970,
+          "language": "Python",
+          "summary": "\"ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)\"",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agentic-aigc",
+            "video-generation"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "items": [
+        {
+          "repo": "Tencent-Hunyuan/HunyuanVideo",
+          "url": "https://github.com/Tencent-Hunyuan/HunyuanVideo",
+          "stars": 12801,
+          "language": "Python",
+          "summary": "HunyuanVideo: A Systematic Framework For Large Video Generation Model",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion-models",
+            "video-generation"
+          ]
+        },
+        {
+          "repo": "Lightricks/LTX-Video",
+          "url": "https://github.com/Lightricks/LTX-Video",
+          "stars": 11434,
+          "language": "Python",
+          "summary": "Official repository for LTX-Video",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion-models",
+            "dit"
+          ]
+        },
+        {
+          "repo": "lipku/LiveTalking",
+          "url": "https://github.com/lipku/LiveTalking",
+          "stars": 10503,
+          "language": "Python",
+          "summary": "Real time interactive streaming digital human",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "aigc",
+            "digihuman"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "items": [
+        {
+          "repo": "NVlabs/Sana",
+          "url": "https://github.com/NVlabs/Sana",
+          "stars": 9857,
+          "language": "Python",
+          "summary": "SANA & Sol: Efficient Generative Models and Full-Stack Training & Inference Engines for Image, Video, and W…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "diffusion",
+            "dit"
+          ]
+        },
+        {
+          "repo": "MeiGen-AI/InfiniteTalk",
+          "url": "https://github.com/MeiGen-AI/InfiniteTalk",
+          "stars": 8432,
+          "language": "Python",
+          "summary": "​​Unlimited-length talking video generation​​ that supports image-to-video and video-to-video generation",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人"
+          ]
+        },
+        {
+          "repo": "Forget-C/Jellyfish",
+          "url": "https://github.com/Forget-C/Jellyfish",
+          "stars": 7207,
+          "language": "Python",
+          "summary": "An end-to-end production workspace for AI-generated short dramas. From script input to structured storyboar…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai",
+            "short-drama"
           ]
         }
       ]

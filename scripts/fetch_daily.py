@@ -107,11 +107,17 @@ def collect(since):
     return list(found.values())
 
 
+JUNK = ("download", "scraper", "crawl", "tiktok", "douyin", "watermark",
+        "ascii", "imagen-pytorch", "stable-diffusion-webui")
+
+
 def relevant(repo):
     hay = " ".join([
         repo.get("description") or "", " ".join(repo.get("topics") or []),
         repo.get("name") or "",
     ]).lower()
+    if any(k in hay for k in JUNK):
+        return False
     return any(k in hay for k in RELEVANT)
 
 
