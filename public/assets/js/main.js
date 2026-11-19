@@ -29,12 +29,7 @@ function afterRender(scroll) {
 }
 
 function setFloating(showBack, showScroll) {
-  const back = $('#backTop');
   const scroll = $('#scrollTop');
-  if (back) {
-    back.hidden = !showBack;
-    back.classList.toggle('in', showBack);
-  }
   if (scroll) {
     scroll.hidden = !showScroll;
     scroll.classList.toggle('in', showScroll);
@@ -75,7 +70,7 @@ function showDay(date) {
   $('#navDateText').textContent = date;
   $('#cards').innerHTML = day.items.map((it, i) => cardHTML(it, i)).join('');
   $('#archive').style.display = 'none';
-  setFloating(true, false);
+  setFloating(false, false);
   const heroNew = $('#heroNew');
   if (heroNew) { heroNew.hidden = false; heroNew.classList.add('show'); }
   scrollToHero();
@@ -98,7 +93,7 @@ function showTag(tagId) {
     ? items.map((it, i) => cardHTML(it, i, it.date)).join('')
     : '<p class="empty-hint">这个分类下暂时没有作品。</p>';
   $('#archive').style.display = 'none';
-  setFloating(true, false);
+  setFloating(false, false);
   document.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c.dataset.tag === tagId));
   const heroNew = $('#heroNew');
   if (heroNew) { heroNew.hidden = false; heroNew.classList.add('show'); }
