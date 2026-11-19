@@ -1,6 +1,53 @@
 {
-  "updated": "2026-11-18T12:00:00+08:00",
+  "updated": "2026-11-19T05:34:28+00:00",
   "days": [
+    {
+      "date": "2026-11-19",
+      "items": [
+        {
+          "repo": "OpenMontageInc/OpenMontage",
+          "url": "https://github.com/OpenMontageInc/OpenMontage",
+          "stars": 81597,
+          "language": "Python",
+          "summary": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent",
+            "agentic-ai"
+          ]
+        },
+        {
+          "repo": "Anil-matcha/Open-Generative-AI",
+          "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+          "stars": 35332,
+          "language": "JavaScript",
+          "summary": "Uncensored Open-source alternative to AI video platforms — Free AI image & video generation studio with 800…",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "fal-ai-alternative",
+            "generative-ai"
+          ]
+        },
+        {
+          "repo": "hypit-ai/hypit",
+          "url": "https://github.com/hypit-ai/hypit",
+          "stars": 30641,
+          "language": "TypeScript",
+          "summary": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agentic-ai",
+            "ai"
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-18",
       "items": [
