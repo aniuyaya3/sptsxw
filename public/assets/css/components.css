@@ -71,3 +71,18 @@
   animation:shimmer 1.6s infinite}
 @keyframes shimmer{from{transform:translateX(-40%)}to{transform:translateX(40%)}}
 
+
+/* 触屏设备不保留 hover 态，避免点完一直"浮着" */
+@media (hover:none){
+  .card:hover{transform:none;box-shadow:0 1px 0 rgba(255,255,255,.05) inset,0 24px 60px -34px rgba(0,0,0,.9)}
+  .card:hover::after{opacity:0}
+  .go:hover span{transform:none}
+}
+@media (max-width:480px){
+  .card{padding:20px 18px 16px;border-radius:16px}
+  .summary{font-size:14px}
+  .facts .row{font-size:13px}
+  .facts dt{min-width:30px}
+  .card-foot{margin-top:18px;padding-top:14px;gap:10px}
+  .go{padding:5px 10px;font-size:12px}
+}

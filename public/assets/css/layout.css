@@ -95,3 +95,17 @@ h1{
 .arc-names a{color:#c6d0dd;transition:color .25s}
 .arc-names a:hover{color:var(--teal)}
 
+
+/* 小屏精修 */
+@media (max-width:480px){
+  .wrap{padding:0 18px}
+  .hero{padding:118px 0 40px}
+  h1{font-size:clamp(34px,10vw,44px);line-height:1.08;letter-spacing:-.035em}
+  .lede{margin-top:18px;font-size:15px}
+  .stats{gap:22px;margin-top:28px}
+  .stat b{font-size:20px}
+  .stat span{font-size:10.5px;letter-spacing:.1em}
+  .section-head{gap:12px}
+  .nav{height:58px}
+  .nav-pill{font-size:10.5px;padding:4px 10px}
+}
