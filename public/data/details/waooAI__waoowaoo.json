@@ -5,5 +5,10 @@
   "docs": [],
   "repo": "waooAI/waoowaoo",
   "url": "https://github.com/waooAI/waoowaoo",
-  "fetched": "2026-11-19T05:57:00+00:00"
+  "fetched": "2026-11-19T05:57:00+00:00",
+  "zh": {
+    "what": "工业级全流程 AI 影视生产平台，从剧本、分镜、素材到成片一体化，偏团队协作和规模化生产。",
+    "note": "仓库 README 有中英日韩多语言版本，部署步骤以 README 的「快速开始」为准。",
+    "steps": []
+  }
 }

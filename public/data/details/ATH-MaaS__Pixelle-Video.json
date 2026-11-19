@@ -29,5 +29,26 @@
   ],
   "repo": "ATH-MaaS/Pixelle-Video",
   "url": "https://github.com/ATH-MaaS/Pixelle-Video",
-  "fetched": "2026-11-19T05:56:58+00:00"
+  "fetched": "2026-11-19T05:56:58+00:00",
+  "zh": {
+    "what": "输入一个主题就自动出短视频：写文案、生成配图、合成配音、加背景音乐、拼成成片一条龙，自带 Web 界面，中文友好。",
+    "note": "",
+    "steps": [
+      {
+        "title": "先装 ffmpeg",
+        "desc": "视频合成依赖 ffmpeg，macOS 用 brew，Linux 用 apt，装完确认命令可用。",
+        "code": "brew install ffmpeg\n\nsudo apt update\nsudo apt install ffmpeg"
+      },
+      {
+        "title": "拉代码",
+        "desc": "克隆仓库到本地，进入项目目录。",
+        "code": "git clone https://github.com/AIDC-AI/Pixelle-Video.git\ncd Pixelle-Video"
+      },
+      {
+        "title": "起 Web 界面",
+        "desc": "用 uv 启动（会自动装依赖），浏览器打开本地地址，填主题就能生成。",
+        "code": "# 使用 uv 运行（推荐，会自动安装依赖）\nuv run streamlit run web/app.py"
+      }
+    ]
+  }
 }

@@ -41,11 +41,13 @@ export function cardHTML(it, i) {
 
 export function archiveHTML(days) {
   if (!days.length) return '';
-  return `<div class="section-head"><h2>往期</h2></div>
-    <div class="arc-list">${days.map((d, i) => `
-      <div class="arc-row reveal" style="--i:${i}">
-        <span class="arc-date">${esc(d.date)}</span>
-        <span class="arc-names">${d.items.map(it =>
-          `<a href="${esc(detailHref(it.repo))}">${esc(it.repo)}</a>`).join('')}</span>
-      </div>`).join('')}</div>`;
+  return `<div class="section-head"><h2>往期</h2><span class="date">共 ${days.length} 期</span></div>
+    ${days.map((d, di) => `
+      <section class="arc-day reveal" style="--i:${di}">
+        <div class="arc-day-head">
+          <span class="arc-date">${esc(d.date)}</span>
+          <span class="arc-count">${d.items.length} 个仓库</span>
+        </div>
+        <div class="cards arc">${d.items.map((it, i) => cardHTML(it, i)).join('')}</div>
+      </section>`).join('')}`;
 }

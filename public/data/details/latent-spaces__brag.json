@@ -16,5 +16,16 @@
   "docs": [],
   "repo": "latent-spaces/brag",
   "url": "https://github.com/latent-spaces/brag",
-  "fetched": "2026-11-19T05:56:59+00:00"
+  "fetched": "2026-11-19T05:56:59+00:00",
+  "zh": {
+    "what": "把刚做完的项目一键剪成短视频的 Agent 技能，装进 Claude Code 这类编码助手里，用 /brag 就能出片。",
+    "note": "",
+    "steps": [
+      {
+        "title": "安装技能",
+        "desc": "一条 npx 命令把技能装到全局，之后在助手对话里直接调用。",
+        "code": "npx skills add https://github.com/latent-spaces/brag --skill brag-slim"
+      }
+    ]
+  }
 }

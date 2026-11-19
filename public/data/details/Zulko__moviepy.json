@@ -5,7 +5,23 @@
   ],
   "steps": [],
   "docs": [],
+  "zh": {
+    "what": "Python 视频剪辑库：用代码做剪切、拼接、加字幕、混音轨。生成模型出片之后，批量后处理基本靠它。",
+    "note": "",
+    "steps": [
+      {
+        "title": "安装",
+        "desc": "一行 pip 装上；处理视频还要系统里有 ffmpeg。",
+        "code": "pip install moviepy"
+      },
+      {
+        "title": "最小示例",
+        "desc": "读入视频、截取前 5 秒、写成新文件（v2 的 API 是 subclipped）。",
+        "code": "from moviepy import VideoFileClip\n\nclip = VideoFileClip(\"in.mp4\").subclipped(0, 5)\nclip.write_videofile(\"out.mp4\")"
+      }
+    ]
+  },
   "repo": "Zulko/moviepy",
   "url": "https://github.com/Zulko/moviepy",
-  "fetched": "2026-11-19T05:57:00+00:00"
+  "fetched": "2026-11-19T06:10:30+00:00"
 }

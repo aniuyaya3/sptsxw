@@ -22,5 +22,21 @@
   ],
   "repo": "FlashML-org/FreeVideo",
   "url": "https://github.com/FlashML-org/FreeVideo",
-  "fetched": "2026-11-19T05:56:58+00:00"
+  "fetched": "2026-11-19T05:56:58+00:00",
+  "zh": {
+    "what": "让普通显卡也能跑视频生成的开源方案，核心是 Video DeltaNet 架构，主打低显存、完全本地出片，不用按次付费。",
+    "note": "",
+    "steps": [
+      {
+        "title": "Linux 下装起来",
+        "desc": "克隆仓库后进目录，按 README 的安装脚本准备依赖和模型权重。",
+        "code": "git clone https://github.com/FlashML-org/FreeVideo.git && cd FreeVideo\n./setup.sh"
+      },
+      {
+        "title": "当作 ComfyUI 插件用",
+        "desc": "已经有 ComfyUI 的话，把仓库放进 custom_nodes，重启就能在节点里调用。",
+        "code": "cd ComfyUI/custom_nodes\ngit clone https://github.com/FlashML-org/FreeVideo.git"
+      }
+    ]
+  }
 }

@@ -45,5 +45,26 @@
   ],
   "repo": "Lightricks/LTX-Video",
   "url": "https://github.com/Lightricks/LTX-Video",
-  "fetched": "2026-11-19T05:57:02+00:00"
+  "fetched": "2026-11-19T05:57:02+00:00",
+  "zh": {
+    "what": "Lightricks 的实时级视频生成模型，主打速度：文生视频、图生视频、视频续写都支持，几十秒能出一段。",
+    "note": "",
+    "steps": [
+      {
+        "title": "安装",
+        "desc": "克隆仓库后装依赖，权重会自动从 Hugging Face 拉。",
+        "code": "git clone https://github.com/Lightricks/LTX-Video.git\ncd LTX-Video\n\n# create env\npython -m venv env\nsource env/bin/activate\npython -m pip install -e .\\[inference\\]"
+      },
+      {
+        "title": "图生视频",
+        "desc": "给提示词和首帧图片，一条命令生成一段带动效的视频。",
+        "code": "python inference.py --prompt \"PROMPT\" --conditioning_media_paths IMAGE_PATH --conditioning_start_frames 0 --height HEIGHT --width WIDTH --num_frames NUM_FRAMES --seed SEED --pipeline_config configs/ltxv-13b-0.9.8-distilled.yaml"
+      },
+      {
+        "title": "视频续写",
+        "desc": "把已有视频作为条件继续往后生成，用来延长镜头。",
+        "code": "python inference.py --prompt \"PROMPT\" --conditioning_media_paths VIDEO_PATH --conditioning_start_frames START_FRAME --height HEIGHT --width WIDTH --num_frames NUM_FRAMES --seed SEED --pipeline_config configs/ltxv-13b-0.9.8-distilled.yaml"
+      }
+    ]
+  }
 }

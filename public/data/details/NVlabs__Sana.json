@@ -33,5 +33,21 @@
   ],
   "repo": "NVlabs/Sana",
   "url": "https://github.com/NVlabs/Sana",
-  "fetched": "2026-11-19T05:57:02+00:00"
+  "fetched": "2026-11-19T05:57:02+00:00",
+  "zh": {
+    "what": "NVIDIA 的高效生成模型代码库，SANA-Video 能在消费级显卡上生成高分辨率视频，速度是它的卖点。",
+    "note": "",
+    "steps": [
+      {
+        "title": "克隆并安装",
+        "desc": "拉代码后装依赖，权重会自动下载。",
+        "code": "git clone https://github.com/NVlabs/Sana.git\ncd Sana && ./environment_setup.sh sana"
+      },
+      {
+        "title": "跑视频示例",
+        "desc": "仓库自带推理脚本，改提示词直接跑，先确认能出片再调参。",
+        "code": "bash inference_video_scripts/inference_sana_video.sh \\\n  --np 1 \\\n  --config configs/sana_video2/SanaVideo2_5B_720p.yaml \\\n  --model_path hf://Efficient-Large-Model/SANA-Video_2.0_5B_720p/checkpoints/SANA_Video_2.0_5B_720p.pth \\\n  --txt_file=asset/samples/sana_video2_5b_720p_demo.txt \\\n  --cfg_scale 8 \\\n  --flow_shift 12 \\\n  --step 50 \\\n  --fps 24 \\\n  --motion_score 20 \\\n  --seed 4 \\\n  --work_dir output/sana_video2_t2v_720p_demo"
+      }
+    ]
+  }
 }

@@ -25,5 +25,21 @@
   ],
   "repo": "hao-ai-lab/FastVideo",
   "url": "https://github.com/hao-ai-lab/FastVideo",
-  "fetched": "2026-11-19T05:56:58+00:00"
+  "fetched": "2026-11-19T05:56:58+00:00",
+  "zh": {
+    "what": "统一的视频生成推理与后训练框架，主打「快」：支持稀疏注意力、蒸馏等加速手段，可以直接跑 Wan、HunyuanVideo 这类主流开源模型，也能自己训。",
+    "note": "",
+    "steps": [
+      {
+        "title": "装好环境",
+        "desc": "用 uv 建一个干净的虚拟环境，再按自己的 CUDA 版本选对应的 torch 后端安装 fastvideo。",
+        "code": "uv venv --python 3.12 --seed\nsource .venv/bin/activate\n\n# NVIDIA CUDA 12; use cu130 on CUDA 13\nUV_TORCH_BACKEND=cu126 uv pip install fastvideo"
+      },
+      {
+        "title": "跑第一个视频",
+        "desc": "写一个 Python 脚本调用 VideoGenerator，指定模型和提示词，出来的片子直接存到本地目录。",
+        "code": "import os\nfrom fastvideo import VideoGenerator\n\ndef main():\n    os.environ[\"FASTVIDEO_ATTENTION_BACKEND\"] = \"VIDEO_SPARSE_ATTN\"\n\n    # Create a video generator with a pre-trained model\n    generator = VideoGenerator.from_pretrained(\n        \"FastVideo/FastWan2.1-T2V-1.3B-Diffusers\",\n        num_gpus=1,  # Adjust based on your hardware\n    )\n\n    # Define a prompt for your video\n    prompt = \"A curious raccoon peers through a vibrant field of yellow sunflowers, its eyes wide with interest.\"\n\n    # Generate the video\n    video = generator.generate_video(\n        prompt,\n        output_path=\"my_videos/\",  # Controls where videos are saved\n        save_video=True\n    )\n\nif __name__ == '__main__':\n    main()\n\npython example.py"
+      }
+    ]
+  }
 }

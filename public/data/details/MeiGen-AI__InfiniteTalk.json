@@ -35,5 +35,26 @@
   ],
   "repo": "MeiGen-AI/InfiniteTalk",
   "url": "https://github.com/MeiGen-AI/InfiniteTalk",
-  "fetched": "2026-11-19T05:57:03+00:00"
+  "fetched": "2026-11-19T05:57:03+00:00",
+  "zh": {
+    "what": "无限长度说话视频生成：给一张图和一段音频，能生成口型同步、长时间不漂移的说话视频，适合口播和数字人内容。",
+    "note": "",
+    "steps": [
+      {
+        "title": "建环境",
+        "desc": "用 conda 建 Python 3.10 环境，装基础依赖。",
+        "code": "conda create -n multitalk python=3.10\nconda activate multitalk\npip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu121\npip install -U xformers==0.0.28 --index-url https://download.pytorch.org/whl/cu121"
+      },
+      {
+        "title": "装项目依赖",
+        "desc": "按 requirements 安装，flash-attn 需要单独处理。",
+        "code": "pip install -r requirements.txt\nconda install -c conda-forge librosa"
+      },
+      {
+        "title": "装 ffmpeg",
+        "desc": "音视频合成依赖 ffmpeg，用 conda 装最省事。",
+        "code": "conda install -c conda-forge ffmpeg\n\nsudo yum install ffmpeg ffmpeg-devel"
+      }
+    ]
+  }
 }

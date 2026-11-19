@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PICKS = os.path.join(ROOT, "public", "data", "picks.json")
 OUTDIR = os.path.join(ROOT, "public", "data", "details")
+ZHP = os.path.join(ROOT, "scripts", "zh_content.json")
 UA = "videogen-daily-bot"
 
 REQ_RE = re.compile(r"(vram|显存|gb\s*(of\s*)?(vram|gpu|memory)|cuda|python\s*3\.\d|pytorch|torch\s*[>=]|node\.?js|nvidia)", re.I)
@@ -123,6 +124,55 @@ def parse(md):
     return {"intro": intro, "requirements": reqs, "steps": steps, "docs": docs}
 
 
+def llm_zh(full, parsed):
+    """没有人工中文文案时，用模型生成（需要 LLM_API_KEY）。"""
+    key = os.environ.get("LLM_API_KEY")
+    if not key:
+        return None
+    base_url = (os.environ.get("LLM_BASE_URL") or "https://api.openai.com/v1").rstrip("/")
+    model = os.environ.get("LLM_MODEL") or "gpt-4o-mini"
+    brief = {
+        "repo": full,
+        "readme_intro": parsed.get("intro", "")[:400],
+        "steps": [{"i": i, "title": s["title"], "code": s["code"][:300]}
+                  for i, s in enumerate(parsed.get("steps", []))],
+    }
+    payload = {
+        "model": model,
+        "temperature": 0.3,
+        "messages": [
+            {"role": "system", "content": "你是中文技术编辑。根据仓库信息写中文说明，"
+             "输出 JSON：{\"what\":\"这个项目做什么（60字内）\",\"note\":\"一句注意点或空字符串\","
+             "\"steps\":[{\"i\":序号,\"title\":\"中文步骤名\",\"desc\":\"一句话怎么做（40字内）\"}]}。"
+             "只输出 JSON，不要解释。"},
+            {"role": "user", "content": json.dumps(brief, ensure_ascii=False)},
+        ],
+    }
+    req = urllib.request.Request(
+        f"{base_url}/chat/completions",
+        data=json.dumps(payload).encode(),
+        headers={"Content-Type": "application/json", "Authorization": f"Bearer {key}"},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=60) as r:
+            text = json.load(r)["choices"][0]["message"]["content"]
+        text = re.sub(r"^```(json)?|```$", "", text.strip(), flags=re.M).strip()
+        data = json.loads(text)
+    except Exception as e:
+        print(f"    ! LLM 生成中文失败: {e}", file=sys.stderr)
+        return None
+    steps = []
+    for st in data.get("steps", []):
+        idx = st.get("i")
+        if not isinstance(idx, int) or idx >= len(parsed.get("steps", [])):
+            continue
+        steps.append({"title": st.get("title", "步骤"), "desc": st.get("desc", ""),
+                      "code": parsed["steps"][idx]["code"]})
+    if not steps:
+        return None
+    return {"what": data.get("what", ""), "note": data.get("note", ""), "steps": steps}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--force", action="store_true")
@@ -148,6 +198,24 @@ def main():
         try:
             md = gh_raw(full)
             parsed = parse(md)
+            try:
+                zh = json.load(open(ZHP, encoding="utf-8")).get(full)
+            except Exception:
+                zh = None
+            if not zh:
+                zh = llm_zh(full, parsed)
+            if zh:
+                zh_steps = []
+                for st in zh.get("steps", []):
+                    code = st.get("code")
+                    if code is None and "i" in st:
+                        raw = parsed["steps"]
+                        code = raw[st["i"]]["code"] if st["i"] < len(raw) else ""
+                    if code:
+                        zh_steps.append({"title": st.get("title", "步骤"),
+                                         "desc": st.get("desc", ""), "code": code})
+                parsed["zh"] = {"what": zh.get("what", ""), "note": zh.get("note", ""),
+                                "steps": zh_steps}
             parsed.update({
                 "repo": full,
                 "url": f"https://github.com/{full}",

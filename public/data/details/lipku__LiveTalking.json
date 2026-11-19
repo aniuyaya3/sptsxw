@@ -26,5 +26,21 @@
   ],
   "repo": "lipku/LiveTalking",
   "url": "https://github.com/lipku/LiveTalking",
-  "fetched": "2026-11-19T05:57:02+00:00"
+  "fetched": "2026-11-19T05:57:02+00:00",
+  "zh": {
+    "what": "实时数字人对话项目：音频驱动嘴型，支持 WebRTC 推流，可以接大模型做实时口播和虚拟主播。",
+    "note": "",
+    "steps": [
+      {
+        "title": "装依赖",
+        "desc": "克隆仓库后建环境装依赖，注意 CUDA 版本，官方在 Ubuntu 22.04 + CUDA 12.8 上验证过。",
+        "code": "git clone https://github.com/lipku/LiveTalking.git \nconda create -n livetalking python=3.12\nconda activate livetalking\n# 如果 CUDA 版本不为 12.8 (运行 nvidia-smi 确认)，请根据 PyTorch 官网(https://pytorch.org/get-started/previous-versions)安装对应版本\npip install torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 --index-url https://download.pytorch.org/whl/cu128\ncd LiveTalking\npip install -r requirements.txt"
+      },
+      {
+        "title": "启动服务",
+        "desc": "一条命令起 WebRTC 服务，指定数字人模型和形象 ID，浏览器里就能对话。",
+        "code": "python app.py --transport webrtc --model wav2lip --avatar_id wav2lip256_avatar1"
+      }
+    ]
+  }
 }

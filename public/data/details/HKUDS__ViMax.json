@@ -14,5 +14,21 @@
   "docs": [],
   "repo": "HKUDS/ViMax",
   "url": "https://github.com/HKUDS/ViMax",
-  "fetched": "2026-11-19T05:57:01+00:00"
+  "fetched": "2026-11-19T05:57:01+00:00",
+  "zh": {
+    "what": "港大 HKUDS 的 Agent 式视频生成框架，把导演、编剧、分镜、素材生成串成一条流水线，适合做长一点的叙事视频。",
+    "note": "",
+    "steps": [
+      {
+        "title": "确认环境",
+        "desc": "官方支持 Linux 和 Windows，建议先备好 GPU 环境和 Python 依赖。",
+        "code": "OS: Linux, Windows"
+      },
+      {
+        "title": "克隆并安装",
+        "desc": "拉代码后按 README 装依赖、下模型，再跑示例任务。",
+        "code": "git clone https://github.com/HKUDS/ViMax.git\ncd ViMax\nuv sync\n\ncp configs/agent.example.yaml configs/agent.local.yaml\n\nvimax tui\n\nvimax tui new\nvimax tui resume\nvimax tui resume <session_id>\n\ncd web\nnpm install\nnpm run dev\n\nssh -N -L 4173:127.0.0.1:4173 <user>@<server>\n\nVIMAX_WEB_PORT=4174 npm run dev\n\nidea = \\\n\"\"\"\nIf a cat and a dog are best friends, what would happen when they meet a new cat?\n\"\"\"\nuser_requirement = \\\n\"\"\"\nFor children, do not exceed 3 scenes.\n\"\"\"\nstyle = \"Cartoon\""
+      }
+    ]
+  }
 }

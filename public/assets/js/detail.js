@@ -84,15 +84,20 @@ async function main() {
   $('#dTags').innerHTML = (item?.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('')
     || `<span class="tag">${esc(item?.language || '开源')}</span>`;
 
-  const intro = detail?.intro && detail.intro.length > 40 ? detail.intro : '';
-  if (intro) $('#dIntro').textContent = intro;
+  const zh = detail?.zh || null;
+  const what = zh?.what || (detail?.intro && detail.intro.length > 40 ? detail.intro : '');
+  if (what) $('#dIntro').textContent = what;
   else $('#dIntroBlock').hidden = true;
 
-  const steps = detail?.steps || [];
+  const note = zh?.note || '';
+  const noteEl = $('#dNote');
+  if (note) { noteEl.textContent = note; noteEl.hidden = false; } else { noteEl.hidden = true; }
+  const steps = (zh?.steps && zh.steps.length) ? zh.steps : (detail?.steps || []);
   if (steps.length) {
     $('#dSteps').innerHTML = steps.map(s => `
       <li>
         <p class="d-step-title">${esc(s.title)}</p>
+        ${s.desc ? `<p class="d-step-desc">${esc(s.desc)}</p>` : ''}
         ${codeBlock(s.code)}
       </li>`).join('');
     bindCopy();

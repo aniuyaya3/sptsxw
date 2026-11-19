@@ -36,5 +36,16 @@
   ],
   "repo": "zai-org/CogVideo",
   "url": "https://github.com/zai-org/CogVideo",
-  "fetched": "2026-11-19T05:57:01+00:00"
+  "fetched": "2026-11-19T05:57:01+00:00",
+  "zh": {
+    "what": "智谱开源的 CogVideoX 系列视频生成模型，文生视频和图生视频都支持，社区生态成熟，二次开发资料多。",
+    "note": "推理命令见 README 的「快速开始」一节，不同尺寸的模型权重和显存要求不一样。",
+    "steps": [
+      {
+        "title": "装依赖",
+        "desc": "克隆仓库后按 requirements 安装，torch 和 CUDA 版本要匹配。",
+        "code": "pip install -r requirements.txt"
+      }
+    ]
+  }
 }

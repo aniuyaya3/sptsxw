@@ -77,3 +77,7 @@
 .d-reqs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
 .d-reqs li{font-size:13.2px;line-height:1.65;color:#b9c4d3;padding-left:14px;position:relative}
 .d-reqs li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:rgba(94,234,212,.55)}
+
+.d-step-desc{margin:0 0 11px;font-size:13.6px;line-height:1.72;color:#a9b5c4}
+.d-note{margin:0 0 18px;padding:10px 14px;border-radius:12px;font-size:13px;line-height:1.7;
+  color:#cfd8e5;background:rgba(245,196,107,.07);border:1px solid rgba(245,196,107,.22)}

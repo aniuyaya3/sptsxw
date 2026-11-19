@@ -22,5 +22,26 @@
   "docs": [],
   "repo": "Forget-C/Jellyfish",
   "url": "https://github.com/Forget-C/Jellyfish",
-  "fetched": "2026-11-19T05:57:03+00:00"
+  "fetched": "2026-11-19T05:57:03+00:00",
+  "zh": {
+    "what": "面向 AI 短剧的端到端生产工作台：剧本进去，结构化分镜、角色场景素材、成片出来，前后端一体，可用 Docker 部署。",
+    "note": "",
+    "steps": [
+      {
+        "title": "准备配置",
+        "desc": "复制环境变量模板成 .env，填好模型和存储相关配置。",
+        "code": "cp deploy/compose/.env.example deploy/compose/.env\ndocker compose --env-file deploy/compose/.env -f deploy/compose/docker-compose.yml up --build"
+      },
+      {
+        "title": "起后端",
+        "desc": "进 backend 目录安装依赖并启动服务。",
+        "code": "cd backend\ncp .env.example .env\nuv sync\nuv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
+      },
+      {
+        "title": "起前端",
+        "desc": "进 front 目录装依赖跑开发服务，浏览器打开就能用。",
+        "code": "cd front\npnpm install\npnpm dev"
+      }
+    ]
+  }
 }

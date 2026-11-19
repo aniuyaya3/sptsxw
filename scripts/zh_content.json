@@ -1,0 +1,339 @@
+{
+  "hao-ai-lab/FastVideo": {
+    "what": "统一的视频生成推理与后训练框架，主打「快」：支持稀疏注意力、蒸馏等加速手段，可以直接跑 Wan、HunyuanVideo 这类主流开源模型，也能自己训。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "装好环境",
+        "desc": "用 uv 建一个干净的虚拟环境，再按自己的 CUDA 版本选对应的 torch 后端安装 fastvideo。"
+      },
+      {
+        "i": 1,
+        "title": "跑第一个视频",
+        "desc": "写一个 Python 脚本调用 VideoGenerator，指定模型和提示词，出来的片子直接存到本地目录。"
+      }
+    ]
+  },
+  "FlashML-org/FreeVideo": {
+    "what": "让普通显卡也能跑视频生成的开源方案，核心是 Video DeltaNet 架构，主打低显存、完全本地出片，不用按次付费。",
+    "steps": [
+      {
+        "i": 1,
+        "title": "Linux 下装起来",
+        "desc": "克隆仓库后进目录，按 README 的安装脚本准备依赖和模型权重。"
+      },
+      {
+        "i": 0,
+        "title": "当作 ComfyUI 插件用",
+        "desc": "已经有 ComfyUI 的话，把仓库放进 custom_nodes，重启就能在节点里调用。"
+      }
+    ]
+  },
+  "ArcReel/ArcReel": {
+    "what": "AI Agent 驱动的可自部署视频工作台：小说或剧本进去，角色、场景、道具资产、分镜、视频一路出来，最后还能导出剪映草稿，适合短剧漫剧批量生产。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "克隆并启动",
+        "desc": "拉下代码后按 README 配好环境变量，一条命令起服务，浏览器里就能开工。"
+      }
+    ]
+  },
+  "ATH-MaaS/Pixelle-Video": {
+    "what": "输入一个主题就自动出短视频：写文案、生成配图、合成配音、加背景音乐、拼成成片一条龙，自带 Web 界面，中文友好。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "先装 ffmpeg",
+        "desc": "视频合成依赖 ffmpeg，macOS 用 brew，Linux 用 apt，装完确认命令可用。"
+      },
+      {
+        "i": 1,
+        "title": "拉代码",
+        "desc": "克隆仓库到本地，进入项目目录。"
+      },
+      {
+        "i": 2,
+        "title": "起 Web 界面",
+        "desc": "用 uv 启动（会自动装依赖），浏览器打开本地地址，填主题就能生成。"
+      }
+    ]
+  },
+  "Anil-matcha/Open-Generative-AI": {
+    "what": "开源的本地 AI 视频与图像生成客户端，把多个开源视频模型打包成桌面 App，用来替代按次付费的闭源视频平台。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "macOS 首次打开",
+        "desc": "App 没有签名，第一次打开要手动解除隔离属性，否则系统会拦。"
+      },
+      {
+        "i": 1,
+        "title": "Linux 打包运行",
+        "desc": "按 README 打 AppImage 或 deb 包，装完直接启动客户端。"
+      }
+    ]
+  },
+  "latent-spaces/brag": {
+    "what": "把刚做完的项目一键剪成短视频的 Agent 技能，装进 Claude Code 这类编码助手里，用 /brag 就能出片。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "安装技能",
+        "desc": "一条 npx 命令把技能装到全局，之后在助手对话里直接调用。"
+      }
+    ]
+  },
+  "KlingAIResearch/LivePortrait": {
+    "what": "让静态人像动起来：一张照片加一段驱动视频，生成表情自然、口型到位的表演视频，速度快、显存占用低。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "克隆并准备环境",
+        "desc": "拉代码后建 conda 环境，装 torch 和依赖，注意 CUDA 版本要匹配。"
+      },
+      {
+        "i": 3,
+        "title": "下载预训练权重",
+        "desc": "权重没在仓库里，需要用 huggingface-cli 单独拉下来放到指定目录。"
+      },
+      {
+        "i": 4,
+        "title": "跑人类示例",
+        "desc": "仓库自带示例脚本，指定源图和驱动视频就能出结果。"
+      }
+    ]
+  },
+  "Wan-Video/Wan2.2": {
+    "what": "阿里万相 2.2 开源视频生成模型，支持文生视频、图生视频、语音驱动视频，是目前开源质量第一梯队，中文提示词理解好。",
+    "note": "14B 版本官方建议 80GB 显存；5B 的 ti2v 版本消费级显卡也能跑。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "装环境",
+        "desc": "克隆仓库，建 conda 环境装依赖，torch 版本按 README 的对照表选。"
+      },
+      {
+        "i": 1,
+        "title": "下模型权重",
+        "desc": "用 modelscope 或 huggingface 命令行把对应尺寸的权重拉到本地目录。"
+      },
+      {
+        "i": 2,
+        "title": "文生视频",
+        "desc": "一条 generate.py 命令，给提示词和权重路径就能出片，注意显存要求。"
+      },
+      {
+        "i": 3,
+        "title": "图生视频（5B）",
+        "desc": "指定 ti2v-5B 任务和首帧图，消费级显卡就能跑，适合先把流程走通。"
+      }
+    ]
+  },
+  "duixcom/Duix-Avatar": {
+    "what": "可离线部署的开源数字人工具包，音频合成加视频合成两段接口，能做实时口播和直播数字人，数据不出本地。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "准备 Ubuntu 22.04 环境",
+        "desc": "先更新系统装基础依赖，官方只在 22.04 上验证过。"
+      },
+      {
+        "i": 1,
+        "title": "部署服务端",
+        "desc": "进 deploy 目录跑安装脚本，起服务后通过 HTTP 接口提交音频和视频任务。"
+      }
+    ]
+  },
+  "Zulko/moviepy": {
+    "what": "Python 视频剪辑库：用代码做剪切、拼接、加字幕、混音轨。生成模型出片之后，批量后处理基本靠它。",
+    "steps": [
+      {
+        "title": "安装",
+        "desc": "一行 pip 装上；处理视频还要系统里有 ffmpeg。",
+        "code": "pip install moviepy"
+      },
+      {
+        "title": "最小示例",
+        "desc": "读入视频、截取前 5 秒、写成新文件（v2 的 API 是 subclipped）。",
+        "code": "from moviepy import VideoFileClip\n\nclip = VideoFileClip(\"in.mp4\").subclipped(0, 5)\nclip.write_videofile(\"out.mp4\")"
+      }
+    ]
+  },
+  "waooAI/waoowaoo": {
+    "what": "工业级全流程 AI 影视生产平台，从剧本、分镜、素材到成片一体化，偏团队协作和规模化生产。",
+    "note": "仓库 README 有中英日韩多语言版本，部署步骤以 README 的「快速开始」为准。",
+    "steps": []
+  },
+  "zai-org/CogVideo": {
+    "what": "智谱开源的 CogVideoX 系列视频生成模型，文生视频和图生视频都支持，社区生态成熟，二次开发资料多。",
+    "note": "推理命令见 README 的「快速开始」一节，不同尺寸的模型权重和显存要求不一样。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "装依赖",
+        "desc": "克隆仓库后按 requirements 安装，torch 和 CUDA 版本要匹配。"
+      }
+    ]
+  },
+  "lipku/LiveTalking": {
+    "what": "实时数字人对话项目：音频驱动嘴型，支持 WebRTC 推流，可以接大模型做实时口播和虚拟主播。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "装依赖",
+        "desc": "克隆仓库后建环境装依赖，注意 CUDA 版本，官方在 Ubuntu 22.04 + CUDA 12.8 上验证过。"
+      },
+      {
+        "i": 1,
+        "title": "启动服务",
+        "desc": "一条命令起 WebRTC 服务，指定数字人模型和形象 ID，浏览器里就能对话。"
+      }
+    ]
+  },
+  "HKUDS/ViMax": {
+    "what": "港大 HKUDS 的 Agent 式视频生成框架，把导演、编剧、分镜、素材生成串成一条流水线，适合做长一点的叙事视频。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "确认环境",
+        "desc": "官方支持 Linux 和 Windows，建议先备好 GPU 环境和 Python 依赖。"
+      },
+      {
+        "i": 1,
+        "title": "克隆并安装",
+        "desc": "拉代码后按 README 装依赖、下模型，再跑示例任务。"
+      }
+    ]
+  },
+  "Forget-C/Jellyfish": {
+    "what": "面向 AI 短剧的端到端生产工作台：剧本进去，结构化分镜、角色场景素材、成片出来，前后端一体，可用 Docker 部署。",
+    "steps": [
+      {
+        "i": 1,
+        "title": "准备配置",
+        "desc": "复制环境变量模板成 .env，填好模型和存储相关配置。"
+      },
+      {
+        "i": 2,
+        "title": "起后端",
+        "desc": "进 backend 目录安装依赖并启动服务。"
+      },
+      {
+        "i": 3,
+        "title": "起前端",
+        "desc": "进 front 目录装依赖跑开发服务，浏览器打开就能用。"
+      }
+    ]
+  },
+  "Tencent-Hunyuan/HunyuanVideo": {
+    "what": "腾讯混元视频生成模型，开源可商用，画质和运动表现在开源里靠前，支持文生视频和图生视频。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "装依赖",
+        "desc": "克隆仓库，按 README 建 conda 环境装依赖。"
+      },
+      {
+        "i": 1,
+        "title": "Linux 完整安装",
+        "desc": "按官方脚本一步步装，包括 torch、flash-attn 和编译依赖。"
+      },
+      {
+        "i": 2,
+        "title": "命令行出片",
+        "desc": "一条命令给提示词和权重路径，直接生成视频文件。"
+      },
+      {
+        "i": 3,
+        "title": "开个网页界面",
+        "desc": "起 Gradio 服务，浏览器里填提示词调试更方便。"
+      }
+    ]
+  },
+  "Lightricks/LTX-Video": {
+    "what": "Lightricks 的实时级视频生成模型，主打速度：文生视频、图生视频、视频续写都支持，几十秒能出一段。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "安装",
+        "desc": "克隆仓库后装依赖，权重会自动从 Hugging Face 拉。"
+      },
+      {
+        "i": 1,
+        "title": "图生视频",
+        "desc": "给提示词和首帧图片，一条命令生成一段带动效的视频。"
+      },
+      {
+        "i": 2,
+        "title": "视频续写",
+        "desc": "把已有视频作为条件继续往后生成，用来延长镜头。"
+      }
+    ]
+  },
+  "MeiGen-AI/InfiniteTalk": {
+    "what": "无限长度说话视频生成：给一张图和一段音频，能生成口型同步、长时间不漂移的说话视频，适合口播和数字人内容。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "建环境",
+        "desc": "用 conda 建 Python 3.10 环境，装基础依赖。"
+      },
+      {
+        "i": 2,
+        "title": "装项目依赖",
+        "desc": "按 requirements 安装，flash-attn 需要单独处理。"
+      },
+      {
+        "i": 3,
+        "title": "装 ffmpeg",
+        "desc": "音视频合成依赖 ffmpeg，用 conda 装最省事。"
+      }
+    ]
+  },
+  "NVlabs/Sana": {
+    "what": "NVIDIA 的高效生成模型代码库，SANA-Video 能在消费级显卡上生成高分辨率视频，速度是它的卖点。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "克隆并安装",
+        "desc": "拉代码后装依赖，权重会自动下载。"
+      },
+      {
+        "i": 1,
+        "title": "跑视频示例",
+        "desc": "仓库自带推理脚本，改提示词直接跑，先确认能出片再调参。"
+      }
+    ]
+  },
+  "OpenMontageInc/OpenMontage": {
+    "what": "开源的 Agent 式视频制作系统：调研、脚本、分镜、素材、剪辑串成流水线，一个人也能做出成片级的短片。",
+    "steps": [
+      {
+        "i": 1,
+        "title": "安装并启动",
+        "desc": "克隆仓库后按 README 装依赖，起服务进 Backlot 界面。"
+      },
+      {
+        "i": 3,
+        "title": "配 API Key（可选）",
+        "desc": "接的模型越多出片质量越高，密钥写进配置文件即可。"
+      },
+      {
+        "i": 4,
+        "title": "跑一条流水线",
+        "desc": "从调研到剪辑是一条流水线，按阶段跑，中间可以人工改稿。"
+      }
+    ]
+  },
+  "hypit-ai/hypit": {
+    "what": "用 AI Agent 复刻爆款短视频的工作流：给一个参考视频，拆结构、写脚本、产出同款节奏的成片。",
+    "steps": [
+      {
+        "i": 0,
+        "title": "安装",
+        "desc": "一条 npx 命令把技能装到全局，之后在助手对话里调用。"
+      }
+    ]
+  }
+}

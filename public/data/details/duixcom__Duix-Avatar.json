@@ -28,5 +28,21 @@
   "docs": [],
   "repo": "duixcom/Duix-Avatar",
   "url": "https://github.com/duixcom/Duix-Avatar",
-  "fetched": "2026-11-19T05:57:00+00:00"
+  "fetched": "2026-11-19T05:57:00+00:00",
+  "zh": {
+    "what": "可离线部署的开源数字人工具包，音频合成加视频合成两段接口，能做实时口播和直播数字人，数据不出本地。",
+    "note": "",
+    "steps": [
+      {
+        "title": "准备 Ubuntu 22.04 环境",
+        "desc": "先更新系统装基础依赖，官方只在 22.04 上验证过。",
+        "code": "sudo apt update\nsudo apt install docker.io\nsudo apt install docker-compose\n\ndistribution=$(. /etc/os-release;echo $ID$VERSION_ID) \\\n  && curl -s -L https://nvidia.github.io/libnvidia-container/gpgkey | sudo apt-key add - \\\n  && curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list\n\nsudo apt-get update\nsudo apt-get install -y nvidia-container-toolkit\n\nsudo nvidia-ctk runtime configure --runtime=docker\n\nsudo systemctl restart docker"
+      },
+      {
+        "title": "部署服务端",
+        "desc": "进 deploy 目录跑安装脚本，起服务后通过 HTTP 接口提交音频和视频任务。",
+        "code": "cd /deploy\ndocker-compose -f docker-compose-linux.yml up -d"
+      }
+    ]
+  }
 }

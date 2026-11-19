@@ -10,5 +10,16 @@
   "docs": [],
   "repo": "hypit-ai/hypit",
   "url": "https://github.com/hypit-ai/hypit",
-  "fetched": "2026-11-19T05:56:58+00:00"
+  "fetched": "2026-11-19T05:56:58+00:00",
+  "zh": {
+    "what": "用 AI Agent 复刻爆款短视频的工作流：给一个参考视频，拆结构、写脚本、产出同款节奏的成片。",
+    "note": "",
+    "steps": [
+      {
+        "title": "安装",
+        "desc": "一条 npx 命令把技能装到全局，之后在助手对话里调用。",
+        "code": "npx skills add hypit-ai/hypit -g"
+      }
+    ]
+  }
 }

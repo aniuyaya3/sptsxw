@@ -27,5 +27,16 @@
   ],
   "repo": "ArcReel/ArcReel",
   "url": "https://github.com/ArcReel/ArcReel",
-  "fetched": "2026-11-19T05:56:58+00:00"
+  "fetched": "2026-11-19T05:56:58+00:00",
+  "zh": {
+    "what": "AI Agent 驱动的可自部署视频工作台：小说或剧本进去，角色、场景、道具资产、分镜、视频一路出来，最后还能导出剪映草稿，适合短剧漫剧批量生产。",
+    "note": "",
+    "steps": [
+      {
+        "title": "克隆并启动",
+        "desc": "拉下代码后按 README 配好环境变量，一条命令起服务，浏览器里就能开工。",
+        "code": "git clone https://github.com/ArcReel/ArcReel.git\ncd ArcReel/deploy\n\ncp .env.example .env\ndocker compose up -d"
+      }
+    ]
+  }
 }

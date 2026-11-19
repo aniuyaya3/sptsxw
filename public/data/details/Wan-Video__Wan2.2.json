@@ -45,5 +45,31 @@
   ],
   "repo": "Wan-Video/Wan2.2",
   "url": "https://github.com/Wan-Video/Wan2.2",
-  "fetched": "2026-11-19T05:56:59+00:00"
+  "fetched": "2026-11-19T05:56:59+00:00",
+  "zh": {
+    "what": "阿里万相 2.2 开源视频生成模型，支持文生视频、图生视频、语音驱动视频，是目前开源质量第一梯队，中文提示词理解好。",
+    "note": "14B 版本官方建议 80GB 显存；5B 的 ti2v 版本消费级显卡也能跑。",
+    "steps": [
+      {
+        "title": "装环境",
+        "desc": "克隆仓库，建 conda 环境装依赖，torch 版本按 README 的对照表选。",
+        "code": "git clone https://github.com/Wan-Video/Wan2.2.git\ncd Wan2.2\n\n# Ensure torch >= 2.4.0\n# If the installation of `flash_attn` fails, try installing the other packages first and install `flash_attn` last\npip install -r requirements.txt\n# If you want to use CosyVoice to synthesize speech for Speech-to-Video Generation, please install requirements_s2v.txt additionally\npip install -r requirements_s2v.txt"
+      },
+      {
+        "title": "下模型权重",
+        "desc": "用 modelscope 或 huggingface 命令行把对应尺寸的权重拉到本地目录。",
+        "code": "Download models using modelscope-cli:\n``` sh\npip install modelscope\nmodelscope download Wan-AI/Wan2.2-T2V-A14B --local_dir ./Wan2.2-T2V-A14B"
+      },
+      {
+        "title": "文生视频",
+        "desc": "一条 generate.py 命令，给提示词和权重路径就能出片，注意显存要求。",
+        "code": "> 💡 This command can run on a GPU with at least 80GB VRAM.\n\n> 💡If you encounter OOM (Out-of-Memory) issues, you can use the `--offload_model True`, `--convert_model_dtype` and `--t5_cpu` options to reduce GPU memory usage.\n\n\n- Multi-GPU inference using FSDP + DeepSpeed Ulysses\n\n  We use [PyTorch FSDP](https://docs.pytorch.org/docs/stable/fsdp.html) and [DeepSpeed Ulysses](https://arxiv.org/abs/2309.14509) to accelerate inference.\n\n\n``` sh\ntorchrun --nproc_per_node=8 generate.py --task t2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-T2V-A14B --dit_fsdp --t5_fsdp --ulysses_size 8 --prompt \"Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage.\"\n\nDASH_API_KEY=your_key torchrun --nproc_per_node=8 generate.py  --task t2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-T2V-A14B --dit_fsdp --t5_fsdp --ulysses_size 8 --prompt \"Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage\" --use_prompt_extend --prompt_extend_method 'dashscope' --prompt_extend_target_lang 'zh'\n\n#### Run Image-to-Video Generation\n\nThis repository supports the `Wan2.2-I2V-A14B` Image-to-Video model and can simultaneously support video generation at 480P and 720P resolutions.\n\n\n- Single-GPU inference\n```sh\npython generate.py --task i2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-I2V-A14B --offload_model True --convert_model_dtype --image examples/i2v_input.JPG --prompt \"Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside.\"\n\ntorchrun --nproc_per_node=8 generate.py --task i2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-I2V-A14B --image examples/i2v_input.JPG --dit_fsdp --t5_fsdp --ulysses_size 8 --prompt \"Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside.\"\n\nDASH_API_KEY=your_key torchrun --nproc_per_node=8 generate.py --task i2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-I2V-A14B --prompt '' --image examples/i2v_input.JPG --dit_fsdp --t5_fsdp --ulysses_size 8 --use_prompt_extend --prompt_extend_method 'dashscope'"
+      },
+      {
+        "title": "图生视频（5B）",
+        "desc": "指定 ti2v-5B 任务和首帧图，消费级显卡就能跑，适合先把流程走通。",
+        "code": "python generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --offload_model True --convert_model_dtype --t5_cpu --prompt \"Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage\"\n\npython generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --offload_model True --convert_model_dtype --t5_cpu --image examples/i2v_input.JPG --prompt \"Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside.\"\n\ntorchrun --nproc_per_node=8 generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --dit_fsdp --t5_fsdp --ulysses_size 8 --image examples/i2v_input.JPG --prompt \"Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside.\""
+      }
+    ]
+  }
 }

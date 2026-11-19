@@ -32,5 +32,21 @@
   "docs": [],
   "repo": "Anil-matcha/Open-Generative-AI",
   "url": "https://github.com/Anil-matcha/Open-Generative-AI",
-  "fetched": "2026-11-19T05:56:57+00:00"
+  "fetched": "2026-11-19T05:56:57+00:00",
+  "zh": {
+    "what": "开源的本地 AI 视频与图像生成客户端，把多个开源视频模型打包成桌面 App，用来替代按次付费的闭源视频平台。",
+    "note": "",
+    "steps": [
+      {
+        "title": "macOS 首次打开",
+        "desc": "App 没有签名，第一次打开要手动解除隔离属性，否则系统会拦。",
+        "code": "xattr -cr \"/Applications/Open Generative AI.app\""
+      },
+      {
+        "title": "Linux 打包运行",
+        "desc": "按 README 打 AppImage 或 deb 包，装完直接启动客户端。",
+        "code": "# Build Linux installers (AppImage + .deb)\nnpm run electron:build:linux\n\nchmod +x \"release/Open Generative AI-*.AppImage\"\n  ./release/Open\\ Generative\\ AI-*.AppImage\n\nsudo apt install ./release/open-generative-ai_*_amd64.deb\n\nsudo apt install libfuse2"
+      }
+    ]
+  }
 }

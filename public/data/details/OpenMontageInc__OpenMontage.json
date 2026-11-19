@@ -28,5 +28,26 @@
   "docs": [],
   "repo": "OpenMontageInc/OpenMontage",
   "url": "https://github.com/OpenMontageInc/OpenMontage",
-  "fetched": "2026-11-19T05:56:57+00:00"
+  "fetched": "2026-11-19T05:56:57+00:00",
+  "zh": {
+    "what": "开源的 Agent 式视频制作系统：调研、脚本、分镜、素材、剪辑串成流水线，一个人也能做出成片级的短片。",
+    "note": "",
+    "steps": [
+      {
+        "title": "安装并启动",
+        "desc": "克隆仓库后按 README 装依赖，起服务进 Backlot 界面。",
+        "code": "git clone https://github.com/calesthio/OpenMontage.git\ncd OpenMontage\nmake setup\n\n\"Make a 60-second animated explainer about how neural networks learn\""
+      },
+      {
+        "title": "配 API Key（可选）",
+        "desc": "接的模型越多出片质量越高，密钥写进配置文件即可。",
+        "code": "make install-gpu\n\n# Then add to .env:\nVIDEO_GEN_LOCAL_ENABLED=true\nVIDEO_GEN_LOCAL_MODEL=wan2.2-ti2v-5b  # or wan2.1-1.3b, wan2.1-14b, hunyuan-1.5, ltx2-local, cogvideo-5b"
+      },
+      {
+        "title": "跑一条流水线",
+        "desc": "从调研到剪辑是一条流水线，按阶段跑，中间可以人工改稿。",
+        "code": "research -> proposal -> script -> scene_plan -> assets -> edit -> compose"
+      }
+    ]
+  }
 }
