@@ -206,7 +206,7 @@ async function main() {
   countUp($('#statIssues'), s.issues, { format: n => String(Math.round(n)) });
   countUp($('#statStars'), s.stars, { format: fmt });
 
-  $('#cards').addEventListener('click', e => {
+  document.body.addEventListener('click', e => {
     if (e.target.closest('a')) return;
     const card = e.target.closest('.card[data-href]');
     if (card) location.href = card.dataset.href;
