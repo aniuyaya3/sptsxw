@@ -159,6 +159,19 @@ function initCalendarUI() {
     if (e.key === 'Escape') openCalendar(false);
   });
 
+  const scrollBtn = $('#scrollTop');
+  const onScroll = () => {
+    const show = window.scrollY > 520;
+    scrollBtn.hidden = !show;
+    scrollBtn.classList.toggle('in', show);
+  };
+  addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
   $('#backTop').addEventListener('click', () => {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
     showLatest(true);

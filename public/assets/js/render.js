@@ -33,6 +33,7 @@ export function cardHTML(it, i, dateLabel) {
     <div class="card-foot">
       <div class="tags">${tags}</div>
     </div>
+    <span class="card-arrow" aria-hidden="true">→</span>
   </article>`;
 }
 
