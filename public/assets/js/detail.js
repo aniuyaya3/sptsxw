@@ -120,6 +120,15 @@ async function main() {
   $('#dGh').href = item?.url || detail?.url || `https://github.com/${repo}`;
 
   renderMore(picks.days || [], date, repo);
+
+  const back = document.querySelector('.nav-back');
+  if (back) {
+    back.addEventListener('click', e => {
+      e.preventDefault();
+      if (history.length > 1) history.back();
+      else location.href = './';
+    });
+  }
 }
 
 main().catch(err => {
