@@ -166,19 +166,23 @@
 .cal-day.sel{background:linear-gradient(160deg,rgba(94,234,212,.22),rgba(139,147,255,.16));border-color:rgba(94,234,212,.55);color:#fff}
 .cal-tip{margin:10px 0 0;font-size:10.5px;color:var(--muted);text-align:center;letter-spacing:.03em}
 
-/* ---------- 视图提示条 ---------- */
-.view-bar{
-  display:flex;align-items:center;justify-content:space-between;gap:14px;
-  margin:0 0 18px;padding:10px 14px;border-radius:12px;
-  border:1px solid rgba(94,234,212,.22);background:rgba(94,234,212,.06);
+/* ---------- 右下角返回最新 ---------- */
+.back-top{
+  position:fixed;right:26px;bottom:26px;z-index:30;
+  width:48px;height:48px;border-radius:50%;cursor:pointer;
+  display:grid;place-items:center;font-family:inherit;
+  border:1px solid rgba(94,234,212,.35);
+  color:#04211d;
+  background:linear-gradient(160deg,var(--teal),#3fd0b8);
+  box-shadow:0 16px 40px -16px rgba(94,234,212,.75),0 4px 14px -6px rgba(0,0,0,.6);
+  opacity:0;transform:translateY(12px) scale(.9);
+  transition:opacity .3s var(--ease),transform .35s var(--ease),box-shadow .3s;
 }
-.view-text{font-size:12.5px;color:#cfe9e3;letter-spacing:.02em}
-.view-clear{
-  font-family:inherit;font-size:11.5px;color:var(--teal);cursor:pointer;
-  border:1px solid rgba(94,234,212,.35);border-radius:999px;padding:4px 10px;background:transparent;
-  transition:background .25s,color .25s;
-}
-.view-clear:hover{background:rgba(94,234,212,.14);color:#fff}
+.back-top[hidden]{display:none}
+.back-top.in{opacity:1;transform:none}
+.back-top:hover{transform:translateY(-3px);box-shadow:0 20px 46px -14px rgba(94,234,212,.85)}
+.back-top svg{width:20px;height:20px}
+@media (max-width:480px){ .back-top{right:16px;bottom:16px;width:44px;height:44px} }
 
 /* ---------- 卡片上的日期小标 ---------- */
 .card-date{

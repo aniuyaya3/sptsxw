@@ -28,12 +28,19 @@ function afterRender(scroll) {
   if (scroll) $('.latest').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
+function setFloating(show) {
+  const el = $('#backTop');
+  if (!el) return;
+  el.hidden = !show;
+  el.classList.toggle('in', show);
+}
+
 function showLatest(scroll = false) {
   const [latest, ...rest] = DAYS;
   $('#sectionTitle').textContent = '最新一期';
   $('#latestDate').textContent = latest.date.replace(/-/g, ' · ');
   $('#navDateText').textContent = latest.date;
-  $('#viewBar').hidden = true;
+  setFloating(false);
   selectedDate = latest.date;
 
   $('#cards').innerHTML = latest.items.map((it, i) => cardHTML(it, i)).join('');
@@ -52,8 +59,7 @@ function showDay(date) {
   $('#navDateText').textContent = date;
   $('#cards').innerHTML = day.items.map((it, i) => cardHTML(it, i)).join('');
   $('#archive').style.display = 'none';
-  $('#viewBar').hidden = false;
-  $('#viewText').textContent = `正在查看 ${date} 的作品（${day.items.length} 个）`;
+  setFloating(true);
   afterRender(true);
 }
 
@@ -68,8 +74,7 @@ function showTag(tagId) {
     ? items.map((it, i) => cardHTML(it, i, it.date)).join('')
     : '<p class="empty-hint">这个分类下暂时没有作品。</p>';
   $('#archive').style.display = 'none';
-  $('#viewBar').hidden = false;
-  $('#viewText').textContent = `分类：${meta.label} · ${meta.dim}`;
+  setFloating(true);
   document.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c.dataset.tag === tagId));
   afterRender(true);
 }
@@ -154,7 +159,7 @@ function initCalendarUI() {
     if (e.key === 'Escape') openCalendar(false);
   });
 
-  $('#viewClear').addEventListener('click', () => {
+  $('#backTop').addEventListener('click', () => {
     document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
     showLatest(true);
   });

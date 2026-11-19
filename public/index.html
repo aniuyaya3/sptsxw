@@ -66,10 +66,6 @@
       <h2 id="sectionTitle">最新一期</h2>
       <span class="date" id="latestDate"></span>
     </div>
-    <div class="view-bar" id="viewBar" hidden>
-      <span class="view-text" id="viewText"></span>
-      <button class="view-clear" id="viewClear">返回最新 ✕</button>
-    </div>
     <div class="cards" id="cards">
       <div class="card skeleton"></div>
       <div class="card skeleton"></div>
@@ -79,6 +75,12 @@
 
   <section class="wrap archive" id="archive"></section>
 </main>
+
+<button class="back-top" id="backTop" hidden aria-label="返回最新一期" title="返回最新一期">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M12 19V5M12 5l-6 6M12 5l6 6" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
 
 <script type="module" src="assets/js/main.js"></script>
 </body>

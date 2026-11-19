@@ -32,10 +32,6 @@ export function cardHTML(it, i, dateLabel) {
     </dl>
     <div class="card-foot">
       <div class="tags">${tags}</div>
-      <div class="card-acts">
-        <a class="go more" href="${esc(href)}">怎么用 <span>→</span></a>
-        <a class="go gh" href="${esc(it.url)}" target="_blank" rel="noopener" title="在 GitHub 打开">GitHub <span>↗</span></a>
-      </div>
     </div>
   </article>`;
 }
