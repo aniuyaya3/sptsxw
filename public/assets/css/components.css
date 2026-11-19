@@ -166,6 +166,26 @@
 .cal-day.sel{background:linear-gradient(160deg,rgba(94,234,212,.22),rgba(139,147,255,.16));border-color:rgba(94,234,212,.55);color:#fff}
 .cal-tip{margin:10px 0 0;font-size:10.5px;color:var(--muted);text-align:center;letter-spacing:.03em}
 
+/* ---------- 右上角 new 角标（筛选后返回顶部入口） ---------- */
+.hero-new{
+  position:fixed;top:92px;right:26px;z-index:35;
+  width:34px;height:34px;border-radius:50%;
+  background:linear-gradient(160deg,var(--teal),#3fd0b8);
+  color:#04211d;font-size:11px;font-weight:800;letter-spacing:.08em;
+  display:grid;place-items:center;
+  border:1px solid rgba(94,234,212,.45);
+  box-shadow:0 12px 28px -14px rgba(94,234,212,.75);
+  opacity:0;transform:translateY(12px) scale(.92);
+  transition:opacity .3s var(--ease),transform .35s var(--ease),box-shadow .3s;
+  cursor:pointer;
+}
+.hero-new.show{opacity:1;transform:none;box-shadow:0 16px 32px -14px rgba(94,234,212,.85)}
+.hero-new[hidden]{display:none}
+.hero-new:hover{transform:translateY(-2px)}
+@media (max-width:480px){
+  .hero-new{top:76px;right:16px;width:30px;height:30px;font-size:10px}
+}
+
 /* ---------- 右下角浮动按钮 ---------- */
 .fab-stack{position:fixed;right:26px;bottom:26px;z-index:30;display:flex;flex-direction:column;align-items:center;gap:10px}
 .fab{

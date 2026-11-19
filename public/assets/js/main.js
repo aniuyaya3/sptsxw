@@ -41,12 +41,22 @@ function setFloating(showBack, showScroll) {
   }
 }
 
+/* 滚动到 hero 区域中间（每日更新时间与标题之间） */
+function scrollToHero() {
+  const hero = document.querySelector('.hero');
+  if (!hero) return;
+  const target = Math.max(0, hero.offsetTop + 100);
+  window.scrollTo({ top: target, behavior: 'smooth' });
+}
+
 function showLatest(scroll = false) {
   const [latest, ...rest] = DAYS;
   $('#sectionTitle').textContent = '最新一期';
   $('#latestDate').textContent = latest.date.replace(/-/g, ' · ');
   $('#navDateText').textContent = latest.date;
   setFloating(false, false);
+  const heroNew = $('#heroNew');
+  if (heroNew) { heroNew.hidden = true; heroNew.classList.remove('show'); }
   selectedDate = latest.date;
 
   $('#cards').innerHTML = latest.items.map((it, i) => cardHTML(it, i)).join('');
@@ -66,10 +76,18 @@ function showDay(date) {
   $('#cards').innerHTML = day.items.map((it, i) => cardHTML(it, i)).join('');
   $('#archive').style.display = 'none';
   setFloating(true, false);
-  afterRender(true);
+  const heroNew = $('#heroNew');
+  if (heroNew) { heroNew.hidden = false; heroNew.classList.add('show'); }
+  scrollToHero();
+  afterRender(false);
 }
 
 function showTag(tagId) {
+  const active = document.querySelector('.chip.on');
+  if (active && active.dataset.tag === tagId) {
+    showLatest();
+    return;
+  }
   const meta = tagMeta(tagId);
   const items = itemsByTag(DAYS, tagId);
   selectedDate = '';
@@ -82,7 +100,10 @@ function showTag(tagId) {
   $('#archive').style.display = 'none';
   setFloating(true, false);
   document.querySelectorAll('.chip').forEach(c => c.classList.toggle('on', c.dataset.tag === tagId));
-  afterRender(true);
+  const heroNew = $('#heroNew');
+  if (heroNew) { heroNew.hidden = false; heroNew.classList.add('show'); }
+  scrollToHero();
+  afterRender(false);
 }
 
 /* ---------------- 分类标签 ---------------- */
@@ -211,6 +232,14 @@ async function main() {
     const card = e.target.closest('.card[data-href]');
     if (card) location.href = card.dataset.href;
   });
+
+  const heroNew = $('#heroNew');
+  if (heroNew) {
+    heroNew.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      showLatest();
+    });
+  }
 }
 
 main().catch(err => {
