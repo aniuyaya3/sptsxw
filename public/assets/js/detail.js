@@ -85,9 +85,8 @@ async function main() {
     || `<span class="tag">${esc(item?.language || '开源')}</span>`;
 
   const zh = detail?.zh || null;
-  const what = zh?.what || (detail?.intro && detail.intro.length > 40 ? detail.intro : '');
-  if (what) $('#dIntro').textContent = what;
-  else $('#dIntroBlock').hidden = true;
+  const what = zh?.what || item?.summary || detail?.intro || '';
+  $('#dIntro').textContent = what || '—';
 
   const note = zh?.note || '';
   const noteEl = $('#dNote');

@@ -81,3 +81,7 @@
 .d-step-desc{margin:0 0 11px;font-size:13.6px;line-height:1.72;color:#a9b5c4}
 .d-note{margin:0 0 18px;padding:10px 14px;border-radius:12px;font-size:13px;line-height:1.7;
   color:#cfd8e5;background:rgba(245,196,107,.07);border:1px solid rgba(245,196,107,.22)}
+
+/* 侧栏「这是什么」：长段落 */
+.d-panel .d-what{margin:0 0 16px;font-size:13.4px;line-height:1.85;color:#c3cddb;letter-spacing:.002em}
+.d-panel h3 + .d-what{margin-top:0}
