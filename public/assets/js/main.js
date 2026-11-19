@@ -52,6 +52,7 @@ function showLatest(scroll = false) {
   setFloating(false, false);
   const heroNew = $('#heroNew');
   if (heroNew) { heroNew.hidden = true; heroNew.classList.remove('show'); }
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
   selectedDate = latest.date;
 
   $('#cards').innerHTML = latest.items.map((it, i) => cardHTML(it, i)).join('');
