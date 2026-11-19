@@ -198,11 +198,6 @@ function initCalendarUI() {
   scrollBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-
-  $('#backTop').addEventListener('click', () => {
-    document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
-    showLatest(true);
-  });
 }
 
 /* ---------------- 启动 ---------------- */
