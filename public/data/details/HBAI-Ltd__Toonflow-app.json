@@ -1,0 +1,31 @@
+{
+  "intro": "&nbsp;|&nbsp;",
+  "requirements": [],
+  "steps": [
+    {
+      "title": "4.1 客户端安装",
+      "code": "sudo xattr -rd com.apple.quarantine /Applications/toonflow.app\n\nsudo spctl --master-disable"
+    },
+    {
+      "title": "4.2 Docker 安装",
+      "code": "git clone https://github.com/HBAI-Ltd/Toonflow-app.git\ncd Toonflow-app\ndocker compose up -d --build\n\ndocker compose logs -f toonflow  # 查看日志\ndocker compose stop             # 停止服务\ndocker compose start            # 再次启动\ndocker compose down             # 删除容器，保留数据卷\n\ndocker compose exec toonflow mkdir -p /app/data/workspaces/newProject\n\ndocker compose stop\ndocker compose cp toonflow:/app/data ./toonflowBackup\ndocker compose start"
+    },
+    {
+      "title": "4.3 服务器安装",
+      "code": "sudo apt-get update\nsudo apt-get install -y git curl unzip ffmpeg\ncurl -fsSL https://bun.com/install | bash -s \"bun-v1.4.3\"\nexport PATH=\"$HOME/.bun/bin:$PATH\"\nbun --version\n\ngit clone https://github.com/HBAI-Ltd/Toonflow-app.git\ncd Toonflow-app\nbun install --frozen-lockfile\n\n# 构建内置节点、工具、Web 与 Server\nbun run build:server\nmkdir -p data/workspaces/myProject\nbun run start:server"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Docker Engine",
+      "url": "https://docs.docker.com/engine/install/"
+    },
+    {
+      "title": "Bun 1.4.3",
+      "url": "https://bun.sh/docs/installation"
+    }
+  ],
+  "repo": "HBAI-Ltd/Toonflow-app",
+  "url": "https://github.com/HBAI-Ltd/Toonflow-app",
+  "fetched": "2026-11-19T11:41:43+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "intro": "English | 中文 | 繁體中文 | 日本語 | Русский",
+  "requirements": [
+    "| Node.js and npm | Remotion rendering, the template and the workbench |"
+  ],
+  "steps": [
+    {
+      "title": "Install",
+      "code": "npx skills add Vincentwei1021/video-shotcraft\n\ngit clone https://github.com/Vincentwei1021/video-shotcraft.git\ncd video-shotcraft\nln -s \"$(pwd)\" ~/.claude/skills/video-shotcraft   # Claude Code\nln -s \"$(pwd)\" ~/.codex/skills/video-shotcraft    # Codex"
+    }
+  ],
+  "docs": [
+    {
+      "title": "uv",
+      "url": "https://docs.astral.sh/uv/"
+    }
+  ],
+  "repo": "Vincentwei1021/video-shotcraft",
+  "url": "https://github.com/Vincentwei1021/video-shotcraft",
+  "fetched": "2026-11-19T11:41:43+00:00"
+}

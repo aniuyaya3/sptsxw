@@ -1,49 +1,49 @@
 {
-  "updated": "2026-11-19T05:46:12+00:00",
+  "updated": "2026-11-19T11:41:42+00:00",
   "days": [
     {
       "date": "2026-11-19",
       "items": [
         {
-          "repo": "OpenMontageInc/OpenMontage",
-          "url": "https://github.com/OpenMontageInc/OpenMontage",
-          "stars": 81597,
-          "language": "Python",
-          "summary": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent…",
-          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
-          "fit": "做短剧、漫剧、系列化内容的中文团队",
-          "tags": [
-            "创作平台",
-            "agent",
-            "agentic-ai"
-          ]
-        },
-        {
-          "repo": "Anil-matcha/Open-Generative-AI",
-          "url": "https://github.com/Anil-matcha/Open-Generative-AI",
-          "stars": 35332,
-          "language": "JavaScript",
-          "summary": "Uncensored Open-source alternative to AI video platforms — Free AI image & video generation studio with 800…",
-          "highlight": "从一张图或一段音频驱动出人物视频",
-          "fit": "做口播、虚拟主播、课程视频的创作者",
-          "tags": [
-            "数字人",
-            "fal-ai-alternative",
-            "generative-ai"
-          ]
-        },
-        {
-          "repo": "hypit-ai/hypit",
-          "url": "https://github.com/hypit-ai/hypit",
-          "stars": 30641,
+          "repo": "invoke-ai/InvokeAI",
+          "url": "https://github.com/invoke-ai/InvokeAI",
+          "stars": 29121,
           "language": "TypeScript",
-          "summary": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the…",
+          "summary": "Invoke is a leading creative engine that uses image and video generation models to empower professionals, a…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "ai-art",
+            "generative-art"
+          ]
+        },
+        {
+          "repo": "HBAI-Ltd/Toonflow-app",
+          "url": "https://github.com/HBAI-Ltd/Toonflow-app",
+          "stars": 22262,
+          "language": "TypeScript",
+          "summary": "短剧、漫剧制作工具 Toonflow：开源 AI 视频创作平台，集成剧本创作、智能分镜、角色与场景资产管理、图像生成和视频生成。融合无限画布、AI Agent 与可视化工作流，支持本地部署、自选模型、跨平台客户端、…",
           "highlight": "把剪辑、配音、字幕这些后期环节自动化",
           "fit": "做批量内容生产、需要统一风格的团队",
           "tags": [
             "视频编辑",
-            "agentic-ai",
-            "ai"
+            "ai-agents",
+            "ai-comic"
+          ]
+        },
+        {
+          "repo": "Vincentwei1021/video-shotcraft",
+          "url": "https://github.com/Vincentwei1021/video-shotcraft",
+          "stars": 21549,
+          "language": "TypeScript",
+          "summary": "AI video skill for Claude Code & Codex — cinematic, editable product promos with Remotion: 124 shot recipe…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent-skills",
+            "ai-agents"
           ]
         }
       ]
