@@ -10,7 +10,7 @@ function splitRepo(full) {
 
 const detailHref = repo => `detail.html?r=${encodeURIComponent(repo)}`;
 
-export function cardHTML(it, i) {
+export function cardHTML(it, i, dateLabel) {
   const { owner, name } = splitRepo(it.repo);
   const href = detailHref(it.repo);
   const tags = [
@@ -24,6 +24,7 @@ export function cardHTML(it, i) {
       <div class="star">${STAR_ICON}<span class="num" data-value="${Number(it.stars) || 0}">0</span></div>
     </div>
     ${it.stars_today ? `<span class="today">今日 +${fmt(it.stars_today)}</span>` : ''}
+    ${dateLabel ? `<span class="card-date">${esc(dateLabel)}</span>` : ''}
     <p class="summary">${esc(it.summary)}</p>
     <dl class="facts">
       <div class="row"><dt>亮点</dt><dd>${esc(it.highlight)}</dd></div>

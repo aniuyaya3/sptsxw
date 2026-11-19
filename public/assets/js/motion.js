@@ -37,6 +37,8 @@ export function setStarFormatter(fn) { formatStars = fn; }
 export function attachSpotlight(root = document) {
   if (reduce) return;
   root.querySelectorAll('.card:not(.skeleton)').forEach(cardEl => {
+    if (cardEl.dataset.spot) return;
+    cardEl.dataset.spot = '1';
     cardEl.addEventListener('pointermove', e => {
       const r = cardEl.getBoundingClientRect();
       cardEl.style.setProperty('--mx', `${e.clientX - r.left}px`);
