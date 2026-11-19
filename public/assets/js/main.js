@@ -29,6 +29,12 @@ async function main() {
 
   if (rest.length) $('#archive').innerHTML = archiveHTML(rest);
 
+  document.querySelector('#cards').addEventListener('click', e => {
+    if (e.target.closest('a')) return;
+    const card = e.target.closest('.card[data-href]');
+    if (card) location.href = card.dataset.href;
+  });
+
   observeReveals(document);
   attachSpotlight(document);
 }

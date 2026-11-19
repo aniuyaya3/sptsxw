@@ -1,0 +1,33 @@
+{
+  "intro": "只需输入一个 主题，Pixelle-Video 就能自动完成： - ✍️ 撰写视频文案 - 🎨 生成 AI 配图/视频 - 🗣️ 合成语音解说 - 🎵 添加背景音乐 - 🎬 一键合成视频",
+  "requirements": [
+    "✅ 2026-01-06: 新增 RunningHub 48G 显存机器调用支持"
+  ],
+  "steps": [
+    {
+      "title": "前置环境依赖",
+      "code": "brew install ffmpeg\n\nsudo apt update\nsudo apt install ffmpeg"
+    },
+    {
+      "title": "第一步：下载项目",
+      "code": "git clone https://github.com/AIDC-AI/Pixelle-Video.git\ncd Pixelle-Video"
+    },
+    {
+      "title": "第二步：启动 Web 界面",
+      "code": "# 使用 uv 运行（推荐，会自动安装依赖）\nuv run streamlit run web/app.py"
+    }
+  ],
+  "docs": [
+    {
+      "title": "uv 安装指南",
+      "url": "https://docs.astral.sh/uv/getting-started/installation/"
+    },
+    {
+      "title": "[Paper",
+      "url": "https://arxiv.org/pdf/2501.12909"
+    }
+  ],
+  "repo": "ATH-MaaS/Pixelle-Video",
+  "url": "https://github.com/ATH-MaaS/Pixelle-Video",
+  "fetched": "2026-11-19T05:56:58+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "intro": "The free, open-source alternative to AI Video Platforms. Generate AI images and videos using 600+ state-of-the-art models across 14 studios — no content filters, no closed ecosystem, no subscription fees.",
+  "requirements": [
+    "One-click installers — no Node.js or terminal required.",
+    "The app does not bundle Python or model weights for Wan2GP. Install Wan2GP yourself on a machine with a CUDA or ROCm GPU:",
+    "| Wan 2.1 1.3B | t2v1.3B | Video | Lightest option, 480p, ~8 GB VRAM |",
+    "sd.cpp runs on CPU (all platforms) and Metal GPU on Apple Silicon (M1/M2/M3/M4); CUDA/Vulkan/ROCm on Linux/Windows.",
+    "Node.js (v18+)"
+  ],
+  "steps": [
+    {
+      "title": "macOS Installation Guide",
+      "code": "xattr -cr \"/Applications/Open Generative AI.app\""
+    },
+    {
+      "title": "Ubuntu / Linux Installation",
+      "code": "# Build Linux installers (AppImage + .deb)\nnpm run electron:build:linux\n\nchmod +x \"release/Open Generative AI-*.AppImage\"\n  ./release/Open\\ Generative\\ AI-*.AppImage\n\nsudo apt install ./release/open-generative-ai_*_amd64.deb\n\nsudo apt install libfuse2"
+    },
+    {
+      "title": "Ubuntu 24.04+ / AppArmor sandbox restriction",
+      "code": "sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0\n\necho 'kernel.apparmor_restrict_unprivileged_userns=0' | sudo tee /etc/sysctl.d/99-userns.conf"
+    },
+    {
+      "title": "Engine 2 — Wan2GP (your own install)",
+      "code": "git clone https://github.com/deepbeepmeep/Wan2GP\ncd Wan2GP\n./install.sh                          # or install.bat on Windows\n\npython wgp.py --mcp --mcp-api-version 1 --mcp-transport streamable-http --mcp-host 0.0.0.0 --mcp-port 7866"
+    },
+    {
+      "title": "Verifying the SD 1.5 path (the fastest sanity test on Mac)",
+      "code": "# 1. App data layout (created on first app launch)\nAPP_DATA=\"${OPEN_GENERATIVE_AI_LOCAL_AI_DIR:-$HOME/Library/Application Support/open-generative-ai/local-ai}\"\nls \"$APP_DATA/bin\"     # sd-cli, libstable-diffusion.dylib\nls \"$APP_DATA/models\"  # whatever you've downloaded\n\n# 2. Grab a small SD 1.5 model directly (Dreamshaper 8, ~2 GB)\ncurl -L --fail --progress-bar \\\n  -o \"$APP_DATA/models/DreamShaper_8_pruned.safetensors\" \\\n  \"https://huggingface.co/Lykon/DreamShaper/resolve/main/DreamShaper_8_pruned.safetensors\"\n\n# 3. Run a single 512x512 / 12-step inference\nDYLD_LIBRARY_PATH=\"$APP_DATA/bin\" \"$APP_DATA/bin/sd-cli\" \\\n  -m \"$APP_DATA/models/DreamShaper_8_pruned.safetensors\" \\\n  -p \"a serene mountain lake at sunrise, oil painting\" \\\n  -o /tmp/sd15-test.png \\\n  --steps 12 -H 512 -W 512 --cfg-scale 7.5 --seed 42 \\\n  --sampling-method euler_a"
+    }
+  ],
+  "docs": [],
+  "repo": "Anil-matcha/Open-Generative-AI",
+  "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+  "fetched": "2026-11-19T05:56:57+00:00"
+}

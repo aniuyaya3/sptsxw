@@ -1,0 +1,49 @@
+{
+  "intro": "- 2025/06/01: 🌍 Over the past year, LivePortrait has 🚀 become an efficient portrait-animation (humans, cats and dogs) solution adopted by major video platforms—Kuaishou, Douyin, Jianying, WeChat Channels—as well as nu…",
+  "requirements": [
+    "Check your CUDA versions",
+    "Firstly, check your current CUDA version by:",
+    "PYTORCHENABLEMPSFALLBACK=1 python inference.py",
+    "Animals mode is ONLY tested on Linux and Windows with NVIDIA GPU.",
+    "PYTORCHENABLEMPSFALLBACK=1 python app.py # humans mode"
+  ],
+  "steps": [
+    {
+      "title": "1. Clone the code and prepare the environment 🛠️",
+      "code": "git clone https://github.com/KlingTeam/LivePortrait\ncd LivePortrait\n\n# create env using conda\nconda create -n LivePortrait python=3.10\nconda activate LivePortrait"
+    },
+    {
+      "title": "For Linux 🐧 or Windows 🪟 Users",
+      "code": "nvcc -V # example versions: 11.1, 11.8, 12.1, etc.\n\n# for CUDA 11.1\n  pip install torch==1.10.1+cu111 torchvision==0.11.2 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html\n  # for CUDA 11.8\n  pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu118\n  # for CUDA 12.1\n  pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cu121\n  # ...\n\npip install -r requirements.txt"
+    },
+    {
+      "title": "For macOS  with Apple Silicon Users",
+      "code": "# for macOS with Apple Silicon users\npip install -r requirements_macOS.txt"
+    },
+    {
+      "title": "2. Download pretrained weights 📥",
+      "code": "# !pip install -U \"huggingface_hub[cli]\"\nhuggingface-cli download KlingTeam/LivePortrait --local-dir pretrained_weights --exclude \"*.git*\" \"README.md\" \"docs\"\n\n# !pip install -U \"huggingface_hub[cli]\"\nexport HF_ENDPOINT=https://hf-mirror.com\nhuggingface-cli download KlingTeam/LivePortrait --local-dir pretrained_weights --exclude \"*.git*\" \"README.md\" \"docs\""
+    },
+    {
+      "title": "Fast hands-on (humans) 👤",
+      "code": "# For Linux and Windows users\npython inference.py\n\n# For macOS users with Apple Silicon (Intel is not tested). NOTE: this maybe 20x slower than RTX 4090\nPYTORCH_ENABLE_MPS_FALLBACK=1 python inference.py"
+    }
+  ],
+  "docs": [
+    {
+      "title": "arXiv",
+      "url": "https://arxiv.org/pdf/2407.03168"
+    },
+    {
+      "title": "downgrade guide",
+      "url": "https://github.com/dimitribarbot/sd-webui-live-portrait/blob/main/assets/docs/how-to-install-xpose.md#cuda-toolkit-118"
+    },
+    {
+      "title": "ArXiv",
+      "url": "https://arxiv.org/abs/2411.19509"
+    }
+  ],
+  "repo": "KlingAIResearch/LivePortrait",
+  "url": "https://github.com/KlingAIResearch/LivePortrait",
+  "fetched": "2026-11-19T05:56:59+00:00"
+}

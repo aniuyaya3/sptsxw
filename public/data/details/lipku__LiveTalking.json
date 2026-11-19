@@ -1,0 +1,30 @@
+{
+  "intro": "中文版 ｜ English",
+  "requirements": [
+    "已在 Ubuntu 22.04、Python 3.12、PyTorch 2.9.1、CUDA 12.8 测试通过。",
+    "Linux CUDA 环境搭建参考:"
+  ],
+  "steps": [
+    {
+      "title": "1.1 安装依赖",
+      "code": "git clone https://github.com/lipku/LiveTalking.git \nconda create -n livetalking python=3.12\nconda activate livetalking\n# 如果 CUDA 版本不为 12.8 (运行 nvidia-smi 确认)，请根据 PyTorch 官网(https://pytorch.org/get-started/previous-versions)安装对应版本\npip install torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 --index-url https://download.pytorch.org/whl/cu128\ncd LiveTalking\npip install -r requirements.txt"
+    },
+    {
+      "title": "2.2 启动服务",
+      "code": "python app.py --transport webrtc --model wav2lip --avatar_id wav2lip256_avatar1"
+    },
+    {
+      "title": "引用",
+      "code": "@software{livetalking,\n  author = {Hengzhong Li},\n  title = {LiveTalking: Real-Time Interactive Streaming Digital Human Framework},\n  year = {2025},\n  publisher = {GitHub},\n  url = {https://github.com/lipku/livetalking}\n}"
+    }
+  ],
+  "docs": [
+    {
+      "title": "FAQ",
+      "url": "https://doc.livetalking.ai/docs/faq/"
+    }
+  ],
+  "repo": "lipku/LiveTalking",
+  "url": "https://github.com/lipku/LiveTalking",
+  "fetched": "2026-11-19T05:57:02+00:00"
+}

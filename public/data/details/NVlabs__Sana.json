@@ -1,0 +1,37 @@
+{
+  "intro": "SANA is an efficiency-oriented codebase for high-resolution image and video generation, providing complete training and inference pipelines. This repository contains code for SANA, SANA-1.5, SANA-Sprint, SANA-Video, S…",
+  "requirements": [
+    "generator=torch.Generator(device=\"cuda\").manualseed(42),"
+  ],
+  "steps": [
+    {
+      "title": "Quick Start",
+      "code": "git clone https://github.com/NVlabs/Sana.git\ncd Sana && ./environment_setup.sh sana"
+    },
+    {
+      "title": "SANA-Video 2.0 5B release demo",
+      "code": "bash inference_video_scripts/inference_sana_video.sh \\\n  --np 1 \\\n  --config configs/sana_video2/SanaVideo2_5B_720p.yaml \\\n  --model_path hf://Efficient-Large-Model/SANA-Video_2.0_5B_720p/checkpoints/SANA_Video_2.0_5B_720p.pth \\\n  --txt_file=asset/samples/sana_video2_5b_720p_demo.txt \\\n  --cfg_scale 8 \\\n  --flow_shift 12 \\\n  --step 50 \\\n  --fps 24 \\\n  --motion_score 20 \\\n  --seed 4 \\\n  --work_dir output/sana_video2_t2v_720p_demo"
+    },
+    {
+      "title": "Inference with 🧨 diffusers",
+      "code": "import torch\nfrom diffusers import SanaPipeline\n\npipe = SanaPipeline.from_pretrained(\n    \"Efficient-Large-Model/SANA1.5_1.6B_1024px_diffusers\",\n    torch_dtype=torch.bfloat16,\n)\npipe.to(\"cuda\")\n\npipe.vae.to(torch.bfloat16)\npipe.text_encoder.to(torch.bfloat16)\n\nprompt = 'a cyberpunk cat with a neon sign that says \"Sana\"'\nimage = pipe(\n    prompt=prompt,\n    height=1024,\n    width=1024,\n    guidance_scale=4.5,\n    num_inference_steps=20,\n    generator=torch.Generator(device=\"cuda\").manual_seed(42),\n)[0]\n\nimage[0].save(\"sana.png\")"
+    }
+  ],
+  "docs": [
+    {
+      "title": "📚 documentation",
+      "url": "https://nvlabs.github.io/Sana/docs/"
+    },
+    {
+      "title": "Doc",
+      "url": "https://nvlabs.github.io/Sana/docs/sana_video2/"
+    },
+    {
+      "title": "Model Zoo",
+      "url": "https://nvlabs.github.io/Sana/docs/model_zoo/#sana-video-20"
+    }
+  ],
+  "repo": "NVlabs/Sana",
+  "url": "https://github.com/NVlabs/Sana",
+  "fetched": "2026-11-19T05:57:02+00:00"
+}

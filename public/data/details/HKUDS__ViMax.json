@@ -1,0 +1,18 @@
+{
+  "intro": "---",
+  "requirements": [],
+  "steps": [
+    {
+      "title": "🖥️ Environment",
+      "code": "OS: Linux, Windows"
+    },
+    {
+      "title": "📥 Clone and Install",
+      "code": "git clone https://github.com/HKUDS/ViMax.git\ncd ViMax\nuv sync\n\ncp configs/agent.example.yaml configs/agent.local.yaml\n\nvimax tui\n\nvimax tui new\nvimax tui resume\nvimax tui resume <session_id>\n\ncd web\nnpm install\nnpm run dev\n\nssh -N -L 4173:127.0.0.1:4173 <user>@<server>\n\nVIMAX_WEB_PORT=4174 npm run dev\n\nidea = \\\n\"\"\"\nIf a cat and a dog are best friends, what would happen when they meet a new cat?\n\"\"\"\nuser_requirement = \\\n\"\"\"\nFor children, do not exceed 3 scenes.\n\"\"\"\nstyle = \"Cartoon\""
+    }
+  ],
+  "docs": [],
+  "repo": "HKUDS/ViMax",
+  "url": "https://github.com/HKUDS/ViMax",
+  "fetched": "2026-11-19T05:57:01+00:00"
+}

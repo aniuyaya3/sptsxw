@@ -1,0 +1,32 @@
+{
+  "intro": "🔗 Office website: www.duix.com",
+  "requirements": [
+    "Nodejs 18",
+    "Ensure you have an NVIDIA graphics card with properly installed drivers",
+    "NVIDIA driver download link: https://www.nvidia.cn/drivers/lookup/",
+    "For 50 series graphics cards (tested and also works for 30/40 series with CUDA 12.8) Uses the official preview version of PyTorch",
+    "Graphics Card: RTX - 4070 (Ensure you have an NVIDIA graphics card and the graphics card driver is correctly installed)"
+  ],
+  "steps": [
+    {
+      "title": "Mode 2：Ubuntu 22.04 Installation",
+      "code": "sudo apt update\nsudo apt install docker.io\nsudo apt install docker-compose\n\ndistribution=$(. /etc/os-release;echo $ID$VERSION_ID) \\\n  && curl -s -L https://nvidia.github.io/libnvidia-container/gpgkey | sudo apt-key add - \\\n  && curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list\n\nsudo apt-get update\nsudo apt-get install -y nvidia-container-toolkit\n\nsudo nvidia-ctk runtime configure --runtime=docker\n\nsudo systemctl restart docker"
+    },
+    {
+      "title": "Install the server",
+      "code": "cd /deploy\ndocker-compose -f docker-compose-linux.yml up -d"
+    },
+    {
+      "title": "Audio Synthesis",
+      "code": "// Request parameters\n{\n  \"speaker\": \"{uuid}\", // A unique UUID\n  \"text\": \"xxxxxxxxxx\", // Text content to synthesize\n  \"format\": \"wav\", // Fixed parameter\n  \"topP\": 0.7, // Fixed parameter\n  \"max_new_tokens\": 1024, // Fixed parameter\n  \"chunk_length\": 100, // Fixed parameter\n  \"repetition_penalty\": 1.2, // Fixed parameter\n  \"temperature\": 0.7, // Fixed parameter\n  \"need_asr\": false, // Fixed parameter\n  \"streaming\": false, // Fixed parameter\n  \"is_fixed_seed\": 0, // Fixed parameter\n  \"is_norm\": 0, // Fixed parameter\n  \"reference_audio\": \"{voice.asr_format_audio_url}\", // Return value from previous \"Model Training\" step\n  \"reference_text\": \"{voice.reference_audio_text}\" // Return value from previous \"Model Training\" step\n}"
+    },
+    {
+      "title": "Video Synthesis",
+      "code": "// Request parameters\n  {\n    \"audio_url\": \"{audioPath}\", // Audio path\n    \"video_url\": \"{videoPath}\", // Video path\n    \"code\": \"{uuid}\", // Unique key\n    \"chaofen\": 0, // Fixed value\n    \"watermark_switch\": 0, // Fixed value\n    \"pn\": 1 // Fixed value\n  }"
+    }
+  ],
+  "docs": [],
+  "repo": "duixcom/Duix-Avatar",
+  "url": "https://github.com/duixcom/Duix-Avatar",
+  "fetched": "2026-11-19T05:57:00+00:00"
+}

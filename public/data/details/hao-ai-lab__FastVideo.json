@@ -1,0 +1,29 @@
+{
+  "intro": "FastVideo is a unified post-training and real-time inference framework for accelerated video generation.",
+  "requirements": [
+    "Platform guides: NVIDIA GPUs, DGX Spark / GB10, Apple Silicon MLX, AMD / ROCm — or the full installation guide."
+  ],
+  "steps": [
+    {
+      "title": "Getting Started",
+      "code": "uv venv --python 3.12 --seed\nsource .venv/bin/activate\n\n# NVIDIA CUDA 12; use cu130 on CUDA 13\nUV_TORCH_BACKEND=cu126 uv pip install fastvideo"
+    },
+    {
+      "title": "Generating Your First Video",
+      "code": "import os\nfrom fastvideo import VideoGenerator\n\ndef main():\n    os.environ[\"FASTVIDEO_ATTENTION_BACKEND\"] = \"VIDEO_SPARSE_ATTN\"\n\n    # Create a video generator with a pre-trained model\n    generator = VideoGenerator.from_pretrained(\n        \"FastVideo/FastWan2.1-T2V-1.3B-Diffusers\",\n        num_gpus=1,  # Adjust based on your hardware\n    )\n\n    # Define a prompt for your video\n    prompt = \"A curious raccoon peers through a vibrant field of yellow sunflowers, its eyes wide with interest.\"\n\n    # Generate the video\n    video = generator.generate_video(\n        prompt,\n        output_path=\"my_videos/\",  # Controls where videos are saved\n        save_video=True\n    )\n\nif __name__ == '__main__':\n    main()\n\npython example.py"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Video Sparse Attention",
+      "url": "https://arxiv.org/pdf/2505.13389"
+    },
+    {
+      "title": "uv",
+      "url": "https://docs.astral.sh/uv/"
+    }
+  ],
+  "repo": "hao-ai-lab/FastVideo",
+  "url": "https://github.com/hao-ai-lab/FastVideo",
+  "fetched": "2026-11-19T05:56:58+00:00"
+}

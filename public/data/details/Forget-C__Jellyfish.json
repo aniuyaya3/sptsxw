@@ -1,0 +1,26 @@
+{
+  "intro": "An end-to-end production workspace for AI-generated short dramas. From script input to structured storyboarding, consistency management, shot preparation, video generation, and export.",
+  "requirements": [],
+  "steps": [
+    {
+      "title": "🔁 Frontend OpenAPI client and type generation",
+      "code": "cd front\npnpm run openapi:update"
+    },
+    {
+      "title": "Start",
+      "code": "cp deploy/compose/.env.example deploy/compose/.env\ndocker compose --env-file deploy/compose/.env -f deploy/compose/docker-compose.yml up --build"
+    },
+    {
+      "title": "Backend",
+      "code": "cd backend\ncp .env.example .env\nuv sync\nuv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
+    },
+    {
+      "title": "Frontend",
+      "code": "cd front\npnpm install\npnpm dev"
+    }
+  ],
+  "docs": [],
+  "repo": "Forget-C/Jellyfish",
+  "url": "https://github.com/Forget-C/Jellyfish",
+  "fetched": "2026-11-19T05:57:03+00:00"
+}

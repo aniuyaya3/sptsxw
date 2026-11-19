@@ -1,0 +1,11 @@
+{
+  "intro": "[!NOTE] MoviePy recently upgraded to v2.0, introducing major breaking changes. You can consult the last v1 docs here but beware that v1 is no longer maintained. For more info on how to update your code from v1 to v2,…",
+  "requirements": [
+    "MoviePy can read and write all the most common audio and video formats, including GIF, and runs on Windows/Mac/Linux, with Python 3.9+."
+  ],
+  "steps": [],
+  "docs": [],
+  "repo": "Zulko/moviepy",
+  "url": "https://github.com/Zulko/moviepy",
+  "fetched": "2026-11-19T05:57:00+00:00"
+}

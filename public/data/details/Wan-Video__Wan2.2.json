@@ -1,0 +1,49 @@
+{
+  "intro": "💜 Wan &nbsp&nbsp ｜ &nbsp&nbsp 🖥️ GitHub &nbsp&nbsp | &nbsp&nbsp🤗 Hugging Face&nbsp&nbsp | &nbsp&nbsp🤖 ModelScope&nbsp&nbsp | &nbsp&nbsp 📑 Paper &nbsp&nbsp | &nbsp&nbsp 📑 Blog &nbsp&nbsp | &nbsp&nbsp 💬 Discord&nbsp&nbsp",
+  "requirements": [
+    "💡 This command can run on a GPU with at least 80GB VRAM.",
+    "We use PyTorch FSDP and DeepSpeed Ulysses to accelerate inference.",
+    "This command can run on a GPU with at least 80GB VRAM.",
+    "This command can run on a GPU with at least 24GB VRAM (e.g, RTX 4090 GPU).",
+    "device = \"cuda:0\""
+  ],
+  "steps": [
+    {
+      "title": "Installation",
+      "code": "git clone https://github.com/Wan-Video/Wan2.2.git\ncd Wan2.2\n\n# Ensure torch >= 2.4.0\n# If the installation of `flash_attn` fails, try installing the other packages first and install `flash_attn` last\npip install -r requirements.txt\n# If you want to use CosyVoice to synthesize speech for Speech-to-Video Generation, please install requirements_s2v.txt additionally\npip install -r requirements_s2v.txt"
+    },
+    {
+      "title": "Model Download",
+      "code": "Download models using modelscope-cli:\n``` sh\npip install modelscope\nmodelscope download Wan-AI/Wan2.2-T2V-A14B --local_dir ./Wan2.2-T2V-A14B"
+    },
+    {
+      "title": "Run Text-to-Video Generation",
+      "code": "> 💡 This command can run on a GPU with at least 80GB VRAM.\n\n> 💡If you encounter OOM (Out-of-Memory) issues, you can use the `--offload_model True`, `--convert_model_dtype` and `--t5_cpu` options to reduce GPU memory usage.\n\n\n- Multi-GPU inference using FSDP + DeepSpeed Ulysses\n\n  We use [PyTorch FSDP](https://docs.pytorch.org/docs/stable/fsdp.html) and [DeepSpeed Ulysses](https://arxiv.org/abs/2309.14509) to accelerate inference.\n\n\n``` sh\ntorchrun --nproc_per_node=8 generate.py --task t2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-T2V-A14B --dit_fsdp --t5_fsdp --ulysses_size 8 --prompt \"Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage.\"\n\nDASH_API_KEY=your_key torchrun --nproc_per_node=8 generate.py  --task t2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-T2V-A14B --dit_fsdp --t5_fsdp --ulysses_size 8 --prompt \"Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage\" --use_prompt_extend --prompt_extend_method 'dashscope' --prompt_extend_target_lang 'zh'\n\n#### Run Image-to-Video Generation\n\nThis repository supports the `Wan2.2-I2V-A14B` Image-to-Video model and can simultaneously support video generation at 480P and 720P resolutions.\n\n\n- Single-GPU inference\n```sh\npython generate.py --task i2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-I2V-A14B --offload_model True --convert_model_dtype --image examples/i2v_input.JPG --prompt \"Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside.\"\n\ntorchrun --nproc_per_node=8 generate.py --task i2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-I2V-A14B --image examples/i2v_input.JPG --dit_fsdp --t5_fsdp --ulysses_size 8 --prompt \"Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside.\"\n\nDASH_API_KEY=your_key torchrun --nproc_per_node=8 generate.py --task i2v-A14B --size 1280*720 --ckpt_dir ./Wan2.2-I2V-A14B --prompt '' --image examples/i2v_input.JPG --dit_fsdp --t5_fsdp --ulysses_size 8 --use_prompt_extend --prompt_extend_method 'dashscope'"
+    },
+    {
+      "title": "Run Text-Image-to-Video Generation",
+      "code": "python generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --offload_model True --convert_model_dtype --t5_cpu --prompt \"Two anthropomorphic cats in comfy boxing gear and bright gloves fight intensely on a spotlighted stage\"\n\npython generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --offload_model True --convert_model_dtype --t5_cpu --image examples/i2v_input.JPG --prompt \"Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside.\"\n\ntorchrun --nproc_per_node=8 generate.py --task ti2v-5B --size 1280*704 --ckpt_dir ./Wan2.2-TI2V-5B --dit_fsdp --t5_fsdp --ulysses_size 8 --image examples/i2v_input.JPG --prompt \"Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes directly at the camera with a relaxed expression. Blurred beach scenery forms the background featuring crystal-clear waters, distant green hills, and a blue sky dotted with white clouds. The cat assumes a naturally relaxed posture, as if savoring the sea breeze and warm sunlight. A close-up shot highlights the feline's intricate details and the refreshing atmosphere of the seaside.\""
+    },
+    {
+      "title": "Run Speech-to-Video Generation",
+      "code": "python generate.py  --task s2v-14B --size 1024*704 --ckpt_dir ./Wan2.2-S2V-14B/ --offload_model True --convert_model_dtype --prompt \"Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard.\"  --image \"examples/i2v_input.JPG\" --audio \"examples/talk.wav\"\n# Without setting --num_clip, the generated video length will automatically adjust based on the input audio length\n\n# You can use CosyVoice to generate audio with --enable_tts\npython generate.py  --task s2v-14B --size 1024*704 --ckpt_dir ./Wan2.2-S2V-14B/ --offload_model True --convert_model_dtype --prompt \"Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard.\"  --image \"examples/i2v_input.JPG\" --enable_tts --tts_prompt_audio \"examples/zero_shot_prompt.wav\" --tts_prompt_text \"希望你以后能够做的比我还好呦。\" --tts_text \"收到好友从远方寄来的生日礼物，那份意外的惊喜与深深的祝福让我心中充满了甜蜜的快乐，笑容如花儿般绽放。\""
+    }
+  ],
+  "docs": [
+    {
+      "title": "CN",
+      "url": "https://docs.comfy.org/zh-CN/tutorials/video/wan/wan2_2"
+    },
+    {
+      "title": "EN",
+      "url": "https://docs.comfy.org/tutorials/video/wan/wan2_2"
+    },
+    {
+      "title": "PyTorch FSDP",
+      "url": "https://docs.pytorch.org/docs/stable/fsdp.html"
+    }
+  ],
+  "repo": "Wan-Video/Wan2.2",
+  "url": "https://github.com/Wan-Video/Wan2.2",
+  "fetched": "2026-11-19T05:56:59+00:00"
+}

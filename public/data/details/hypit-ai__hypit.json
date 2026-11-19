@@ -1,0 +1,14 @@
+{
+  "intro": "&nbsp;&bull;&nbsp;",
+  "requirements": [],
+  "steps": [
+    {
+      "title": "Install once",
+      "code": "npx skills add hypit-ai/hypit -g"
+    }
+  ],
+  "docs": [],
+  "repo": "hypit-ai/hypit",
+  "url": "https://github.com/hypit-ai/hypit",
+  "fetched": "2026-11-19T05:56:58+00:00"
+}

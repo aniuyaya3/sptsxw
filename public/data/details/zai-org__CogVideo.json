@@ -1,0 +1,40 @@
+{
+  "intro": "中文阅读",
+  "requirements": [
+    "scheme has not been tested for actual memory usage on devices outside of NVIDIA A100 / H100 architectures.",
+    "Generally, this scheme can be adapted to all NVIDIA Ampere architecture and above devices. If optimizations are",
+    "+ PytorchAO and Optimum-quanto can be",
+    "devices with NVIDIA H100 and above, requiring source installation of torch, torchao Python packages. CUDA 12.4 is recommended."
+  ],
+  "steps": [
+    {
+      "title": "Diffusers",
+      "code": "pip install -r requirements.txt"
+    },
+    {
+      "title": "Model Introduction",
+      "code": "pipe.enable_sequential_cpu_offload()\npipe.vae.enable_slicing()\npipe.vae.enable_tiling()"
+    },
+    {
+      "title": "Citation",
+      "code": "@article{yang2024cogvideox,\n  title={CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer},\n  author={Yang, Zhuoyi and Teng, Jiayan and Zheng, Wendi and Ding, Ming and Huang, Shiyu and Xu, Jiazheng and Yang, Yuanming and Hong, Wenyi and Zhang, Xiaohan and Feng, Guanyu and others},\n  journal={arXiv preprint arXiv:2408.06072},\n  year={2024}\n}\n@article{hong2022cogvideo,\n  title={CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers},\n  author={Hong, Wenyi and Ding, Ming and Zheng, Wendi and Liu, Xinghan and Tang, Jie},\n  journal={arXiv preprint arXiv:2205.15868},\n  year={2022}\n}"
+    }
+  ],
+  "docs": [
+    {
+      "title": "here",
+      "url": "https://arxiv.org/pdf/2408.06072"
+    },
+    {
+      "title": "technical documentation",
+      "url": "https://zhipu-ai.feishu.cn/wiki/DHCjw1TrJiTyeukfc9RceoSRnCh"
+    },
+    {
+      "title": "ICLR'23 paper",
+      "url": "https://arxiv.org/abs/2205.15868"
+    }
+  ],
+  "repo": "zai-org/CogVideo",
+  "url": "https://github.com/zai-org/CogVideo",
+  "fetched": "2026-11-19T05:57:01+00:00"
+}

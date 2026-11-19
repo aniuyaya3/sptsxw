@@ -1,0 +1,39 @@
+{
+  "intro": "Shaoshu Yang · Zhe Kong · Feng Gao · Meng Cheng · Xiangyu Liu · Yong Zhang&#9993; · Zhuoliang Kang",
+  "requirements": [
+    "[x] Run with very low VRAM",
+    "If you want run with very low VRAM, set --numpersistentparamindit 0:",
+    "savefile infinitetalkreslowvram"
+  ],
+  "steps": [
+    {
+      "title": "1. Create a conda environment and install pytorch, xformers",
+      "code": "conda create -n multitalk python=3.10\nconda activate multitalk\npip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu121\npip install -U xformers==0.0.28 --index-url https://download.pytorch.org/whl/cu121"
+    },
+    {
+      "title": "2. Flash-attn installation:",
+      "code": "pip install misaki[en]\npip install ninja \npip install psutil \npip install packaging\npip install wheel\npip install flash_attn==2.7.4.post1"
+    },
+    {
+      "title": "3. Other dependencies",
+      "code": "pip install -r requirements.txt\nconda install -c conda-forge librosa"
+    },
+    {
+      "title": "4. FFmeg installation",
+      "code": "conda install -c conda-forge ffmpeg\n\nsudo yum install ffmpeg ffmpeg-devel"
+    },
+    {
+      "title": "1. Model Download",
+      "code": "#### 1. Inference\n\n##### 1) Run with single GPU"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Technique-Report",
+      "url": "https://arxiv.org/abs/2508.14033"
+    }
+  ],
+  "repo": "MeiGen-AI/InfiniteTalk",
+  "url": "https://github.com/MeiGen-AI/InfiniteTalk",
+  "fetched": "2026-11-19T05:57:03+00:00"
+}

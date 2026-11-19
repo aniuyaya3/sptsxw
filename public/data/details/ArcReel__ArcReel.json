@@ -1,0 +1,31 @@
+{
+  "intro": "ArcReel",
+  "requirements": [],
+  "steps": [
+    {
+      "title": "快速开始",
+      "code": "git clone https://github.com/ArcReel/ArcReel.git\ncd ArcReel/deploy\n\ncp .env.example .env\ndocker compose up -d"
+    },
+    {
+      "title": "贡献",
+      "code": "uv run pre-commit install"
+    }
+  ],
+  "docs": [
+    {
+      "title": "创作流程与模式",
+      "url": "https://docs.arc-reel.com/guide/workflows"
+    },
+    {
+      "title": "反向代理与 HTTPS",
+      "url": "https://docs.arc-reel.com/ops/deployment#reverse-proxy-and-https"
+    },
+    {
+      "title": "完整入门教程",
+      "url": "https://docs.arc-reel.com/guide/getting-started"
+    }
+  ],
+  "repo": "ArcReel/ArcReel",
+  "url": "https://github.com/ArcReel/ArcReel",
+  "fetched": "2026-11-19T05:56:58+00:00"
+}

@@ -38,6 +38,11 @@ jobs:
             --date "$(TZ=Asia/Shanghai date +%F)" \
             --file /tmp/items.json
 
+      - name: Fetch details (README → 怎么用)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/fetch_details.py
+
       - name: Validate
         run: |
           python3 -m json.tool public/data/picks.json > /dev/null
@@ -47,7 +52,7 @@ jobs:
         run: |
           git config user.name "videogen-bot"
           git config user.email "videogen-bot@users.noreply.github.com"
-          git add public/data/picks.json
+          git add public/data/picks.json public/data/details
           if git diff --cached --quiet; then
             echo "无变化，跳过提交"
             exit 0

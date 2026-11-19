@@ -1,0 +1,48 @@
+{
+  "intro": "中文阅读",
+  "requirements": [
+    "An NVIDIA GPU with CUDA support is required.",
+    "Recommended: We recommend using a GPU with 80GB of memory for better generation quality.",
+    "We recommend CUDA versions 12.6 or 11.8 for the manual installation.",
+    "export LDLIBRARYPATH=/opt/conda/lib/python3.8/site-packages/nvidia/cublas/lib/"
+  ],
+  "steps": [
+    {
+      "title": "🛠️ Dependencies and Installation",
+      "code": "git clone https://github.com/Tencent-Hunyuan/HunyuanVideo\ncd HunyuanVideo"
+    },
+    {
+      "title": "Installation Guide for Linux",
+      "code": "# 1. Create conda environment\nconda create -n HunyuanVideo python==3.10.9\n\n# 2. Activate the environment\nconda activate HunyuanVideo\n\n# 3. Install PyTorch\n# For CUDA 11.8\npip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu118\n# For CUDA 12.6\npip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu126\n\n# 4. Install pip dependencies\npython -m pip install -r requirements.txt\n\n# 5. Install flash attention v2 for acceleration (requires CUDA 11.8 or above)\npython -m pip install ninja\npython -m pip install git+https://github.com/Dao-AILab/flash-attention.git@v2.8.3\n\n# 6. Install xDiT for parallel inference (It is recommended to use torch 2.7.1 and flash-attn 2.8.3)\npython -m pip install xfuser==0.4.0\n\n# Option 1: Making sure you have installed CUDA 12.4, CUBLAS>=12.4.5.8, and CUDNN>=9.00 (or simply using our CUDA 12 docker image).\npip install nvidia-cublas-cu12==12.4.5.8\nexport LD_LIBRARY_PATH=/opt/conda/lib/python3.8/site-packages/nvidia/cublas/lib/\n\n# Option 2: Forcing to explictly use the CUDA 11.8 compiled version of Pytorch and all the other packages\npip uninstall -r requirements.txt  # uninstall all packages\npip uninstall -y xfuser\npip install torch==2.7.1 torchvision==0.22.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cu118\npip install -r requirements.txt\npip install ninja\npip install git+https://github.com/Dao-AILab/flash-attention.git@v2.8.3\npip install xfuser==0.4.0\n\n# For CUDA 12.4 (updated to avoid float point exception)\ndocker pull hunyuanvideo/hunyuanvideo:cuda_12\ndocker run -itd --gpus all --init --net=host --uts=host --ipc=host --name hunyuanvideo --security-opt=seccomp=unconfined --ulimit=stack=67108864 --ulimit=memlock=-1 --privileged hunyuanvideo/hunyuanvideo:cuda_12\n\n# For CUDA 11.8\ndocker pull hunyuanvideo/hunyuanvideo:cuda_11\ndocker run -itd --gpus all --init --net=host --uts=host --ipc=host --name hunyuanvideo --security-opt=seccomp=unconfined --ulimit=stack=67108864 --ulimit=memlock=-1 --privileged hunyuanvideo/hunyuanvideo:cuda_11"
+    },
+    {
+      "title": "Using Command Line",
+      "code": "cd HunyuanVideo\n\npython3 sample_video.py \\\n    --video-size 720 1280 \\\n    --video-length 129 \\\n    --infer-steps 50 \\\n    --prompt \"A cat walks on the grass, realistic style.\" \\\n    --flow-reverse \\\n    --use-cpu-offload \\\n    --save-path ./results"
+    },
+    {
+      "title": "Run a Gradio Server",
+      "code": "python3 gradio_server.py --flow-reverse\n\n# set SERVER_NAME and SERVER_PORT manually\n# SERVER_NAME=0.0.0.0 SERVER_PORT=8081 python3 gradio_server.py --flow-reverse"
+    },
+    {
+      "title": "Using Command Line",
+      "code": "cd HunyuanVideo\n\ntorchrun --nproc_per_node=8 sample_video.py \\\n    --video-size 1280 720 \\\n    --video-length 129 \\\n    --infer-steps 50 \\\n    --prompt \"A cat walks on the grass, realistic style.\" \\\n    --flow-reverse \\\n    --seed 42 \\\n    --ulysses-degree 8 \\\n    --ring-degree 1 \\\n    --save-path ./results"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Diffusers",
+      "url": "https://huggingface.co/docs/diffusers/main/api/pipelines/hunyuan_video"
+    },
+    {
+      "title": "Zhejiang University",
+      "url": "https://arxiv.org/abs/2606.26795"
+    },
+    {
+      "title": "here",
+      "url": "https://docs.anaconda.com/free/miniconda/index.html"
+    }
+  ],
+  "repo": "Tencent-Hunyuan/HunyuanVideo",
+  "url": "https://github.com/Tencent-Hunyuan/HunyuanVideo",
+  "fetched": "2026-11-19T05:57:01+00:00"
+}

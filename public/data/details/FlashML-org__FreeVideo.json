@@ -1,0 +1,26 @@
+{
+  "intro": "Make videos on the computer you already own. Powered by Video DeltaNet (VDN), FreeVideo runs MiniMax H3 in as little as 8 GB of VRAM and 16 GB of RAM, with acceleration adapted to your&nbsp;hardware.",
+  "requirements": [
+    "· v0.5.0: H3 Image. Pictures up to 16 MP locally, from 8 GB of VRAM.",
+    "· FreeVideo is open source. MiniMax H3 on consumer GPUs with as little as 8 GB of VRAM."
+  ],
+  "steps": [
+    {
+      "title": "Existing ComfyUI",
+      "code": "cd ComfyUI/custom_nodes\ngit clone https://github.com/FlashML-org/FreeVideo.git"
+    },
+    {
+      "title": "Linux",
+      "code": "git clone https://github.com/FlashML-org/FreeVideo.git && cd FreeVideo\n./setup.sh"
+    }
+  ],
+  "docs": [
+    {
+      "title": "Video DeltaNet paper",
+      "url": "https://arxiv.org/abs/2609.20744"
+    }
+  ],
+  "repo": "FlashML-org/FreeVideo",
+  "url": "https://github.com/FlashML-org/FreeVideo",
+  "fetched": "2026-11-19T05:56:58+00:00"
+}

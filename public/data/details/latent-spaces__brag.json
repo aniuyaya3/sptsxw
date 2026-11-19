@@ -1,0 +1,20 @@
+{
+  "intro": "You built it. Now brag.",
+  "requirements": [
+    "Node.js 22+"
+  ],
+  "steps": [
+    {
+      "title": "New: /brag-slim",
+      "code": "npx skills add https://github.com/latent-spaces/brag --skill brag-slim"
+    },
+    {
+      "title": "Install /brag",
+      "code": "codex plugin marketplace add latent-spaces/brag\ncodex plugin add brag@brag\n\ncodex plugin marketplace upgrade brag\ncodex plugin add brag@brag\n\n/plugin marketplace add latent-spaces/brag\n/plugin install brag@brag\n\nnpx skills add https://github.com/latent-spaces/brag --skill brag\n\nrsync -a --exclude '.DS_Store' skills/brag/ ~/.claude/skills/brag/\nrsync -a --exclude '.DS_Store' skills/brag-slim/ ~/.claude/skills/brag-slim/  # optional: the /brag-slim command"
+    }
+  ],
+  "docs": [],
+  "repo": "latent-spaces/brag",
+  "url": "https://github.com/latent-spaces/brag",
+  "fetched": "2026-11-19T05:56:59+00:00"
+}

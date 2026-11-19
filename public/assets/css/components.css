@@ -86,3 +86,18 @@
   .card-foot{margin-top:18px;padding-top:14px;gap:10px}
   .go{padding:5px 10px;font-size:12px}
 }
+
+/* ---------- 详情入口 ---------- */
+.repo-link{text-decoration:none;color:inherit}
+.repo-link:hover .name{color:var(--teal)}
+.card[data-href]{cursor:pointer}
+.card-acts{display:flex;align-items:center;gap:8px;flex:none}
+.go.more{color:#04211d;background:linear-gradient(160deg,var(--teal),#3fd0b8);border-color:transparent;font-weight:600}
+.go.more:hover{color:#04211d;background:linear-gradient(160deg,#7ff2e0,#4bdbc3);border-color:transparent;box-shadow:0 10px 26px -14px rgba(94,234,212,.7)}
+.go.gh{color:var(--muted)}
+.go.gh:hover{color:#fff}
+.arc-names a:hover{color:var(--teal)}
+@media (max-width:480px){
+  .card-acts{gap:6px}
+  .go.gh{padding:5px 8px}
+}

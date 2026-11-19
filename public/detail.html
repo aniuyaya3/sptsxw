@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VideoGen Daily — 怎么用</title>
+<meta name="description" content="视频生成开源仓库的定位、亮点与上手步骤。" />
+<meta name="theme-color" content="#06070a" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="VideoGen Daily — 怎么用" />
+<meta property="og:description" content="视频生成开源仓库的定位、亮点与上手步骤。" />
+<link rel="stylesheet" href="assets/css/tokens.css" />
+<link rel="stylesheet" href="assets/css/base.css" />
+<link rel="stylesheet" href="assets/css/layout.css" />
+<link rel="stylesheet" href="assets/css/components.css" />
+<link rel="stylesheet" href="assets/css/detail.css" />
+<link rel="stylesheet" href="assets/css/motion.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230b0d10'/><path d='M38 30l28 20-28 20z' fill='%235eead4'/></svg>" />
+</head>
+<body>
+<a class="skip" href="#main">跳到内容</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="aurora" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="logo" href="./">
+      <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M9 7.5v9l7.5-4.5L9 7.5z" fill="currentColor"/></svg></span>
+      <span class="logo-text">VideoGen<em>Daily</em></span>
+    </a>
+    <a class="nav-back" href="./">← 返回列表</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="wrap d-hero">
+    <p class="eyebrow"><span class="pulse"></span><span id="dDate">—</span></p>
+    <h1 id="dTitle"><span class="d-skel">加载中…</span></h1>
+    <p class="lede" id="dSummary"></p>
+    <div class="d-meta" id="dMeta"></div>
+  </section>
+
+  <section class="wrap d-grid">
+    <div class="d-main">
+      <article class="d-block" id="dIntroBlock">
+        <h2>这是什么</h2>
+        <p class="d-intro" id="dIntro"></p>
+      </article>
+
+      <article class="d-block">
+        <h2>怎么用</h2>
+        <ol class="d-steps" id="dSteps"><li class="d-empty">正在抓取 README…</li></ol>
+      </article>
+
+      <article class="d-block" id="dReqBlock" hidden>
+        <h2>环境要求</h2>
+        <ul class="d-reqs" id="dReqs"></ul>
+      </article>
+    </div>
+
+    <aside class="d-side">
+      <div class="d-panel">
+        <h3>亮点</h3>
+        <p id="dHighlight">—</p>
+        <h3>适合谁</h3>
+        <p id="dFit">—</p>
+        <div class="d-tags" id="dTags"></div>
+      </div>
+      <div class="d-panel" id="dDocsBlock" hidden>
+        <h3>官方资料</h3>
+        <ul class="d-docs" id="dDocs"></ul>
+      </div>
+      <a class="d-gh" id="dGh" href="#" target="_blank" rel="noopener">在 GitHub 打开 ↗</a>
+    </aside>
+  </section>
+
+  <section class="wrap d-more" id="dMore"></section>
+</main>
+
+<script type="module" src="assets/js/detail.js"></script>
+</body>
+</html>

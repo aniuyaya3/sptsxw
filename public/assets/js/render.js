@@ -8,16 +8,19 @@ function splitRepo(full) {
     : { owner: '', name: full };
 }
 
+const detailHref = repo => `detail.html?r=${encodeURIComponent(repo)}`;
+
 export function cardHTML(it, i) {
   const { owner, name } = splitRepo(it.repo);
+  const href = detailHref(it.repo);
   const tags = [
     it.language ? `<span class="tag lang">${esc(it.language)}</span>` : '',
     ...(it.tags || []).map(t => `<span class="tag">${esc(t)}</span>`)
   ].join('');
 
-  return `<article class="card reveal" style="--i:${i}">
+  return `<article class="card reveal" style="--i:${i}" data-href="${esc(href)}">
     <div class="card-top">
-      <div class="repo">${owner ? `<span class="owner">${esc(owner)}/</span>` : ''}<span class="name">${esc(name)}</span></div>
+      <div class="repo"><a class="repo-link" href="${esc(href)}">${owner ? `<span class="owner">${esc(owner)}/</span>` : ''}<span class="name">${esc(name)}</span></a></div>
       <div class="star">${STAR_ICON}<span class="num" data-value="${Number(it.stars) || 0}">0</span></div>
     </div>
     ${it.stars_today ? `<span class="today">今日 +${fmt(it.stars_today)}</span>` : ''}
@@ -28,7 +31,10 @@ export function cardHTML(it, i) {
     </dl>
     <div class="card-foot">
       <div class="tags">${tags}</div>
-      <a class="go" href="${esc(it.url)}" target="_blank" rel="noopener">GitHub <span>↗</span></a>
+      <div class="card-acts">
+        <a class="go more" href="${esc(href)}">怎么用 <span>→</span></a>
+        <a class="go gh" href="${esc(it.url)}" target="_blank" rel="noopener" title="在 GitHub 打开">GitHub <span>↗</span></a>
+      </div>
     </div>
   </article>`;
 }
@@ -40,6 +46,6 @@ export function archiveHTML(days) {
       <div class="arc-row reveal" style="--i:${i}">
         <span class="arc-date">${esc(d.date)}</span>
         <span class="arc-names">${d.items.map(it =>
-          `<a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.repo)}</a>`).join('')}</span>
+          `<a href="${esc(detailHref(it.repo))}">${esc(it.repo)}</a>`).join('')}</span>
       </div>`).join('')}</div>`;
 }

@@ -1,0 +1,49 @@
+{
+  "intro": "[!IMPORTANT] LTX-2.5 is the latest LTX model and is recommended for all new projects. Released on August 11, 2026, LTX-2.5 supersedes both LTX-Video (v0.9.x) and LTX-2. It brings native multi-shot generation, synchron…",
+  "requirements": [
+    "Requires only 1GB of VRAM",
+    "Release a new quantized distilled model ltxv-13b-0.9.7-distilled-fp8 for real-time generation (on H100) with even less VRAM",
+    "Release a new quantized model ltxv-13b-0.9.7-dev-fp8 for faster inference with less VRam",
+    "Support MPS on macOS with PyTorch 2.3.0",
+    "| ltxv-13b-0.9.8-dev | Highest quality, requires more VRAM | ltxv-13b-0.9.8-dev.yaml | ltxv-13b-i2v-base.json |"
+  ],
+  "steps": [
+    {
+      "title": "Installation",
+      "code": "git clone https://github.com/Lightricks/LTX-Video.git\ncd LTX-Video\n\n# create env\npython -m venv env\nsource env/bin/activate\npython -m pip install -e .\\[inference\\]"
+    },
+    {
+      "title": "For image-to-video generation:",
+      "code": "python inference.py --prompt \"PROMPT\" --conditioning_media_paths IMAGE_PATH --conditioning_start_frames 0 --height HEIGHT --width WIDTH --num_frames NUM_FRAMES --seed SEED --pipeline_config configs/ltxv-13b-0.9.8-distilled.yaml"
+    },
+    {
+      "title": "Extending a video:",
+      "code": "python inference.py --prompt \"PROMPT\" --conditioning_media_paths VIDEO_PATH --conditioning_start_frames START_FRAME --height HEIGHT --width WIDTH --num_frames NUM_FRAMES --seed SEED --pipeline_config configs/ltxv-13b-0.9.8-distilled.yaml"
+    },
+    {
+      "title": "For video generation with multiple conditions:",
+      "code": "python inference.py --prompt \"PROMPT\" --conditioning_media_paths IMAGE_OR_VIDEO_PATH_1 IMAGE_OR_VIDEO_PATH_2 --conditioning_start_frames TARGET_FRAME_1 TARGET_FRAME_2 --height HEIGHT --width WIDTH --num_frames NUM_FRAMES --seed SEED --pipeline_config configs/ltxv-13b-0.9.8-distilled.yaml"
+    },
+    {
+      "title": "Using as a library",
+      "code": "from ltx_video.inference import infer, InferenceConfig\n\ninfer(\n    InferenceConfig(\n        pipeline_config=\"configs/ltxv-13b-0.9.8-distilled.yaml\",\n        prompt=PROMPT,\n        height=HEIGHT,\n        width=WIDTH,\n        num_frames=NUM_FRAMES,\n        output_path=\"output.mp4\",\n    )\n)"
+    }
+  ],
+  "docs": [
+    {
+      "title": "![Paper",
+      "url": "https://img.shields.io/badge/Paper-arXiv-B31B1B?logo=arxiv"
+    },
+    {
+      "title": "documentation",
+      "url": "https://docs.ltx.io/models/ltx-2-5"
+    },
+    {
+      "title": "research paper",
+      "url": "https://arxiv.org/abs/2501.00103"
+    }
+  ],
+  "repo": "Lightricks/LTX-Video",
+  "url": "https://github.com/Lightricks/LTX-Video",
+  "fetched": "2026-11-19T05:57:02+00:00"
+}
