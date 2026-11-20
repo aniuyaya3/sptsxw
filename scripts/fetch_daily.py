@@ -18,7 +18,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PICKS = os.path.join(ROOT, "public", "data", "picks.json")
 API = "https://api.github.com"
 UA = "videogen-daily-bot"
-DEDUPE_DAYS = 7
+DEDUPE_DAYS = 90
 WANT = 3
 
 QUERIES = [

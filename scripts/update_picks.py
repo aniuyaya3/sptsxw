@@ -20,8 +20,8 @@ import argparse, json, os, sys, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PICKS = os.path.join(ROOT, "public", "data", "picks.json")
 REQUIRED = ("repo", "url", "stars", "summary", "highlight", "fit")
-DEDUPE_DAYS = 7
-KEEP_DAYS = 60
+DEDUPE_DAYS = 90
+KEEP_DAYS = 400
 
 
 def load():
@@ -59,7 +59,7 @@ def main():
         fresh = [i for i in items if i["repo"].lower() not in recent]
         dropped = [i["repo"] for i in items if i["repo"].lower() in recent]
         if dropped:
-            print(f"⚠️  近 {DEDUPE_DAYS} 天已推过，剔除: {dropped}", file=sys.stderr)
+            print(f"⚠️  已收录过，剔除: {dropped}", file=sys.stderr)
         if not fresh:
             sys.exit("全部重复，今日不更新")
         items = fresh
