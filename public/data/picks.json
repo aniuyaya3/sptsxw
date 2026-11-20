@@ -325,6 +325,4274 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-11-12",
+      "items": [
+        {
+          "repo": "zebbern/no-cost-ai",
+          "url": "https://github.com/zebbern/no-cost-ai",
+          "stars": 2437,
+          "language": "",
+          "summary": "80+ free AI services for chat, image, video, voice & APIs (may sometimes include access to lead gen ai mode…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai",
+            "ai-agents"
+          ]
+        },
+        {
+          "repo": "b-editor/beutl",
+          "url": "https://github.com/b-editor/beutl",
+          "stars": 1248,
+          "language": "C#",
+          "summary": "Cross-platform video editing (compositing) software",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "c-sharp",
+            "composition"
+          ]
+        },
+        {
+          "repo": "LucasHJin/vit",
+          "url": "https://github.com/LucasHJin/vit",
+          "stars": 739,
+          "language": "Python",
+          "summary": "Git for video editing",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "version-control",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "items": [
+        {
+          "repo": "Vincentwei1021/video-talkcraft",
+          "url": "https://github.com/Vincentwei1021/video-talkcraft",
+          "stars": 2437,
+          "language": "HTML",
+          "summary": "Agent skill that turns Claude Code / Codex into a motion-design studio for voiceover-driven explainer video…",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "agent-skills",
+            "ai-agent"
+          ]
+        },
+        {
+          "repo": "KillzXGaming/Switch-Toolbox",
+          "url": "https://github.com/KillzXGaming/Switch-Toolbox",
+          "stars": 1249,
+          "language": "C#",
+          "summary": "A tool to edit many video game file formats",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "Leonxlnx/cook",
+          "url": "https://github.com/Leonxlnx/cook",
+          "stars": 740,
+          "language": "JavaScript",
+          "summary": "Give your agent a target, a bar and time, then let it cook. An agent skill for visual builds that have to m…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent-skills",
+            "claude-code"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "items": [
+        {
+          "repo": "WhiteTowerAI/ohmygame",
+          "url": "https://github.com/WhiteTowerAI/ohmygame",
+          "stars": 2462,
+          "language": "TypeScript",
+          "summary": "The open-source studio for making games with AI. Your own one-person game studio. Everything you need to ma…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai-coding",
+            "ai-coding-agent"
+          ]
+        },
+        {
+          "repo": "unum-cloud/UForm",
+          "url": "https://github.com/unum-cloud/UForm",
+          "stars": 1253,
+          "language": "Cuda",
+          "summary": "Distributed training & inference for multimodal perception: shared embeddings across text, images, video, a…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "bert",
+            "clip"
+          ]
+        },
+        {
+          "repo": "lcy362/agnes-video-generator",
+          "url": "https://github.com/lcy362/agnes-video-generator",
+          "stars": 741,
+          "language": "Python",
+          "summary": "Open-source, self-hosted AI video generator — completely free. Text to multi-scene video with narration, su…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "agnes",
+            "agnes-video"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "items": [
+        {
+          "repo": "shuyu-labs/BigBanana-AI-Director",
+          "url": "https://github.com/shuyu-labs/BigBanana-AI-Director",
+          "stars": 2469,
+          "language": "",
+          "summary": "BigBanana AI Director是一个工业级一站式  AI 短剧，AI 漫剧,AI 导演平台，面向创作者，实现从灵感到成片的高效生产。  它摇弃了传统的“抽卡式”生成，采用 \"Script-to-Asse…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai-comic-drama",
+            "ai-short-drama"
+          ]
+        },
+        {
+          "repo": "zhouxiaoka/autoclip_mvp",
+          "url": "https://github.com/zhouxiaoka/autoclip_mvp",
+          "stars": 1268,
+          "language": "Python",
+          "summary": "AutoClip: AI-powered video clipping and highlight generation · 一款智能高光提取与剪辑的二创工具",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai-video-editing",
+            "auto-highlight"
+          ]
+        },
+        {
+          "repo": "devhyper/open-video-editor",
+          "url": "https://github.com/devhyper/open-video-editor",
+          "stars": 744,
+          "language": "Kotlin",
+          "summary": "Open source Android video editor, built with Media3 and Jetpack Compose",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "android",
+            "video-editing"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "items": [
+        {
+          "repo": "D3voz/openjutsu",
+          "url": "https://github.com/D3voz/openjutsu",
+          "stars": 2500,
+          "language": "TypeScript",
+          "summary": "One-click character swap for videos: an open-source, local Higgsfield Genjutsu alternative built on ComfyUI…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "character-swap",
+            "comfyui"
+          ]
+        },
+        {
+          "repo": "Francis-Rings/StableAvatar",
+          "url": "https://github.com/Francis-Rings/StableAvatar",
+          "stars": 1276,
+          "language": "Python",
+          "summary": "[NeurIPS2026] We present StableAvatar, the first end-to-end video diffusion transformer, which synthesizes…",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "aigc",
+            "avatar-generator"
+          ]
+        },
+        {
+          "repo": "taco-group/SparkVSR",
+          "url": "https://github.com/taco-group/SparkVSR",
+          "stars": 752,
+          "language": "Python",
+          "summary": "[ECCV 2026] SparkVSR: Interactive Video Super-Resolution via Sparse Keyframe Propagation",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "generative-ai",
+            "generative-models"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "items": [
+        {
+          "repo": "NVlabs/ProtoMotions",
+          "url": "https://github.com/NVlabs/ProtoMotions",
+          "stars": 2506,
+          "language": "Python",
+          "summary": "ProtoMotions is a GPU-accelerated simulation and learning framework for training physically simulated digit…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "digital-human",
+            "humanoid"
+          ]
+        },
+        {
+          "repo": "snap-research/articulated-animation",
+          "url": "https://github.com/snap-research/articulated-animation",
+          "stars": 1281,
+          "language": "Jupyter",
+          "summary": "Code for Motion Representations for Articulated Animation paper",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "deep-learning",
+            "image-animation"
+          ]
+        },
+        {
+          "repo": "GML-MMGroup/AdCraft",
+          "url": "https://github.com/GML-MMGroup/AdCraft",
+          "stars": 734,
+          "language": "Python",
+          "summary": "AdCraft — 首个面向营销广告的 Agentic 视频制作平台。无限画布 · 拉片复刻 · 全流程自动化，从创意到成片一站直达。AdCraft — The first agentic video produc…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent",
+            "agentic-ai"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "items": [
+        {
+          "repo": "ddalcu/mlx-serve",
+          "url": "https://github.com/ddalcu/mlx-serve",
+          "stars": 2506,
+          "language": "Zig",
+          "summary": "Native LLM inference server for Apple Silicon. OpenAI + Anthropic API compatible. No Python. Zig backend, S…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "agent",
+            "anthropic-api"
+          ]
+        },
+        {
+          "repo": "shahen94/react-native-video-processing",
+          "url": "https://github.com/shahen94/react-native-video-processing",
+          "stars": 1290,
+          "language": "Objective-C",
+          "summary": "Native Video editing/trimming/compressing  :movie_camera: library for React-Native",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "android",
+            "ios"
+          ]
+        },
+        {
+          "repo": "ExerciseDB/exercisedb-api",
+          "url": "https://github.com/ExerciseDB/exercisedb-api",
+          "stars": 767,
+          "language": "",
+          "summary": "ExerciseDB API is an fitness exercise database api that allows users to access high-quality exercises data…",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "datasets",
+            "exercise-dataset"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "items": [
+        {
+          "repo": "gnipbao/story-to-handdrawn-video",
+          "url": "https://github.com/gnipbao/story-to-handdrawn-video",
+          "stars": 2511,
+          "language": "HTML",
+          "summary": "Agent skill: convert Chinese story copy or ordered images into a hand-drawn diary-comic animation (silent M…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        },
+        {
+          "repo": "plemeri/transparent-background",
+          "url": "https://github.com/plemeri/transparent-background",
+          "stars": 1305,
+          "language": "Python",
+          "summary": "This is a background removing tool powered by InSPyReNet (ACCV 2022)",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "background-removal",
+            "deep-learning"
+          ]
+        },
+        {
+          "repo": "MyNiuuu/MOFA-Video",
+          "url": "https://github.com/MyNiuuu/MOFA-Video",
+          "stars": 770,
+          "language": "Python",
+          "summary": "[ECCV 2024] MOFA-Video: Controllable Image Animation via Generative Motion Field Adaptions in Frozen Image-…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "aigc",
+            "diffusion-models"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "items": [
+        {
+          "repo": "yangjie10930/EpMedia",
+          "url": "https://github.com/yangjie10930/EpMedia",
+          "stars": 2512,
+          "language": "C",
+          "summary": "Android上基于FFmpeg开发的视频处理框架，简单易用，体积小，帮助使用者快速实现视频处理功能。包含以下功能：剪辑，裁剪，旋转，镜像，合并，分离，变速，添加LOGO，添加滤镜，添加背景音乐，加速减速视频，倒放…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "android",
+            "ffmpeg"
+          ]
+        },
+        {
+          "repo": "XiaoyeCodes/code-animation-prompts",
+          "url": "https://github.com/XiaoyeCodes/code-animation-prompts",
+          "stars": 1332,
+          "language": "HTML",
+          "summary": "341 种代码动画风格提示词、196 张参考静帧与离线挑选器，封装为 Claude Code / Codex Skill，支持一键导入与 HTML 视频渲染。",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent-skills",
+            "animation"
+          ]
+        },
+        {
+          "repo": "alexfazio/viral-clips-crew",
+          "url": "https://github.com/alexfazio/viral-clips-crew",
+          "stars": 772,
+          "language": "Python",
+          "summary": "Your CrewAI Powered Video Editing Assistant",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "crewai",
+            "ffmpeg"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "items": [
+        {
+          "repo": "alecm20/story-flicks",
+          "url": "https://github.com/alecm20/story-flicks",
+          "stars": 2555,
+          "language": "Python",
+          "summary": "使用AI大模型，一键生成高清故事短视频。Generate high-definition story short videos with one click using AI large models",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "ai-video",
+            "ai-video-generator"
+          ]
+        },
+        {
+          "repo": "Henry-23/VideoChat",
+          "url": "https://github.com/Henry-23/VideoChat",
+          "stars": 1332,
+          "language": "Python",
+          "summary": "实时交互数字人，可自定义形象与音色，支持音色克隆，对话延迟低至3s。Real-time voice interactive digital human, customizable appearance and vo…",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "asr",
+            "dialogue-systems"
+          ]
+        },
+        {
+          "repo": "mohyware/clip-js",
+          "url": "https://github.com/mohyware/clip-js",
+          "stars": 774,
+          "language": "TypeScript",
+          "summary": "online video editor built with nextjs, remotion and ffmpeg (web assembly port) for render",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "canvas",
+            "editor"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "items": [
+        {
+          "repo": "glanderness/BeefTV",
+          "url": "https://github.com/glanderness/BeefTV",
+          "stars": 2568,
+          "language": "TypeScript",
+          "summary": "High-performance · Lightweight · AI Native Video workspace. 面向 AI 时代的视频创作工作台。 在画布中，和Agent一起自由连接创意和素材。",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai-video",
+            "ai-workspace"
+          ]
+        },
+        {
+          "repo": "Borewit/music-metadata",
+          "url": "https://github.com/Borewit/music-metadata",
+          "stars": 1337,
+          "language": "TypeScript",
+          "summary": "Audio and video metadata parser and editor for Node.js and browsers. Read, write, and edit tags, artwork, a…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "aiff",
+            "ape"
+          ]
+        },
+        {
+          "repo": "GuanYixuan/pyCapCut",
+          "url": "https://github.com/GuanYixuan/pyCapCut",
+          "stars": 776,
+          "language": "Python",
+          "summary": "A lightweight, flexible, and easy-to-use Python tool for generating CapCut drafts to build automated video…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "api",
+            "automation"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-01",
+      "items": [
+        {
+          "repo": "digitalsamba/claude-code-video-toolkit",
+          "url": "https://github.com/digitalsamba/claude-code-video-toolkit",
+          "stars": 2675,
+          "language": "Python",
+          "summary": "Make videos with Claude Code: script, AI voiceover, music, video clips and render, on open-source models th…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent-skills",
+            "ai-video"
+          ]
+        },
+        {
+          "repo": "PKU-YuanGroup/MagicTime",
+          "url": "https://github.com/PKU-YuanGroup/MagicTime",
+          "stars": 1337,
+          "language": "Python",
+          "summary": "[TPAMI 2025🔥] MagicTime: Time-lapse Video Generation Models as Metamorphic Simulators",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion-models",
+            "open-sora-plan"
+          ]
+        },
+        {
+          "repo": "Boese0601/MagicDance",
+          "url": "https://github.com/Boese0601/MagicDance",
+          "stars": 779,
+          "language": "Python",
+          "summary": "[ICML 2024] MagicPose(also known as MagicDance): Realistic Human Poses and Facial Expressions Retargeting w…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "cartoon-animation",
+            "diffusion-models"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-31",
+      "items": [
+        {
+          "repo": "HypoX64/DeepMosaics",
+          "url": "https://github.com/HypoX64/DeepMosaics",
+          "stars": 2676,
+          "language": "Python",
+          "summary": "Automatically remove the mosaics in images and videos, or add mosaics to them",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "computer-vision",
+            "deep-learning"
+          ]
+        },
+        {
+          "repo": "mayuelala/FollowYourPose",
+          "url": "https://github.com/mayuelala/FollowYourPose",
+          "stars": 1357,
+          "language": "Python",
+          "summary": "[AAAI 2024] Follow-Your-Pose: This repo is the official implementation of \"Follow-Your-Pose : Pose-Guided T…",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "aaai-2024",
+            "aigc"
+          ]
+        },
+        {
+          "repo": "Songssx/ComfyUI-MiniMaxH3-TimelineDirector",
+          "url": "https://github.com/Songssx/ComfyUI-MiniMaxH3-TimelineDirector",
+          "stars": 781,
+          "language": "Python",
+          "summary": "Editable reference-media timeline director for ComfyUI MiniMax H3 Reference to Video",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "items": [
+        {
+          "repo": "Tencent/MimicMotion",
+          "url": "https://github.com/Tencent/MimicMotion",
+          "stars": 2694,
+          "language": "Python",
+          "summary": "High-Quality Human Motion Video Generation with Confidence-aware Pose Guidance",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion-models",
+            "video-generation"
+          ]
+        },
+        {
+          "repo": "bytedance/Lance",
+          "url": "https://github.com/bytedance/Lance",
+          "stars": 1371,
+          "language": "Python",
+          "summary": "A 3B-active-parameter native unified multimodal model for image and video understanding, generation, and ed…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "image-editing",
+            "image-generation"
+          ]
+        },
+        {
+          "repo": "daohoangson/flutter_widget_from_html",
+          "url": "https://github.com/daohoangson/flutter_widget_from_html",
+          "stars": 782,
+          "language": "Dart",
+          "summary": "Flutter package to render html as widgets that supports hyperlink, image, audio, video, iframe and many oth…",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "flutter",
+            "html"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "items": [
+        {
+          "repo": "TMElyralab/MusePose",
+          "url": "https://github.com/TMElyralab/MusePose",
+          "stars": 2721,
+          "language": "Python",
+          "summary": "MusePose: a Pose-Driven Image-to-Video Framework for Virtual Human Generation",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        },
+        {
+          "repo": "aston314/hongguo-tv-releases",
+          "url": "https://github.com/aston314/hongguo-tv-releases",
+          "stars": 1374,
+          "language": "",
+          "summary": "红果短剧 Android TV 及webOS、Mac、Windows 、Linux正式安装包、版本信息与更新说明 Android TV,webOS,Mac,Windows,Linux app for Hongguo…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        },
+        {
+          "repo": "eps696/aphantasia",
+          "url": "https://github.com/eps696/aphantasia",
+          "stars": 787,
+          "language": "Python",
+          "summary": "CLIP + FFT/DWT/RGB = text to image/video",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "clip",
+            "text-to-image"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "items": [
+        {
+          "repo": "FurkanGozukara/Stable-Diffusion",
+          "url": "https://github.com/FurkanGozukara/Stable-Diffusion",
+          "stars": 2786,
+          "language": "Jupyter",
+          "summary": "FLUX, Stable Diffusion, SDXL, SD3, LoRA, Fine Tuning, DreamBooth, Training, Automatic1111, Forge WebUI, Swa…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai-art",
+            "coding"
+          ]
+        },
+        {
+          "repo": "NikoDemon80/ComfyUI-H3-Motion-Context",
+          "url": "https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context",
+          "stars": 1374,
+          "language": "Python",
+          "summary": "Clip chaining for MiniMax H3 in ComfyUI - motion and audio genuinely continue across joins",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "comfyui",
+            "comfyui-nodes"
+          ]
+        },
+        {
+          "repo": "AnyImageKit/AnyImageKit",
+          "url": "https://github.com/AnyImageKit/AnyImageKit",
+          "stars": 788,
+          "language": "Swift",
+          "summary": "A toolbox for pick/edit/capture photo or video. Written in Swift",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "capture",
+            "crop-image"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "items": [
+        {
+          "repo": "sarpstar/cinecode",
+          "url": "https://github.com/sarpstar/cinecode",
+          "stars": 2789,
+          "language": "Python",
+          "summary": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agen…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        },
+        {
+          "repo": "vincentsch/explainroo",
+          "url": "https://github.com/vincentsch/explainroo",
+          "stars": 1379,
+          "language": "JavaScript",
+          "summary": "Explainer videos and product demos made by your AI agent. Free and open source: a local voice (Kokoro), wor…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai-agents",
+            "animation"
+          ]
+        },
+        {
+          "repo": "tetherto/qvac",
+          "url": "https://github.com/tetherto/qvac",
+          "stars": 788,
+          "language": "TypeScript",
+          "summary": "Open-source local AI SDK - run AI on-device with no cloud, no API keys. Supports GGUF, RAG, image, music, a…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "ai-sdk",
+            "decentralized-ai"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "items": [
+        {
+          "repo": "shinyobjectz/raea",
+          "url": "https://github.com/shinyobjectz/raea",
+          "stars": 2807,
+          "language": "TypeScript",
+          "summary": "Render Anything Engine: tell your AI what to make. Videos, motion graphics, 3D and games as React and TypeS…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "3d",
+            "agent-skills"
+          ]
+        },
+        {
+          "repo": "lucidrains/video-diffusion-pytorch",
+          "url": "https://github.com/lucidrains/video-diffusion-pytorch",
+          "stars": 1391,
+          "language": "Python",
+          "summary": "Implementation of Video Diffusion Models, Jonathan Ho's new paper extending DDPMs to Video Generation - in…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "ddpm",
+            "deep-learning"
+          ]
+        },
+        {
+          "repo": "zenstory-ai/oh-story-dsh",
+          "url": "https://github.com/zenstory-ai/oh-story-dsh",
+          "stars": 801,
+          "language": "Python",
+          "summary": "DeepSeek Harness 故事创作插件：集成网文写作、短剧漫剧、小说改游戏与视频解说四个可视化工作台 ｜ DeepSeek Harness plugin for novels, short dramas,…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent-skills",
+            "ai-agents"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "items": [
+        {
+          "repo": "bangtutorial/bang-motion",
+          "url": "https://github.com/bangtutorial/bang-motion",
+          "stars": 2810,
+          "language": "HTML",
+          "summary": "Agent skill for browser motion graphics — openers, promos, bumpers, kinetic typography, and five explainer…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        },
+        {
+          "repo": "Tourenathan-G5organisation/SiliCompressor",
+          "url": "https://github.com/Tourenathan-G5organisation/SiliCompressor",
+          "stars": 1394,
+          "language": "Java",
+          "summary": "A powerful, flexible and easy to use Video and Image compression library for Android",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "android",
+            "compressor"
+          ]
+        },
+        {
+          "repo": "ronak-create/FableCut",
+          "url": "https://github.com/ronak-create/FableCut",
+          "stars": 804,
+          "language": "JavaScript",
+          "summary": "Zero-dependency browser video editor that AI agents can drive — JSON timeline, MCP + REST, live-reloading UI",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai-agent",
+            "canvas"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "items": [
+        {
+          "repo": "academa-labs/manimgx",
+          "url": "https://github.com/academa-labs/manimgx",
+          "stars": 2822,
+          "language": "Python",
+          "summary": "The animation engine for agents: blazingly fast math and 3D videos with Manim's Python API, on a Rust GPU core",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速"
+          ]
+        },
+        {
+          "repo": "nvidia-cosmos/cosmos-predict2.5",
+          "url": "https://github.com/nvidia-cosmos/cosmos-predict2.5",
+          "stars": 1403,
+          "language": "Python",
+          "summary": "Cosmos-Predict2.5, the latest version of the Cosmos World Foundation Models (WFMs) family, specialized for…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "video-generation",
+            "world-models"
+          ]
+        },
+        {
+          "repo": "ChenShuo2004/cs-board",
+          "url": "https://github.com/ChenShuo2004/cs-board",
+          "stars": 807,
+          "language": "Python",
+          "summary": "将参考声音和中文文案自动生成白板动画视频的本地 AI 工具。",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "ai-video",
+            "chinese"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "items": [
+        {
+          "repo": "TMElyralab/MuseV",
+          "url": "https://github.com/TMElyralab/MuseV",
+          "stars": 2849,
+          "language": "Python",
+          "summary": "MuseV: Infinite-length and High Fidelity Virtual Human Video Generation with Visual Conditioned Parallel De…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion",
+            "image2video"
+          ]
+        },
+        {
+          "repo": "Francis-Rings/StableAnimator",
+          "url": "https://github.com/Francis-Rings/StableAnimator",
+          "stars": 1434,
+          "language": "Python",
+          "summary": "[CVPR2025] We present StableAnimator, the first end-to-end ID-preserving video diffusion framework, which s…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型"
+          ]
+        },
+        {
+          "repo": "liyue-aigc/seedance-2-5-video-director",
+          "url": "https://github.com/liyue-aigc/seedance-2-5-video-director",
+          "stars": 811,
+          "language": "Python",
+          "summary": "Seedance 2.5 视频导演 Skill：提示词、脚本、诊断、人物锁定、续写、编辑、转场与首次使用指导",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "ai-video",
+            "codex-skill"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "items": [
+        {
+          "repo": "NVlabs/LongLive",
+          "url": "https://github.com/NVlabs/LongLive",
+          "stars": 2893,
+          "language": "Python",
+          "summary": "Long Video Gen / World Model / World Action Model (Embodied) Infrastructure",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "infra",
+            "long"
+          ]
+        },
+        {
+          "repo": "wenhaochai/StableVideo",
+          "url": "https://github.com/wenhaochai/StableVideo",
+          "stars": 1434,
+          "language": "Python",
+          "summary": "[ICCV 2023] StableVideo: Text-driven Consistency-aware Diffusion Video Editing",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "aigc",
+            "computer-vision"
+          ]
+        },
+        {
+          "repo": "facebookresearch/eb_jepa",
+          "url": "https://github.com/facebookresearch/eb_jepa",
+          "stars": 816,
+          "language": "Python",
+          "summary": "An open source library designed to provide community examples of Joint Embedding Predictive Architectures (…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "items": [
+        {
+          "repo": "oil-oil/oil-motion",
+          "url": "https://github.com/oil-oil/oil-motion",
+          "stars": 2944,
+          "language": "Python",
+          "summary": "Web animation skill for Claude Code & Codex. 帮你做跟着滚动和鼠标动的网页动画。",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent-skill",
+            "agent-skills"
+          ]
+        },
+        {
+          "repo": "lettier/gifcurry",
+          "url": "https://github.com/lettier/gifcurry",
+          "stars": 1457,
+          "language": "Haskell",
+          "summary": "😎 The open-source, Haskell-built video editor for GIF makers",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "animated-gifs",
+            "appimage"
+          ]
+        },
+        {
+          "repo": "christopherkarani/Wax",
+          "url": "https://github.com/christopherkarani/Wax",
+          "stars": 816,
+          "language": "Swift",
+          "summary": "Shared Single-file memory layer for all your agents, sub mili-second RAG over text, photo and video on Appl…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai-agents",
+            "cli"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "items": [
+        {
+          "repo": "SkyworkAI/Matrix-Game",
+          "url": "https://github.com/SkyworkAI/Matrix-Game",
+          "stars": 2945,
+          "language": "Python",
+          "summary": "Matrix-Game 4.0: Streaming Neural Rendering for Playable Games",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "genie",
+            "interactive-video"
+          ]
+        },
+        {
+          "repo": "shijue-aid/aid-studio",
+          "url": "https://github.com/shijue-aid/aid-studio",
+          "stars": 1469,
+          "language": "Java",
+          "summary": "开源AI漫剧、AI短剧、AI电影与AI漫画创作平台，支持剧本、角色场景、智能分镜、图片与视频生成、配音及成片预览，多模型接入，可自行部署。预：无限画布、导演台。",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai",
+            "ai-anime-art"
+          ]
+        },
+        {
+          "repo": "pexoai/pexo-skills",
+          "url": "https://github.com/pexoai/pexo-skills",
+          "stars": 835,
+          "language": "Shell",
+          "summary": "A collection of open-source Agent Skills for content creation — images, audio, and video",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "items": [
+        {
+          "repo": "Alisa0808/vox-director",
+          "url": "https://github.com/Alisa0808/vox-director",
+          "stars": 2979,
+          "language": "Python",
+          "summary": "Turn one topic into a finished Vox-style paper-collage explainer/ad video — automated end to end on Atlas C…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai",
+            "ai-video"
+          ]
+        },
+        {
+          "repo": "pireel/pireel",
+          "url": "https://github.com/pireel/pireel",
+          "stars": 1472,
+          "language": "TypeScript",
+          "summary": "Open-source AI video editor: captions, cuts, B-roll, export to Premiere and DaVinci. Drive it from any AI a…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai-video",
+            "ai-video-editor"
+          ]
+        },
+        {
+          "repo": "soumatheusgomes/editonny",
+          "url": "https://github.com/soumatheusgomes/editonny",
+          "stars": 837,
+          "language": "Python",
+          "summary": "Local video editing through conversation. Created by Matheus Gomes",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-18",
+      "items": [
+        {
+          "repo": "nateherkai/herk-edit-kit",
+          "url": "https://github.com/nateherkai/herk-edit-kit",
+          "stars": 2984,
+          "language": "HTML",
+          "summary": "Herk Edit Kit by Nate Herk: edit videos, reels, and YouTube Shorts with Codex or Claude Code. 15 skills, tr…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "claude-code",
+            "codex"
+          ]
+        },
+        {
+          "repo": "omni-media/omniclip",
+          "url": "https://github.com/omni-media/omniclip",
+          "stars": 1474,
+          "language": "TypeScript",
+          "summary": "Open source video editing web application",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "nmatter1/smallville",
+          "url": "https://github.com/nmatter1/smallville",
+          "stars": 839,
+          "language": "Java",
+          "summary": "Generative Agents for video games. Based on Generative Agents: Interactive Simulacra of Human Behavior",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "generative-agents"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "items": [
+        {
+          "repo": "snapotter-hq/SnapOtter",
+          "url": "https://github.com/snapotter-hq/SnapOtter",
+          "stars": 2996,
+          "language": "TypeScript",
+          "summary": "Free, open-source file toolkit for PDFs, images, video and audio. Compress, convert, OCR, remove background…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "background-removal",
+            "docker"
+          ]
+        },
+        {
+          "repo": "scraed/LanPaint",
+          "url": "https://github.com/scraed/LanPaint",
+          "stars": 1493,
+          "language": "Python",
+          "summary": "High quality training free inpaint for every stable diffusion model. Supports ComfyUI",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "audio-processing",
+            "comfyui"
+          ]
+        },
+        {
+          "repo": "kandinskylab/kandinsky-5",
+          "url": "https://github.com/kandinskylab/kandinsky-5",
+          "stars": 845,
+          "language": "Python",
+          "summary": "Kandinsky 5.0: A family of diffusion models for Video & Image generation",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "diffusion",
+            "distillation"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "items": [
+        {
+          "repo": "Doubiiu/DynamiCrafter",
+          "url": "https://github.com/Doubiiu/DynamiCrafter",
+          "stars": 3003,
+          "language": "Python",
+          "summary": "[ECCV 2024, Oral] DynamiCrafter: Animating Open-domain Images with Video Diffusion Priors",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "image-animation",
+            "image-to-video"
+          ]
+        },
+        {
+          "repo": "TIGER-AI-Lab/TheoremExplainAgent",
+          "url": "https://github.com/TIGER-AI-Lab/TheoremExplainAgent",
+          "stars": 1514,
+          "language": "Python",
+          "summary": "Official Repo for \"TheoremExplainAgent: Towards Video-based Multimodal Explanations for LLM Theorem Underst…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "llm-agents",
+            "manim"
+          ]
+        },
+        {
+          "repo": "SkyworkAI/Matrix-3D",
+          "url": "https://github.com/SkyworkAI/Matrix-3D",
+          "stars": 854,
+          "language": "Python",
+          "summary": "Generate large-scale explorable 3D scenes with high-quality panorama videos from a single image or text prompt",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "3d-generation",
+            "3d-reconstruction"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "items": [
+        {
+          "repo": "ModelTC/LightX2V",
+          "url": "https://github.com/ModelTC/LightX2V",
+          "stars": 3013,
+          "language": "Python",
+          "summary": "Lightweight Image Video Action Generation Inference Framework",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "diffusion-models",
+            "dreamzero"
+          ]
+        },
+        {
+          "repo": "Weizhi-Zhong/IP_LAP",
+          "url": "https://github.com/Weizhi-Zhong/IP_LAP",
+          "stars": 732,
+          "language": "Python",
+          "summary": "CVPR2023 talking face implementation for Identity-Preserving Talking Face Generation With Landmark and Appe…",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "cvpr2023",
+            "talking-head"
+          ]
+        },
+        {
+          "repo": "philcryer/lipsync",
+          "url": "https://github.com/philcryer/lipsync",
+          "stars": 856,
+          "language": "Shell",
+          "summary": "lipsync sets up a lightweight service that provides command-line, Dropbox like syncing",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "items": [
+        {
+          "repo": "cclank/lanshu-create-ai-presenter-video",
+          "url": "https://github.com/cclank/lanshu-create-ai-presenter-video",
+          "stars": 3069,
+          "language": "HTML",
+          "summary": "Provider-neutral Codex Skill for producing verified AI presenter videos from a script and an authorized pre…",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "ai-video",
+            "codex"
+          ]
+        },
+        {
+          "repo": "ant-research/4DAnyone",
+          "url": "https://github.com/ant-research/4DAnyone",
+          "stars": 1517,
+          "language": "Python",
+          "summary": "[SIGGRAPH Asia 2026] 4DAnyone: Create Anyone in 4D from a Casual Monocular Video",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "generative-ai",
+            "generative-model"
+          ]
+        },
+        {
+          "repo": "pdollar/toolbox",
+          "url": "https://github.com/pdollar/toolbox",
+          "stars": 861,
+          "language": "Matlab",
+          "summary": "Piotr's Image & Video Matlab Toolbox",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "items": [
+        {
+          "repo": "ali-vilab/VGen",
+          "url": "https://github.com/ali-vilab/VGen",
+          "stars": 3153,
+          "language": "Python",
+          "summary": "Official repo for VGen: a holistic video generation ecosystem for video generation building on diffusion mo…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion-models",
+            "video-synthesis"
+          ]
+        },
+        {
+          "repo": "GDQuest/blender-power-sequencer",
+          "url": "https://github.com/GDQuest/blender-power-sequencer",
+          "stars": 731,
+          "language": "Python",
+          "summary": "Add-on for video editing in Blender 3D: edit videos faster! Included in Blender 2.81+",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "add-on",
+            "blender"
+          ]
+        },
+        {
+          "repo": "aschmelyun/subvert",
+          "url": "https://github.com/aschmelyun/subvert",
+          "stars": 868,
+          "language": "PHP",
+          "summary": "Generate subtitles, summaries, and chapters from videos in seconds",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "chatgpt",
+            "openai"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "items": [
+        {
+          "repo": "OpenGVLab/InternGPT",
+          "url": "https://github.com/OpenGVLab/InternGPT",
+          "stars": 3202,
+          "language": "Python",
+          "summary": "InternGPT (iGPT) is an open source demo platform where you can easily showcase your AI models. Now it suppo…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "chatgpt",
+            "click"
+          ]
+        },
+        {
+          "repo": "Phantom-video/Phantom",
+          "url": "https://github.com/Phantom-video/Phantom",
+          "stars": 1537,
+          "language": "Python",
+          "summary": "Phantom: Subject-Consistent Video Generation via Cross-Modal Alignment",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "aigc",
+            "consistency-models"
+          ]
+        },
+        {
+          "repo": "robertfoss/audio_shop",
+          "url": "https://github.com/robertfoss/audio_shop",
+          "stars": 874,
+          "language": "Shell",
+          "summary": "Your friendly neighbourhood script for mangling images or video using audio editing tools",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "items": [
+        {
+          "repo": "jy0205/Pyramid-Flow",
+          "url": "https://github.com/jy0205/Pyramid-Flow",
+          "stars": 3215,
+          "language": "Python",
+          "summary": "[ICLR 2025] Pyramidal Flow Matching for Efficient Video Generative Modeling",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion-models",
+            "flow-matching"
+          ]
+        },
+        {
+          "repo": "nnx0r/vidage",
+          "url": "https://github.com/nnx0r/vidage",
+          "stars": 1568,
+          "language": "JavaScript",
+          "summary": "Your solution to full-screen background video & image combined",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "background",
+            "background-video"
+          ]
+        },
+        {
+          "repo": "manoloide/AllSketchs",
+          "url": "https://github.com/manoloide/AllSketchs",
+          "stars": 880,
+          "language": "Processing",
+          "summary": "Processing sketches, in which I have worked in the last years; images, videos, prototypes, experiments, too…",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "art",
+            "design"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "items": [
+        {
+          "repo": "Agentchengfeng/chengfeng-videocut-skills",
+          "url": "https://github.com/Agentchengfeng/chengfeng-videocut-skills",
+          "stars": 3245,
+          "language": "JavaScript",
+          "summary": "用 Claude Code Skills 做的视频剪辑 Agent",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "diego3g/video-to-reels",
+          "url": "https://github.com/diego3g/video-to-reels",
+          "stars": 731,
+          "language": "JavaScript",
+          "summary": "Automatically edit videos to post on Instagram Reels",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "omerbt/Text2LIVE",
+          "url": "https://github.com/omerbt/Text2LIVE",
+          "stars": 884,
+          "language": "Python",
+          "summary": "Official Pytorch Implementation for \"Text2LIVE: Text-Driven Layered Image and Video Editing\" (ECCV 2022 Oral)",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "clip",
+            "eccv2022"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "items": [
+        {
+          "repo": "NarratorAI-Studio/narrator-ai-cli-skill",
+          "url": "https://github.com/NarratorAI-Studio/narrator-ai-cli-skill",
+          "stars": 3308,
+          "language": "",
+          "summary": "AI 解说大师 — Agent skill；封装 narrator-ai-cli 供 Claude/Codex 等工具调用",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent-skills",
+            "ai-agent"
+          ]
+        },
+        {
+          "repo": "menyifang/MIMO",
+          "url": "https://github.com/menyifang/MIMO",
+          "stars": 1579,
+          "language": "Python",
+          "summary": "Official implementation of \"MIMO: Controllable Character Video Synthesis with Spatial Decomposed Modeling\"",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "diffusion-models",
+            "human-animation"
+          ]
+        },
+        {
+          "repo": "autresphere/ASMediaFocusManager",
+          "url": "https://github.com/autresphere/ASMediaFocusManager",
+          "stars": 887,
+          "language": "Objective-C",
+          "summary": "iOS library to animate your image and video thumbnails to fullscreen",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "items": [
+        {
+          "repo": "Vincentwei1021/anything2explainer",
+          "url": "https://github.com/Vincentwei1021/anything2explainer",
+          "stars": 3430,
+          "language": "TypeScript",
+          "summary": "Topic in, narrated explainer video out. A Claude Code / Codex skill that turns any topic into a black-canva…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent-skills",
+            "ai-agents"
+          ]
+        },
+        {
+          "repo": "video-db/Director",
+          "url": "https://github.com/video-db/Director",
+          "stars": 1591,
+          "language": "Python",
+          "summary": "AI video agents framework for next-gen video interactions and workflows",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent",
+            "agent-framework"
+          ]
+        },
+        {
+          "repo": "jdh-algo/JoyVASA",
+          "url": "https://github.com/jdh-algo/JoyVASA",
+          "stars": 889,
+          "language": "Python",
+          "summary": "Diffusion-based Portrait and Animal Animation",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "generative-ai",
+            "image-animation"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "items": [
+        {
+          "repo": "diffusionstudio/editor",
+          "url": "https://github.com/diffusionstudio/editor",
+          "stars": 3540,
+          "language": "TypeScript",
+          "summary": "The VS Code of video editing, built for agents",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "BrokenSource/DepthFlow",
+          "url": "https://github.com/BrokenSource/DepthFlow",
+          "stars": 1593,
+          "language": "Python",
+          "summary": "🌊 Images to 3D parallax videos",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "computer-vision",
+            "depth-map"
+          ]
+        },
+        {
+          "repo": "OpenDCAI/OpenWorldLib",
+          "url": "https://github.com/OpenDCAI/OpenWorldLib",
+          "stars": 892,
+          "language": "Python",
+          "summary": "Unified Codebase for Advanced World Models",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "diffusion-models",
+            "gaussian-splatting"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "items": [
+        {
+          "repo": "yoyo-nb/Thin-Plate-Spline-Motion-Model",
+          "url": "https://github.com/yoyo-nb/Thin-Plate-Spline-Motion-Model",
+          "stars": 3607,
+          "language": "Jupyter",
+          "summary": "[CVPR 2022] Thin-Plate Spline Motion Model for Image Animation",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "deep-learning",
+            "deepfake"
+          ]
+        },
+        {
+          "repo": "OpenShot/libopenshot",
+          "url": "https://github.com/OpenShot/libopenshot",
+          "stars": 1593,
+          "language": "C++",
+          "summary": "OpenShot Video Library (libopenshot) is a free, open-source project dedicated to delivering high quality vi…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "audio",
+            "c-plus-plus"
+          ]
+        },
+        {
+          "repo": "Dakkshin/after-effects-mcp",
+          "url": "https://github.com/Dakkshin/after-effects-mcp",
+          "stars": 901,
+          "language": "JavaScript",
+          "summary": "MCP Server for Adobe After Effects. Enables remote control (compositions, text, shapes, solids, properties)…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "after-effects",
+            "ai"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "items": [
+        {
+          "repo": "FireRedTeam/FireRed-OpenStoryline",
+          "url": "https://github.com/FireRedTeam/FireRed-OpenStoryline",
+          "stars": 3715,
+          "language": "Python",
+          "summary": "FireRed-OpenStoryline is an AI video editing agent that transforms manual editing into intention-driven dir…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent",
+            "chatbot"
+          ]
+        },
+        {
+          "repo": "ali-vilab/TeaCache",
+          "url": "https://github.com/ali-vilab/TeaCache",
+          "stars": 1390,
+          "language": "Python",
+          "summary": "Timestep Embedding Tells: It's Time to Cache for Video Diffusion Model",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "cogvideox",
+            "diffusion-models"
+          ]
+        },
+        {
+          "repo": "Station-Sciences/bot-crossing",
+          "url": "https://github.com/Station-Sciences/bot-crossing",
+          "stars": 904,
+          "language": "JavaScript",
+          "summary": "A video game for AI agents. Created by Jarren Rocks",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "items": [
+        {
+          "repo": "SandAI-org/MAGI-1",
+          "url": "https://github.com/SandAI-org/MAGI-1",
+          "stars": 3806,
+          "language": "Python",
+          "summary": "MAGI-1: Autoregressive Video Generation at Scale",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "autoregressive",
+            "diffusion-models"
+          ]
+        },
+        {
+          "repo": "facebookresearch/ClassyVision",
+          "url": "https://github.com/facebookresearch/ClassyVision",
+          "stars": 1604,
+          "language": "Python",
+          "summary": "An end-to-end PyTorch framework for image and video classification",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        },
+        {
+          "repo": "h2non/videoshow",
+          "url": "https://github.com/h2non/videoshow",
+          "stars": 904,
+          "language": "JavaScript",
+          "summary": "Simple node.js utility to create video slideshows from images with optional audio and visual effects using…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ffmpeg",
+            "images"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "items": [
+        {
+          "repo": "thu-ml/TurboDiffusion",
+          "url": "https://github.com/thu-ml/TurboDiffusion",
+          "stars": 3868,
+          "language": "Python",
+          "summary": "TurboDiffusion: 100–200× Acceleration for Video Diffusion Models",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "ai-infra",
+            "consistency-model"
+          ]
+        },
+        {
+          "repo": "MiniMax-AI/MiniMax-MCP",
+          "url": "https://github.com/MiniMax-AI/MiniMax-MCP",
+          "stars": 1608,
+          "language": "Python",
+          "summary": "Official MiniMax Model Context Protocol (MCP) server that enables interaction with powerful Text to Speech,…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "image-generation",
+            "image-to-video"
+          ]
+        },
+        {
+          "repo": "hetpatel-11/Adobe_Premiere_Pro_MCP",
+          "url": "https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP",
+          "stars": 904,
+          "language": "TypeScript",
+          "summary": "Adobe Premiere Pro MCP. Tools for AI-driven video editing via MCP, for Codex, Claude, and other MCP clients",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "adobe",
+            "adobe-mcp"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "items": [
+        {
+          "repo": "scenario-labs/skills",
+          "url": "https://github.com/scenario-labs/skills",
+          "stars": 3922,
+          "language": "Python",
+          "summary": "Get production-ready images, video, audio, and 3D from any AI agent: skills that pick the right model, pric…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "3d-models",
+            "agent-skills"
+          ]
+        },
+        {
+          "repo": "yasirkula/UnityNativeGallery",
+          "url": "https://github.com/yasirkula/UnityNativeGallery",
+          "stars": 1623,
+          "language": "Objective-C++",
+          "summary": "A native Unity plugin to interact with Gallery/Photos on Android & iOS (save and/or load images/videos)",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        },
+        {
+          "repo": "lidge-ai/ima2-gen",
+          "url": "https://github.com/lidge-ai/ima2-gen",
+          "stars": 905,
+          "language": "TypeScript",
+          "summary": "Local-first visual generation runtime and studio for people and coding agents, with reproducible image and…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai-agent",
+            "gemini"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "items": [
+        {
+          "repo": "thu-ml/SageAttention",
+          "url": "https://github.com/thu-ml/SageAttention",
+          "stars": 4013,
+          "language": "Cuda",
+          "summary": "[ICLR2025, ICML2025, NeurIPS2025 Spotlight] Quantized Attention achieves speedup of 2-5x compared to FlashA…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "attention",
+            "cuda"
+          ]
+        },
+        {
+          "repo": "ZiqiaoPeng/SyncTalk",
+          "url": "https://github.com/ZiqiaoPeng/SyncTalk",
+          "stars": 1627,
+          "language": "Python",
+          "summary": "[CVPR 2024] This is the official source for our paper \"SyncTalk: The Devil is in the Synchronization for Ta…",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "cvpr",
+            "cvpr2024"
+          ]
+        },
+        {
+          "repo": "ruanjx/VideoLab",
+          "url": "https://github.com/ruanjx/VideoLab",
+          "stars": 922,
+          "language": "Swift",
+          "summary": "High-performance and flexible video editing and effects framework, based on AVFoundation and Metal",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "avfoundation",
+            "ios"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "items": [
+        {
+          "repo": "ali-vilab/VACE",
+          "url": "https://github.com/ali-vilab/VACE",
+          "stars": 4067,
+          "language": "Python",
+          "summary": "[ICCV 2025] Official implementations for paper: VACE: All-in-One Video Creation and Editing",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "video-editing",
+            "video-generation"
+          ]
+        },
+        {
+          "repo": "neuregex/freefield",
+          "url": "https://github.com/neuregex/freefield",
+          "stars": 1637,
+          "language": "Python",
+          "summary": "Open-source Higgsfield on ComfyUI: 120 image, video, VFX and audio apps, every model open weights; runs on…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "comfyui",
+            "higgsfield"
+          ]
+        },
+        {
+          "repo": "360CVGroup/FancyVideo",
+          "url": "https://github.com/360CVGroup/FancyVideo",
+          "stars": 922,
+          "language": "Python",
+          "summary": "Video generation from text&image, 1st-gen",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "image-to-video",
+            "text-to-video"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "items": [
+        {
+          "repo": "QwenLM/Qwen3-Omni",
+          "url": "https://github.com/QwenLM/Qwen3-Omni",
+          "stars": 4120,
+          "language": "Jupyter",
+          "summary": "Qwen3-omni is a natively end-to-end, omni-modal LLM developed by the Qwen team at Alibaba Cloud, capable of…",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        },
+        {
+          "repo": "edbeeching/godot_rl_agents",
+          "url": "https://github.com/edbeeching/godot_rl_agents",
+          "stars": 1639,
+          "language": "Python",
+          "summary": "An Open Source package that allows video game creators, AI researchers and hobbyists the opportunity to lea…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "godot",
+            "simulation"
+          ]
+        },
+        {
+          "repo": "Junchao-cs/SolarWM",
+          "url": "https://github.com/Junchao-cs/SolarWM",
+          "stars": 928,
+          "language": "Python",
+          "summary": "Open data and scalable training for long-horizon video world models",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "acceleration",
+            "aigc"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "items": [
+        {
+          "repo": "GVCLab/PersonaLive",
+          "url": "https://github.com/GVCLab/PersonaLive",
+          "stars": 4176,
+          "language": "Python",
+          "summary": "[CVPR 2026] PersonaLive! : Expressive Portrait Image Animation for Live Streaming",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "cvpr",
+            "cvpr2026"
+          ]
+        },
+        {
+          "repo": "0xsline/short-drama",
+          "url": "https://github.com/0xsline/short-drama",
+          "stars": 1658,
+          "language": "",
+          "summary": "专业的短剧剧本创作skill,从选题立项到分集撰写、质量自检、合规审核、海外出海，覆盖短剧剧本生产全流程。",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        },
+        {
+          "repo": "Valen-Team/Valen",
+          "url": "https://github.com/Valen-Team/Valen",
+          "stars": 930,
+          "language": "Python",
+          "summary": "Open multimodal decision models, 0.8B to 27B, for text, images and video. Decide with probabilities over yo…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "decision-model",
+            "fine-tuning"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "items": [
+        {
+          "repo": "Picsart-AI-Research/Text2Video-Zero",
+          "url": "https://github.com/Picsart-AI-Research/Text2Video-Zero",
+          "stars": 4250,
+          "language": "Python",
+          "summary": "[ICCV 2023 Oral] Text-to-Image Diffusion Models are Zero-Shot Video Generators",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "video-editing",
+            "video-generation"
+          ]
+        },
+        {
+          "repo": "869413421/ai-moive-studio",
+          "url": "https://github.com/869413421/ai-moive-studio",
+          "stars": 1666,
+          "language": "Python",
+          "summary": "自然语言驱动的无限画布工作流 Agent，让 AI 视频创作第一次真正变成可编辑的工作流。   AICON 面向创作者，提供从剧本拆解、分镜生成、素材生成、视频合成到内容分发的一整套能力。   不是只给你一个输入框…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai",
+            "ai-agents"
+          ]
+        },
+        {
+          "repo": "x007xyz/flycut",
+          "url": "https://github.com/x007xyz/flycut",
+          "stars": 938,
+          "language": "Vue",
+          "summary": "A web-based video editing tool implemented with WebCodecs, similar to CapCut Web.使用webcodecs实现的Web端视频编辑工具，类…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "timeline-component",
+            "video"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "items": [
+        {
+          "repo": "fudan-generative-vision/champ",
+          "url": "https://github.com/fudan-generative-vision/champ",
+          "stars": 4262,
+          "language": "Python",
+          "summary": "[ECCV 2024] Champ: Controllable and Consistent Human Image Animation with 3D Parametric Guidance",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "human-animation",
+            "image-animatioln"
+          ]
+        },
+        {
+          "repo": "Stability-AI/stable-virtual-camera",
+          "url": "https://github.com/Stability-AI/stable-virtual-camera",
+          "stars": 1683,
+          "language": "Python",
+          "summary": "Stable Virtual Camera: Generative View Synthesis with Diffusion Models",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion-model",
+            "image-to-video"
+          ]
+        },
+        {
+          "repo": "artokun/comfyui-mcp",
+          "url": "https://github.com/artokun/comfyui-mcp",
+          "stars": 940,
+          "language": "TypeScript",
+          "summary": "Local-first, agent-native control plane for ComfyUI — MCP server + sidebar agent that generates images, vid…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "agent-skills",
+            "ai-agent"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "items": [
+        {
+          "repo": "Lightricks/ComfyUI-LTXVideo",
+          "url": "https://github.com/Lightricks/ComfyUI-LTXVideo",
+          "stars": 4270,
+          "language": "Python",
+          "summary": "LTX-Video Support for ComfyUI",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "comfyui",
+            "diffusion-models"
+          ]
+        },
+        {
+          "repo": "met4citizen/TalkingHead",
+          "url": "https://github.com/met4citizen/TalkingHead",
+          "stars": 1687,
+          "language": "JavaScript",
+          "summary": "Talking Head (3D): A JavaScript class for real-time lip-sync using full-body 3D avatars",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "3d-avatar",
+            "lip-sync"
+          ]
+        },
+        {
+          "repo": "FoundationVision/Waver",
+          "url": "https://github.com/FoundationVision/Waver",
+          "stars": 953,
+          "language": "",
+          "summary": "Industry-level video foundation model for unified Text-to-Video (T2V) and Image-to-Video (I2V) generation",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "items": [
+        {
+          "repo": "Likely7/Veyra-NRVideo",
+          "url": "https://github.com/Likely7/Veyra-NRVideo",
+          "stars": 4289,
+          "language": "C++",
+          "summary": "Bring PS5 GTA6 to 120FPS with DLSS 5. An advanced Windows video player and capture enhancement tool featuri…",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        },
+        {
+          "repo": "Tejashmakwana/motionmaxxing",
+          "url": "https://github.com/Tejashmakwana/motionmaxxing",
+          "stars": 1699,
+          "language": "JavaScript",
+          "summary": "Looksmaxxing for motion graphics. An agent skill that turns AI slop videos into films that look made by a m…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent-skills",
+            "ai"
+          ]
+        },
+        {
+          "repo": "ShmuelRonen/ComfyUI-LatentSyncWrapper",
+          "url": "https://github.com/ShmuelRonen/ComfyUI-LatentSyncWrapper",
+          "stars": 964,
+          "language": "Python",
+          "summary": "This node provides lip-sync capabilities in ComfyUI using ByteDance's LatentSync model. It allows you to sy…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "items": [
+        {
+          "repo": "antgroup/echomimic",
+          "url": "https://github.com/antgroup/echomimic",
+          "stars": 4335,
+          "language": "Python",
+          "summary": "[AAAI 2025] EchoMimic: Lifelike Audio-Driven Portrait Animations through Editable Landmark Conditioning",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "aaai2025",
+            "human-animation"
+          ]
+        },
+        {
+          "repo": "omerbt/TokenFlow",
+          "url": "https://github.com/omerbt/TokenFlow",
+          "stars": 1708,
+          "language": "Python",
+          "summary": "Official Pytorch Implementation for \"TokenFlow: Consistent Diffusion Features for Consistent Video Editing\"…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "iclr2024",
+            "stable-diffusion"
+          ]
+        },
+        {
+          "repo": "Vchitect/SEINE",
+          "url": "https://github.com/Vchitect/SEINE",
+          "stars": 967,
+          "language": "Python",
+          "summary": "[ICLR 2024] SEINE: Short-to-Long Video Diffusion Model for Generative Transition and Prediction",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion-model",
+            "image-to-video"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "items": [
+        {
+          "repo": "showlab/Tune-A-Video",
+          "url": "https://github.com/showlab/Tune-A-Video",
+          "stars": 4353,
+          "language": "Python",
+          "summary": "[ICCV 2023] Tune-A-Video: One-Shot Tuning of Image Diffusion Models for Text-to-Video Generation",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型"
+          ]
+        },
+        {
+          "repo": "v-modal/vmodal_sdk_flutter",
+          "url": "https://github.com/v-modal/vmodal_sdk_flutter",
+          "stars": 1714,
+          "language": "Dart",
+          "summary": "V- Modal AI: Visual Video / Image Search - Flutter Video SDK",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "android-sdk",
+            "flutter"
+          ]
+        },
+        {
+          "repo": "DmitryRyumin/ICCV-2023-25-Papers",
+          "url": "https://github.com/DmitryRyumin/ICCV-2023-25-Papers",
+          "stars": 971,
+          "language": "Python",
+          "summary": "ICCV 2023-2025 Papers: Discover cutting-edge research from ICCV 2023-25, the leading computer vision confer…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "3d-graphics",
+            "3d-reconstruction"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-21",
+      "items": [
+        {
+          "repo": "PurpleDoubleD/locally-uncensored",
+          "url": "https://github.com/PurpleDoubleD/locally-uncensored",
+          "stars": 4477,
+          "language": "TypeScript",
+          "summary": "The all-in-one local AI studio for your desktop: chat, image and video generation and a coding agent in one…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "agent",
+            "ai-chat"
+          ]
+        },
+        {
+          "repo": "hecomi/uLipSync",
+          "url": "https://github.com/hecomi/uLipSync",
+          "stars": 1719,
+          "language": "C#",
+          "summary": "MFCC-based LipSync plug-in for Unity using Job System and Burst Compiler",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "burst-compiler",
+            "job-system"
+          ]
+        },
+        {
+          "repo": "open-mmlab/PIA",
+          "url": "https://github.com/open-mmlab/PIA",
+          "stars": 972,
+          "language": "Python",
+          "summary": "[CVPR 2024] PIA, your Personalized Image Animator. Animate your images by text prompt, combing with Dreambo…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "aigc",
+            "animation"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "items": [
+        {
+          "repo": "tmoroney/auto-subs",
+          "url": "https://github.com/tmoroney/auto-subs",
+          "stars": 4588,
+          "language": "TypeScript",
+          "summary": "On-device subtitle generation that connects directly to DaVinci Resolve, Premiere, and After Effects",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai",
+            "cross-platform"
+          ]
+        },
+        {
+          "repo": "Ebony-Vinyl/EAC-design-world",
+          "url": "https://github.com/Ebony-Vinyl/EAC-design-world",
+          "stars": 1725,
+          "language": "JavaScript",
+          "summary": "DeepSeek Harness 本地视频制作与设计插件：多轨剪辑、模板与设计体系、原生预览画布和真实文件导出",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai-design",
+            "ai-video"
+          ]
+        },
+        {
+          "repo": "yvetteYSY/creator-agent",
+          "url": "https://github.com/yvetteYSY/creator-agent",
+          "stars": 973,
+          "language": "TypeScript",
+          "summary": "Build AI agents grounded in a creator's documents, audio, and video",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "items": [
+        {
+          "repo": "Robbyant/lingbot-world",
+          "url": "https://github.com/Robbyant/lingbot-world",
+          "stars": 4592,
+          "language": "Python",
+          "summary": "Advancing Open-source World Models",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "aigc",
+            "image-to-video"
+          ]
+        },
+        {
+          "repo": "NVIDIA/Cosmos-Tokenizer",
+          "url": "https://github.com/NVIDIA/Cosmos-Tokenizer",
+          "stars": 1726,
+          "language": "Jupyter",
+          "summary": "A suite of image and video neural tokenizers",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion",
+            "tokenization"
+          ]
+        },
+        {
+          "repo": "Gitruck/cli",
+          "url": "https://github.com/Gitruck/cli",
+          "stars": 975,
+          "language": "TypeScript",
+          "summary": "一条命令，把口播毛片变成可二次精修的剪辑工程。",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent-skills",
+            "agentic-ai"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "items": [
+        {
+          "repo": "Tencent-Hunyuan/HunyuanVideo-1.5",
+          "url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-1.5",
+          "stars": 4609,
+          "language": "Python",
+          "summary": "HunyuanVideo-1.5: A leading lightweight video generation model",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "image-to-video",
+            "text-to-video"
+          ]
+        },
+        {
+          "repo": "x007xyz/flycut-caption",
+          "url": "https://github.com/x007xyz/flycut-caption",
+          "stars": 1782,
+          "language": "TypeScript",
+          "summary": "A complete video subtitle editing React component with AI-powered speech recognition and visual editing cap…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "yasirkula/UnityNativeShare",
+          "url": "https://github.com/yasirkula/UnityNativeShare",
+          "stars": 986,
+          "language": "C#",
+          "summary": "A Unity plugin to natively share files (images, videos, documents, etc.) and/or plain text on Android & iOS",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "items": [
+        {
+          "repo": "antgroup/echomimic_v2",
+          "url": "https://github.com/antgroup/echomimic_v2",
+          "stars": 4677,
+          "language": "Python",
+          "summary": "[CVPR 2025] EchoMimicV2: Towards Striking, Simplified, and Semi-Body Human Animation",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "cvpr2025",
+            "human-animation"
+          ]
+        },
+        {
+          "repo": "magic-research/magic-edit",
+          "url": "https://github.com/magic-research/magic-edit",
+          "stars": 1789,
+          "language": "",
+          "summary": "MagicEdit: High-Fidelity Temporally Coherent Video Editing",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "Blizaine/Maestro",
+          "url": "https://github.com/Blizaine/Maestro",
+          "stars": 987,
+          "language": "Python",
+          "summary": "An all-in-one, 100% local AI video, image, and music studio. Director mode plans full music videos and shor…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai",
+            "ai-video"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "items": [
+        {
+          "repo": "GuanYixuan/pyJianYingDraft",
+          "url": "https://github.com/GuanYixuan/pyJianYingDraft",
+          "stars": 4946,
+          "language": "Python",
+          "summary": "轻量、灵活、易上手的Python剪映草稿生成及导出工具，构建全自动化视频剪辑/混剪流水线。本项目的CapCut版本正于 https://github.com/GuanYixuan/pyCapCut 内开发",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "api",
+            "automation"
+          ]
+        },
+        {
+          "repo": "JimLiu/baocut",
+          "url": "https://github.com/JimLiu/baocut",
+          "stars": 1792,
+          "language": "TypeScript",
+          "summary": "BaoCut: an AI video agent with an editable timeline. Transcribe, subtitle, translate, dub, cut and animate",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent-skill",
+            "claude-code"
+          ]
+        },
+        {
+          "repo": "Robbyant/lingbot-video",
+          "url": "https://github.com/Robbyant/lingbot-video",
+          "stars": 988,
+          "language": "Python",
+          "summary": "Scaling Mixture-of-Experts Video Pretraining for Embodied Intelligence",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "image-to-video",
+            "lingbot-video"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "items": [
+        {
+          "repo": "AILab-CVC/VideoCrafter",
+          "url": "https://github.com/AILab-CVC/VideoCrafter",
+          "stars": 5112,
+          "language": "Python",
+          "summary": "VideoCrafter2: Overcoming Data Limitations for High-Quality Video Diffusion Models",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "image-to-video",
+            "text-to-video"
+          ]
+        },
+        {
+          "repo": "Stonewuu/ai-fusion-video",
+          "url": "https://github.com/Stonewuu/ai-fusion-video",
+          "stars": 1796,
+          "language": "Java",
+          "summary": "【融光】 - 基于 Agent 的全流程AI短剧/漫剧/视频创作平台 - Java & agentscope2.0 | Agent-based end-to-end AI creation platform for…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agents",
+            "agentscope"
+          ]
+        },
+        {
+          "repo": "harlanhong/CVPR2022-DaGAN",
+          "url": "https://github.com/harlanhong/CVPR2022-DaGAN",
+          "stars": 997,
+          "language": "Python",
+          "summary": "Official code for CVPR2022 paper: Depth-Aware Generative Adversarial Network for Talking Head Video Generation",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "deepfake",
+            "depth"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "items": [
+        {
+          "repo": "darkzOGx/youtube-automation-agent",
+          "url": "https://github.com/darkzOGx/youtube-automation-agent",
+          "stars": 5289,
+          "language": "JavaScript",
+          "summary": "🎬 Open-source, self-hosted AI agent that runs a YouTube channel end to end: researches topics, writes scrip…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai-agents",
+            "automation"
+          ]
+        },
+        {
+          "repo": "DozenTwelve/Papermorph",
+          "url": "https://github.com/DozenTwelve/Papermorph",
+          "stars": 1805,
+          "language": "JavaScript",
+          "summary": "An AI skill that turns books into animated, narrated, interactive web experiences",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai-agents",
+            "ai-education"
+          ]
+        },
+        {
+          "repo": "MartinDelophy/ai-video-editor",
+          "url": "https://github.com/MartinDelophy/ai-video-editor",
+          "stars": 1002,
+          "language": "JavaScript",
+          "summary": "Open-source, local-first video editor where creators and AI agents edit the same real timeline",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "agent-skills",
+            "ai-music"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-13",
+      "items": [
+        {
+          "repo": "AgnesAI-Labs/AgnesAI-Models",
+          "url": "https://github.com/AgnesAI-Labs/AgnesAI-Models",
+          "stars": 5300,
+          "language": "",
+          "summary": "Official Agnes AI gateway and model catalog for OpenAI-compatible text, image, video, and agent workflows",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agnes-ai",
+            "ai-api"
+          ]
+        },
+        {
+          "repo": "BoundingBoxSoftware/Materialize",
+          "url": "https://github.com/BoundingBoxSoftware/Materialize",
+          "stars": 1834,
+          "language": "C#",
+          "summary": "Materialize is a program for converting images to materials for use in video games and whatnot",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        },
+        {
+          "repo": "johannakarras/DreamPose",
+          "url": "https://github.com/johannakarras/DreamPose",
+          "stars": 1004,
+          "language": "Python",
+          "summary": "Official implementation of \"DreamPose: Fashion Image-to-Video Synthesis via Stable Diffusion\"",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-12",
+      "items": [
+        {
+          "repo": "mifi/editly",
+          "url": "https://github.com/mifi/editly",
+          "stars": 5634,
+          "language": "TypeScript",
+          "summary": "Slick, declarative command line video editing & API",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "animations",
+            "cli"
+          ]
+        },
+        {
+          "repo": "IliasHad/orcah-studio",
+          "url": "https://github.com/IliasHad/orcah-studio",
+          "stars": 1838,
+          "language": "TypeScript",
+          "summary": "Local-first Video Knowledge Base. Index your video library with multi-modal analysis (YOLO, DeepFace, Whisp…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai",
+            "computer-vision"
+          ]
+        },
+        {
+          "repo": "GVCLab/CutClaw",
+          "url": "https://github.com/GVCLab/CutClaw",
+          "stars": 1016,
+          "language": "Python",
+          "summary": "Agentic Hours-Long Video Editing via Music Synchronization",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-11",
+      "items": [
+        {
+          "repo": "WyattBlue/auto-editor",
+          "url": "https://github.com/WyattBlue/auto-editor",
+          "stars": 6016,
+          "language": "Nim",
+          "summary": "Effort free video editing!",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "audio",
+            "audio-editing"
+          ]
+        },
+        {
+          "repo": "veedstudio/open-edit",
+          "url": "https://github.com/veedstudio/open-edit",
+          "stars": 1842,
+          "language": "TypeScript",
+          "summary": "Open-source, agent-driven editing pipeline: create subtitles, motion graphics, slides, edit and render videos",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai-agents",
+            "captions"
+          ]
+        },
+        {
+          "repo": "VisoMasterFusion/VisoMaster-Fusion",
+          "url": "https://github.com/VisoMasterFusion/VisoMaster-Fusion",
+          "stars": 1029,
+          "language": "Python",
+          "summary": "Powerful & Easy-to-Use Video Face Swapping and Editing Software",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai",
+            "computer-vision"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "items": [
+        {
+          "repo": "bytedance/LatentSync",
+          "url": "https://github.com/bytedance/LatentSync",
+          "stars": 6303,
+          "language": "Python",
+          "summary": "Taming Stable Diffusion for Lip Sync!",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "diffusion-models",
+            "lipsync"
+          ]
+        },
+        {
+          "repo": "Tencent-Hunyuan/HunyuanVideo-I2V",
+          "url": "https://github.com/Tencent-Hunyuan/HunyuanVideo-I2V",
+          "stars": 1856,
+          "language": "Python",
+          "summary": "HunyuanVideo-I2V: A Customizable Image-to-Video Model based on HunyuanVideo",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion-models",
+            "image-to-video"
+          ]
+        },
+        {
+          "repo": "scenario-labs/blender-plugin",
+          "url": "https://github.com/scenario-labs/blender-plugin",
+          "stars": 1058,
+          "language": "Python",
+          "summary": "Scenario for Blender: AI images, video, 3D and PBR materials in the viewport, plus a local MCP server for a…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "3d-models",
+            "agentic-ai"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-09",
+      "items": [
+        {
+          "repo": "modelscope/FunClip",
+          "url": "https://github.com/modelscope/FunClip",
+          "stars": 6593,
+          "language": "Python",
+          "summary": "FunASR-powered video transcription, subtitle generation, and LLM-assisted clipping tool with a local Gradio UI",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ai-tools",
+            "ai-video-editing"
+          ]
+        },
+        {
+          "repo": "KlingAIResearch/ReCamMaster",
+          "url": "https://github.com/KlingAIResearch/ReCamMaster",
+          "stars": 1899,
+          "language": "Python",
+          "summary": "[ICCV'25 Best Paper Finalist] ReCamMaster: Camera-Controlled Generative Rendering from A Single Video",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "4d",
+            "aigc"
+          ]
+        },
+        {
+          "repo": "ChatCut-Inc/agent-plugin",
+          "url": "https://github.com/ChatCut-Inc/agent-plugin",
+          "stars": 1068,
+          "language": "JavaScript",
+          "summary": "AI video editor for agents. ChatCut plugin and MCP server for Codex, ChatGPT, Claude Code, Cursor, Grok, Ge…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent-skills",
+            "ai-video-editor"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "items": [
+        {
+          "repo": "OpenShot/openshot-qt",
+          "url": "https://github.com/OpenShot/openshot-qt",
+          "stars": 6815,
+          "language": "Python",
+          "summary": "OpenShot Video Editor is an award-winning free and open-source video editor for Linux, Mac, and Windows, an…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "c-plus-plus",
+            "ffmpeg"
+          ]
+        },
+        {
+          "repo": "bugbakery/audapolis",
+          "url": "https://github.com/bugbakery/audapolis",
+          "stars": 1906,
+          "language": "TypeScript",
+          "summary": "an editor for spoken-word audio with automatic transcription",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "audio-editing",
+            "speech-to-text"
+          ]
+        },
+        {
+          "repo": "SylphxAI/anymd",
+          "url": "https://github.com/SylphxAI/anymd",
+          "stars": 1071,
+          "language": "Rust",
+          "summary": "Any file → clean Markdown for AI agents: PDF, Word, PowerPoint, Excel, EPUB, HTML and web pages, images (OC…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "ai-agents",
+            "cli"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-07",
+      "items": [
+        {
+          "repo": "eternityspring/shuohao-skills",
+          "url": "https://github.com/eternityspring/shuohao-skills",
+          "stars": 6862,
+          "language": "JavaScript",
+          "summary": "AI 短剧制作的 skill 集合：拆角色、排大纲、出场景与道具设定、写剧本、切分镜 | Agent skills for AI short-drama production — character bibles,…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        },
+        {
+          "repo": "HITsz-TMG/VideoClaw",
+          "url": "https://github.com/HITsz-TMG/VideoClaw",
+          "stars": 1915,
+          "language": "Python",
+          "summary": "🚀 AI 全自动化视频生成员工 | Your First AIGC Coworker. Chat an Idea. Get a Film. 🦞",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent",
+            "aigc"
+          ]
+        },
+        {
+          "repo": "SnapXL/SnapX",
+          "url": "https://github.com/SnapXL/SnapX",
+          "stars": 1072,
+          "language": "C#",
+          "summary": "SnapX is a free, open-source, cross-platform tool that lets you capture or record any area of your screen a…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "avalonia",
+            "csharp"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-06",
+      "items": [
+        {
+          "repo": "yi1108/printfilm",
+          "url": "https://github.com/yi1108/printfilm",
+          "stars": 7217,
+          "language": "Python",
+          "summary": "PRINTFILM: AI short-video marketing and AI short-drama creation platform",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai",
+            "ai-video"
+          ]
+        },
+        {
+          "repo": "andyhuo520/vibe-knowledge",
+          "url": "https://github.com/andyhuo520/vibe-knowledge",
+          "stars": 730,
+          "language": "JavaScript",
+          "summary": "Vibe 知识大赏：一个知识点 → 一条有旁白、每句有出处的精品知识短片（Claude Code skill · 44 套风格 · 代码逐帧成片）",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "chinese",
+            "claude-code"
+          ]
+        },
+        {
+          "repo": "ShareGPT4Omni/ShareGPT4Video",
+          "url": "https://github.com/ShareGPT4Omni/ShareGPT4Video",
+          "stars": 1096,
+          "language": "Python",
+          "summary": "[NeurIPS 2024] An official implementation of \"ShareGPT4Video: Improving Video Understanding and Generation…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "chatgpt",
+            "gpt"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-05",
+      "items": [
+        {
+          "repo": "OpenTalker/video-retalking",
+          "url": "https://github.com/OpenTalker/video-retalking",
+          "stars": 7308,
+          "language": "Python",
+          "summary": "[SIGGRAPH Asia 2022] VideoReTalking: Audio-based Lip Synchronization for Talking Head Video Editing In the…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "siggraph-asia-2022",
+            "video-editing"
+          ]
+        },
+        {
+          "repo": "pyang5166/gbro-collage-broll",
+          "url": "https://github.com/pyang5166/gbro-collage-broll",
+          "stars": 1960,
+          "language": "Python",
+          "summary": "半调纸拼贴 B-roll 生成 skill：三闸门审批，Gemini Omni Flash 首尾帧组装动画 | Editorial halftone paper-collage B-roll agent skill",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent-skill",
+            "broll"
+          ]
+        },
+        {
+          "repo": "wassgha/rescript",
+          "url": "https://github.com/wassgha/rescript",
+          "stars": 1117,
+          "language": "TypeScript",
+          "summary": "🎬 Open source, transcript-based video/audio editor that lives in the browser",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "audio",
+            "media"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-04",
+      "items": [
+        {
+          "repo": "open-mmlab/mmagic",
+          "url": "https://github.com/open-mmlab/mmagic",
+          "stars": 7482,
+          "language": "Jupyter",
+          "summary": "OpenMMLab Multimodal Advanced, Generative, and Intelligent Creation Toolbox. Unlock the magic 🪄: Generative…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "aigc",
+            "computer-vision"
+          ]
+        },
+        {
+          "repo": "LingyiChen-AI/AIComicBuilder",
+          "url": "https://github.com/LingyiChen-AI/AIComicBuilder",
+          "stars": 1981,
+          "language": "TypeScript",
+          "summary": "AI-powered animated comic generator — transform scripts into fully animated videos with AI-driven character…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai-animation",
+            "ai-animation-tools"
+          ]
+        },
+        {
+          "repo": "hotshotco/Hotshot-XL",
+          "url": "https://github.com/hotshotco/Hotshot-XL",
+          "stars": 1119,
+          "language": "Python",
+          "summary": "✨ Hotshot-XL: State-of-the-art AI text-to-GIF model trained to work alongside Stable Diffusion XL",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "ai",
+            "hotshot"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "items": [
+        {
+          "repo": "Devin-AXIS/iPolloWork",
+          "url": "https://github.com/Devin-AXIS/iPolloWork",
+          "stars": 7515,
+          "language": "TypeScript",
+          "summary": "An enterprise collaboration platform for people and multi-agent teams, built on the open-source DeepSeek Ha…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agent-skills",
+            "ai-agents"
+          ]
+        },
+        {
+          "repo": "lucidrains/make-a-video-pytorch",
+          "url": "https://github.com/lucidrains/make-a-video-pytorch",
+          "stars": 1989,
+          "language": "Python",
+          "summary": "Implementation of Make-A-Video, new SOTA text to video generator from Meta AI, in Pytorch",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "axial-convolutions",
+            "deep-learning"
+          ]
+        },
+        {
+          "repo": "flopperam/unreal-engine-mcp",
+          "url": "https://github.com/flopperam/unreal-engine-mcp",
+          "stars": 1120,
+          "language": "C++",
+          "summary": "This MCP is now owned by Aura! Please try out the most intelligent AI agent for Unreal Engine at https://ww…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-02",
+      "items": [
+        {
+          "repo": "dramaclaw/dramaclaw",
+          "url": "https://github.com/dramaclaw/dramaclaw",
+          "stars": 7772,
+          "language": "TypeScript",
+          "summary": "A general-purpose AIGC video engine: script to finished film in one pipeline — dramas, ads, product videos,…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "ai-agent",
+            "ai-filmmaking"
+          ]
+        },
+        {
+          "repo": "NVIDIA-AI-Blueprints/video-search-and-summarization",
+          "url": "https://github.com/NVIDIA-AI-Blueprints/video-search-and-summarization",
+          "stars": 2001,
+          "language": "Python",
+          "summary": "NVIDIA AI Blueprint for video search and summarization (VSS) is a GPU-accelerated reference architecture fo…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "computer-vision",
+            "generative-ai"
+          ]
+        },
+        {
+          "repo": "kerberos-io/agent",
+          "url": "https://github.com/kerberos-io/agent",
+          "stars": 1133,
+          "language": "Go",
+          "summary": "An open and scalable video surveillance system for anyone making this world a better and more peaceful place",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "docker",
+            "golang"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-09-01",
+      "items": [
+        {
+          "repo": "vllm-project/vllm-omni",
+          "url": "https://github.com/vllm-project/vllm-omni",
+          "stars": 7862,
+          "language": "Python",
+          "summary": "A framework for efficient model inference with omni-modality models",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "audio-generation",
+            "diffusion"
+          ]
+        },
+        {
+          "repo": "bytedance/Bernini",
+          "url": "https://github.com/bytedance/Bernini",
+          "stars": 1370,
+          "language": "Python",
+          "summary": "Bernini is a unified framework for video generation and editing that combines an MLLM-based semantic planne…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "image-editing",
+            "image-generation"
+          ]
+        },
+        {
+          "repo": "ChrisChen667788/wind-comic",
+          "url": "https://github.com/ChrisChen667788/wind-comic",
+          "stars": 722,
+          "language": "TypeScript",
+          "summary": "Multi-agent AI pipeline that turns one line of text into a finished short-form drama: script, cinematic sto…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "agents",
+            "ai"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-31",
+      "items": [
+        {
+          "repo": "brycedrennan/imaginAIry",
+          "url": "https://github.com/brycedrennan/imaginAIry",
+          "stars": 8180,
+          "language": "Python",
+          "summary": "Pythonic AI generation of images and videos",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        },
+        {
+          "repo": "Zz-ww/SadTalker-Video-Lip-Sync",
+          "url": "https://github.com/Zz-ww/SadTalker-Video-Lip-Sync",
+          "stars": 2010,
+          "language": "Python",
+          "summary": "本项目基于SadTalkers实现视频唇形合成的Wav2lip。通过以视频文件方式进行语音驱动生成唇形，设置面部区域可配置的增强方式进行合成唇形（人脸）区域画面增强，提高生成唇形的清晰度。使用DAIN 插帧的DL算…",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人"
+          ]
+        },
+        {
+          "repo": "caydey/ffshare",
+          "url": "https://github.com/caydey/ffshare",
+          "stars": 1148,
+          "language": "Kotlin",
+          "summary": "An android app to compress image, video and audio files through ffmpeg before sharing them",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "android",
+            "android-app"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "items": [
+        {
+          "repo": "GetStream/Agents",
+          "url": "https://github.com/GetStream/Agents",
+          "stars": 8216,
+          "language": "Go",
+          "summary": "Quickly build text, voice and video agents. Fast, Go based Agent backend with SDKs for every language. Sens…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "agentic-ai",
+            "agents"
+          ]
+        },
+        {
+          "repo": "HaD0Yun/CozyClay",
+          "url": "https://github.com/HaD0Yun/CozyClay",
+          "stars": 2020,
+          "language": "JavaScript",
+          "summary": "Open source previs software in the browser: block a scene, pose characters, author camera moves and cuts, t…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "3d",
+            "3d-animation"
+          ]
+        },
+        {
+          "repo": "OpenMOSS/MOVA",
+          "url": "https://github.com/OpenMOSS/MOVA",
+          "stars": 1150,
+          "language": "Python",
+          "summary": "A foundation model that generates synchronized video and audio in a single model",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "audio-generation",
+            "diffusion-models"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "items": [
+        {
+          "repo": "duixcom/Duix-Mobile",
+          "url": "https://github.com/duixcom/Duix-Mobile",
+          "stars": 8347,
+          "language": "C++",
+          "summary": "🚀 The best real-time interactive AI avatar(digital human) with on-premise deployment and <1.5 s latency",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "ai-avatars",
+            "ai-boyfriend"
+          ]
+        },
+        {
+          "repo": "Lynpoint/CyberVerse",
+          "url": "https://github.com/Lynpoint/CyberVerse",
+          "stars": 2025,
+          "language": "Python",
+          "summary": "Self hosted, real-time digital human agent platform. Build voice-first AI agents with WebRTC, persona memor…",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "ai-agents",
+            "ai-companion"
+          ]
+        },
+        {
+          "repo": "etro-js/etro",
+          "url": "https://github.com/etro-js/etro",
+          "stars": 1155,
+          "language": "TypeScript",
+          "summary": "Typescript video-editing library for the browser",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "audio",
+            "blob"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-28",
+      "items": [
+        {
+          "repo": "kajisho5/ffmpeg-skill",
+          "url": "https://github.com/kajisho5/ffmpeg-skill",
+          "stars": 8498,
+          "language": "Python",
+          "summary": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, f…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "agent-skills",
+            "ai-agents"
+          ]
+        },
+        {
+          "repo": "szczyglis-dev/py-gpt",
+          "url": "https://github.com/szczyglis-dev/py-gpt",
+          "stars": 2032,
+          "language": "Python",
+          "summary": "Desktop AI Assistant powered by GPT, Gemini, Claude, Grok, Ollama, DeepSeek, Perplexity, and more - chat, a…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agents",
+            "ai"
+          ]
+        },
+        {
+          "repo": "bellingcat/auto-archiver",
+          "url": "https://github.com/bellingcat/auto-archiver",
+          "stars": 1157,
+          "language": "Python",
+          "summary": "Automatically archive links to videos, images, and social media content from Google Sheets (and more)",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "archive",
+            "docker"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-27",
+      "items": [
+        {
+          "repo": "openfilm/openfilm",
+          "url": "https://github.com/openfilm/openfilm",
+          "stars": 8601,
+          "language": "TypeScript",
+          "summary": "The open source AI video agent: turns any coding agent into a video agent, with editors to change anything…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai-video",
+            "claude-code"
+          ]
+        },
+        {
+          "repo": "andyhuo520/digital-human-koubo",
+          "url": "https://github.com/andyhuo520/digital-human-koubo",
+          "stars": 2049,
+          "language": "TypeScript",
+          "summary": "AI digital-human talking-head videos from one photo: Renoise MCP generation + 5 editing styles + 48 creator…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "joeseesun/opus-video-prompts",
+          "url": "https://github.com/joeseesun/opus-video-prompts",
+          "stars": 1163,
+          "language": "",
+          "summary": "Claude Opus 5.5 用代码生成视频：全网案例与可直接复制的提示词 | Copy-ready prompts & 54 cases of Opus 5.5 code-rendered videos",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "claude",
+            "claude-code"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "items": [
+        {
+          "repo": "xorbitsai/inference",
+          "url": "https://github.com/xorbitsai/inference",
+          "stars": 9668,
+          "language": "Python",
+          "summary": "Open-source inference platform for language, vision, embedding, reranking, image, audio, and video models.…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "diffusers",
+            "gemma"
+          ]
+        },
+        {
+          "repo": "edenfunf/reelmimic",
+          "url": "https://github.com/edenfunf/reelmimic",
+          "stars": 2070,
+          "language": "JavaScript",
+          "summary": "Open-source AI video style cloning for 2D animation. Give it a reference video or YouTube link; Claude Code…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "2d-animation",
+            "ai-agents"
+          ]
+        },
+        {
+          "repo": "ChenyangQiQi/FateZero",
+          "url": "https://github.com/ChenyangQiQi/FateZero",
+          "stars": 1165,
+          "language": "Jupyter",
+          "summary": "[ICCV 2023 Oral] \"FateZero: Fusing Attentions for Zero-shot Text-based Video Editing\"",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "image-editing",
+            "stable-diffusion"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "items": [
+        {
+          "repo": "AIGC-Audio/AudioGPT",
+          "url": "https://github.com/AIGC-Audio/AudioGPT",
+          "stars": 10173,
+          "language": "Python",
+          "summary": "AudioGPT: Understanding and Generating Speech, Music, Sound, and Talking Head",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "audio",
+            "gpt"
+          ]
+        },
+        {
+          "repo": "video-db/call.md",
+          "url": "https://github.com/video-db/call.md",
+          "stars": 2101,
+          "language": "TypeScript",
+          "summary": "Turn meetings into live agent loops. Record, transcribe, and analyze meetings with real-time AI intelligenc…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agentic-ai",
+            "agentic-workflow"
+          ]
+        },
+        {
+          "repo": "Anil-matcha/open-genjutsu",
+          "url": "https://github.com/Anil-matcha/open-genjutsu",
+          "stars": 1165,
+          "language": "Python",
+          "summary": "Local-first AI video recasting with draft review, explicit HD approval, and source-audio restoration",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "ai-media",
+            "ai-video"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-24",
+      "items": [
+        {
+          "repo": "OpenTalker/SadTalker",
+          "url": "https://github.com/OpenTalker/SadTalker",
+          "stars": 14212,
+          "language": "Python",
+          "summary": "[CVPR 2023] SadTalker：Learning Realistic 3D Motion Coefficients for Stylized Audio-Driven Single Image Talk…",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人",
+            "cvpr2023",
+            "deep-fake"
+          ]
+        },
+        {
+          "repo": "WebAV-Tech/WebAV",
+          "url": "https://github.com/WebAV-Tech/WebAV",
+          "stars": 2102,
+          "language": "TypeScript",
+          "summary": "A web-based Video Editing SDK built on WebCodecs. 基于 WebCodecs 构建的网页视频编辑 SDK。",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "audio",
+            "browser"
+          ]
+        },
+        {
+          "repo": "cure-lab/MagicDrive",
+          "url": "https://github.com/cure-lab/MagicDrive",
+          "stars": 1167,
+          "language": "Python",
+          "summary": "[ICLR24] Official implementation of the paper “MagicDrive: Street View Generation with Diverse 3D Geometry…",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "deep-learning",
+            "diffusion-models"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "items": [
+        {
+          "repo": "HumanAIGC/AnimateAnyone",
+          "url": "https://github.com/HumanAIGC/AnimateAnyone",
+          "stars": 14781,
+          "language": "",
+          "summary": "Animate Anyone: Consistent and Controllable Image-to-Video Synthesis for Character Animation",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        },
+        {
+          "repo": "AcademySoftwareFoundation/OpenTimelineIO",
+          "url": "https://github.com/AcademySoftwareFoundation/OpenTimelineIO",
+          "stars": 2104,
+          "language": "C++",
+          "summary": "Open Source API and interchange format for editorial timeline information",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "animation",
+            "cut"
+          ]
+        },
+        {
+          "repo": "haidrrrry/claude-remotion-skill",
+          "url": "https://github.com/haidrrrry/claude-remotion-skill",
+          "stars": 1170,
+          "language": "TypeScript",
+          "summary": "Open-source Claude agent skill that teaches Claude Code, Claude Desktop & Claude AI to create and edit prof…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai-agents",
+            "ai-video"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "items": [
+        {
+          "repo": "palmier-io/palmier-pro",
+          "url": "https://github.com/palmier-io/palmier-pro",
+          "stars": 14794,
+          "language": "Swift",
+          "summary": "macOS video editor built for AI",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai-video",
+            "claude"
+          ]
+        },
+        {
+          "repo": "visomaster/VisoMaster",
+          "url": "https://github.com/visomaster/VisoMaster",
+          "stars": 2135,
+          "language": "Python",
+          "summary": "Powerful & Easy-to-Use Video Face Swapping and Editing Software",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai",
+            "computer-vision"
+          ]
+        },
+        {
+          "repo": "crisng95/flowkit",
+          "url": "https://github.com/crisng95/flowkit",
+          "stars": 1179,
+          "language": "Python",
+          "summary": "AI agent can create video content better than you. No reason why you do it manually in google flow!",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-21",
+      "items": [
+        {
+          "repo": "chatfire-AI/huobao-drama",
+          "url": "https://github.com/chatfire-AI/huobao-drama",
+          "stars": 17749,
+          "language": "TypeScript",
+          "summary": "🎬 火宝短剧 - 基于AI的一站式短剧生成平台 《一句话生成完整短剧，从剧本到成片全自动化》  Huobao Drama - An AI-Powered End-to-End Short Drama Generat…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        },
+        {
+          "repo": "jd-opensource/JoyAI-Video-Edit",
+          "url": "https://github.com/jd-opensource/JoyAI-Video-Edit",
+          "stars": 2164,
+          "language": "Python",
+          "summary": "[Official Repo] JoyAI-Video-Edit: Real-Time Open-Ended Video Editing with Autoregressive Diffusion",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "zcbacxc/movie-narrator",
+          "url": "https://github.com/zcbacxc/movie-narrator",
+          "stars": 1185,
+          "language": "Python",
+          "summary": "🎬 Generate narrated movie recap videos from a single prompt",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "automation",
+            "ffmpeg"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "items": [
+        {
+          "repo": "storytold/filmcraft",
+          "url": "https://github.com/storytold/filmcraft",
+          "stars": 18661,
+          "language": "Rust",
+          "summary": "FilmCraft: An open-source, nonlinear video editor written from scratch in pure Rust",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "art",
+            "rust"
+          ]
+        },
+        {
+          "repo": "lixiaoxiao9888-create/manju-laoli-skill",
+          "url": "https://github.com/lixiaoxiao9888-create/manju-laoli-skill",
+          "stars": 2182,
+          "language": "Python",
+          "summary": "漫剧老李 AIGC 创作全流程 Skill · V7.4.26 多技能套装版（Short-Drama Director Suite）：1 总控 + 12 子技能 · 四层纵深——赛道分流 / 素材采风 / 剧本 /…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台"
+          ]
+        },
+        {
+          "repo": "wladradchenko/wunjo.wladradchenko.ru",
+          "url": "https://github.com/wladradchenko/wunjo.wladradchenko.ru",
+          "stars": 1189,
+          "language": "C++",
+          "summary": "Wunjo Make: Face Swap, Lip Sync, Control Remove Objects & Text & Background, Restyling, Audio Separator, Cl…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "controlnet",
+            "deepfake"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-19",
+      "items": [
+        {
+          "repo": "lemomo-ai/lemo-opuscar",
+          "url": "https://github.com/lemomo-ai/lemo-opuscar",
+          "stars": 18841,
+          "language": "JavaScript",
+          "summary": "A toolbox of film styles made in code for Claude Code: 99 ready to use, and your own. Each style is a style…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent-skills",
+            "ai-agents"
+          ]
+        },
+        {
+          "repo": "PKU-YuanGroup/Helios",
+          "url": "https://github.com/PKU-YuanGroup/Helios",
+          "stars": 2271,
+          "language": "Python",
+          "summary": "[TPAMI 2026🔥] Helios: Real Real-Time Long Video Generation Model",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "acceleration",
+            "diffusion"
+          ]
+        },
+        {
+          "repo": "Keys-Wasserman/Imagination-Studio-by-keys-Wasserman",
+          "url": "https://github.com/Keys-Wasserman/Imagination-Studio-by-keys-Wasserman",
+          "stars": 1195,
+          "language": "Python",
+          "summary": "Imagination Studio by keys+Wasserman powered by TensorFold: an AI film studio for Mac and NVIDIA DGX Spark.…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "ai-filmmaking",
+            "apple-silicon"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-18",
+      "items": [
+        {
+          "repo": "jub0t/Concat",
+          "url": "https://github.com/jub0t/Concat",
+          "stars": 19034,
+          "language": "Rust",
+          "summary": "Beta: The truly free, open-source, local-first, cross-platform video editor. Scriptable through a JSON-RPC…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "ffmpeg",
+            "free-video-editor"
+          ]
+        },
+        {
+          "repo": "baresip/baresip",
+          "url": "https://github.com/baresip/baresip",
+          "stars": 2275,
+          "language": "C",
+          "summary": "Baresip is a modular SIP User-Agent with audio and video support",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "libre",
+            "sip"
+          ]
+        },
+        {
+          "repo": "meta-pytorch/torchcodec",
+          "url": "https://github.com/meta-pytorch/torchcodec",
+          "stars": 1203,
+          "language": "Python",
+          "summary": "Media decoding and encoding for PyTorch: videos, images, and audio, on CPU and GPU",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "items": [
+        {
+          "repo": "hypit-ai/hypit",
+          "url": "https://github.com/hypit-ai/hypit",
+          "stars": 30788,
+          "language": "TypeScript",
+          "summary": "Clone any viral video with AI agents. Not just a script, the whole workflow: swap the face, the words, the…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "agentic-ai",
+            "ai"
+          ]
+        },
+        {
+          "repo": "trykimu/videoeditor",
+          "url": "https://github.com/trykimu/videoeditor",
+          "stars": 2311,
+          "language": "TypeScript",
+          "summary": "Your Creative Copilot for Video Editing",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "canva",
+            "capcut"
+          ]
+        },
+        {
+          "repo": "DevonCrawford/Video-Editing-Automation",
+          "url": "https://github.com/DevonCrawford/Video-Editing-Automation",
+          "stars": 1206,
+          "language": "C",
+          "summary": "Toolkit of algorithms to automate the video editing process",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-16",
+      "items": [
+        {
+          "repo": "browser-use/video-use",
+          "url": "https://github.com/browser-use/video-use",
+          "stars": 31325,
+          "language": "Python",
+          "summary": "Edit videos with coding agents",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "walterlow/freecut",
+          "url": "https://github.com/walterlow/freecut",
+          "stars": 2339,
+          "language": "TypeScript",
+          "summary": "FreeCut is a professional-grade video editor that runs entirely in your browser. Professional video editing…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "mediabunny",
+            "open-source"
+          ]
+        },
+        {
+          "repo": "decodingai-magazine/building-a-coding-agent-from-scratch-course",
+          "url": "https://github.com/decodingai-magazine/building-a-coding-agent-from-scratch-course",
+          "stars": 1217,
+          "language": "Python",
+          "summary": "Learn harness engineering by building Claude Code from scratch. Free, open-source course: 8 articles, 6 vid…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "ai-agent",
+            "claude-code"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-15",
+      "items": [
+        {
+          "repo": "Anil-matcha/Open-Generative-AI",
+          "url": "https://github.com/Anil-matcha/Open-Generative-AI",
+          "stars": 35450,
+          "language": "JavaScript",
+          "summary": "Uncensored Open-source alternative to AI video platforms — Free AI image & video generation studio with 800…",
+          "highlight": "消费级显卡就能跑起来，不依赖云端 API",
+          "fit": "想完全本地化、不想按次付费的创作者",
+          "tags": [
+            "本地部署",
+            "fal-ai-alternative",
+            "generative-ai"
+          ]
+        },
+        {
+          "repo": "tencent-ailab/V-Express",
+          "url": "https://github.com/tencent-ailab/V-Express",
+          "stars": 2353,
+          "language": "Python",
+          "summary": "V-Express aims to generate a talking head video under the control of a reference image, an audio, and a seq…",
+          "highlight": "从一张图或一段音频驱动出人物视频",
+          "fit": "做口播、虚拟主播、课程视频的创作者",
+          "tags": [
+            "数字人"
+          ]
+        },
+        {
+          "repo": "ZeroPointRepo/youtube-skills",
+          "url": "https://github.com/ZeroPointRepo/youtube-skills",
+          "stars": 1220,
+          "language": "",
+          "summary": "YouTube Transcript API skills for AI agents. Get transcripts, search videos, browse channels. Works with Op…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent-skills",
+            "clawdbot"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "items": [
+        {
+          "repo": "mifi/lossless-cut",
+          "url": "https://github.com/mifi/lossless-cut",
+          "stars": 46220,
+          "language": "TypeScript",
+          "summary": "The swiss army knife of lossless video/audio editing",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "codec",
+            "cut"
+          ]
+        },
+        {
+          "repo": "stephengpope/no-code-architects-toolkit",
+          "url": "https://github.com/stephengpope/no-code-architects-toolkit",
+          "stars": 2357,
+          "language": "Python",
+          "summary": "The NCA Toolkit API eliminates monthly subscription fees by consolidating common API functionalities into a…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑"
+          ]
+        },
+        {
+          "repo": "gufo-org/gufo",
+          "url": "https://github.com/gufo-org/gufo",
+          "stars": 1228,
+          "language": "C++",
+          "summary": "The open-source AI engine for AMD Strix Halo. Text, embeddings, speech, image and video models in one binar…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "amd",
+            "asr"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "items": [
+        {
+          "repo": "OpenMontageInc/OpenMontage",
+          "url": "https://github.com/OpenMontageInc/OpenMontage",
+          "stars": 81815,
+          "language": "Python",
+          "summary": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent…",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "agent",
+            "agentic-ai"
+          ]
+        },
+        {
+          "repo": "rushindrasinha/youtube-shorts-pipeline",
+          "url": "https://github.com/rushindrasinha/youtube-shorts-pipeline",
+          "stars": 2400,
+          "language": "Python",
+          "summary": "Automated YouTube Shorts pipeline: news → script → AI visuals → voiceover → captions → upload",
+          "highlight": "开源视频生成相关项目，可自行编译与二次开发",
+          "fit": "想动手跑通链路的开发者",
+          "tags": [
+            "生成模型",
+            "ai-video",
+            "automation"
+          ]
+        },
+        {
+          "repo": "renezander030/capcut-cli",
+          "url": "https://github.com/renezander030/capcut-cli",
+          "stars": 1238,
+          "language": "JavaScript",
+          "summary": "Independent, unofficial CLI to edit CapCut and JianYing (剪映) projects — subtitles, timing, speed, volume, t…",
+          "highlight": "把主流开源视频模型的推理成本压下来",
+          "fit": "自己部署出片、要把显存和时延压住的团队",
+          "tags": [
+            "推理加速",
+            "agent-skills",
+            "ai-agent"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "items": [
+        {
+          "repo": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "stars": 87162,
+          "language": "TypeScript",
+          "summary": "AI video you can actually edit. HyperFrames is a free, open-source AI video editor. Describe any video and…",
+          "highlight": "把剪辑、配音、字幕这些后期环节自动化",
+          "fit": "做批量内容生产、需要统一风格的团队",
+          "tags": [
+            "视频编辑",
+            "ai",
+            "ai-agents"
+          ]
+        },
+        {
+          "repo": "showlab/Code2Video",
+          "url": "https://github.com/showlab/Code2Video",
+          "stars": 2416,
+          "language": "Python",
+          "summary": "[ICML 2026] Video generation via code",
+          "highlight": "把剧本、分镜、素材、成片串成一条可复用的流水线",
+          "fit": "做短剧、漫剧、系列化内容的中文团队",
+          "tags": [
+            "创作平台",
+            "coding",
+            "education"
+          ]
+        },
+        {
+          "repo": "PKU-YuanGroup/ConsisID",
+          "url": "https://github.com/PKU-YuanGroup/ConsisID",
+          "stars": 866,
+          "language": "Python",
+          "summary": "[CVPR 2025 Highlight🔥] Identity-Preserving Text-to-Video Generation by Frequency Decomposition",
+          "highlight": "开源视频生成模型本体，可直接微调或二次开发",
+          "fit": "要自研、微调或做垂直场景的研究与工程团队",
+          "tags": [
+            "生成模型",
+            "diffusion",
+            "diffusion-models"
+          ]
+        }
+      ]
     }
   ]
 }
